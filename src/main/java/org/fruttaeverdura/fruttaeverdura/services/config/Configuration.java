@@ -11,7 +11,7 @@ public class Configuration {
     public static final String SERVER_TIMEZONE=Calendar.getInstance().getTimeZone().getID();
     public static final String
             DATABASE_URL="jdbc:mysql://localhost/ecommerce?user=root&password=password&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone="+SERVER_TIMEZONE;
-    //ciao
+
     /* Session Configuration */
     public static final String COOKIE_IMPL=DAOFactory.COOKIEIMPL;
 
