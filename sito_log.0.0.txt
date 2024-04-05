@@ -2,3 +2,7 @@ apr 05, 2024 4:29:15 PM org.fruttaeverdura.fruttaeverdura.services.logservice.Lo
 CONFIG: Logger: frutta created.
 apr 05, 2024 4:29:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
 INFO: HomeManagement view
+apr 05, 2024 5:07:15 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 05, 2024 5:07:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
