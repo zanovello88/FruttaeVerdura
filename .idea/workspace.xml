@@ -10,14 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="correzione file UtenteDAOMySQLJDBCImpl.java">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/addressbook.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/stile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/footer.inc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/footer.inc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/include/header.inc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/header.inc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/htmlHead.inc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/htmlHead.inc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
