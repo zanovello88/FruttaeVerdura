@@ -53,7 +53,7 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
                     = " SELECT * "
                     + " FROM utente "
                     + " WHERE "
-                    + " username = ?";
+                    + " Username = ?";
 
             ps = conn.prepareStatement(sql);
             int i = 1;
@@ -77,18 +77,18 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
             else {
                 sql
                         = " INSERT INTO utente "
-                        + "     (username,"
-                        + "     email,"
-                        + "     password,"
-                        + "     nome,"
-                        + "     cognome,"
-                        + "     indirizzo,"
-                        + "     stato,"
-                        + "     citta,"
-                        + "     cap,"
-                        + "     admin,"
-                        + "     blocked,"
-                        + "     deleted "
+                        + "     (Username,"
+                        + "     Email,"
+                        + "     Password,"
+                        + "     Nome,"
+                        + "     Cognome,"
+                        + "     Indirizzo,"
+                        + "     Stato,"
+                        + "     Citta,"
+                        + "     Cap,"
+                        + "     Admin,"
+                        + "     Blocked,"
+                        + "     Deleted "
                         + "   ) "
                         + " VALUES (?,?,?,?,?,null,null,null,null,'N','N', 'N')";
 
@@ -119,11 +119,11 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
             // controllo solo sull'username, il resto non mi interessa
             // controllo se l'username (modificato) è già presente in una tupla
             sql
-                    = " SELECT COUNT(*)username "
+                    = " SELECT COUNT(*)Username "
                     + " FROM utente "
                     + " WHERE "
                     + " user_id != ? AND "
-                    + " username = ?";
+                    + " Username = ?";
 
             ps = conn.prepareStatement(sql);
             int i = 1;
@@ -146,17 +146,17 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
                 sql
                         = " UPDATE utente "
                         + " SET "
-                        + " username = ? ,"
-                        + " email = ? ,"
-                        + " password = ? ,"
-                        + " nome = ? , "
-                        + " cognome = ? , "
-                        + " indirizzo = ? , "
-                        + " stato = ? , "
-                        + " citta = ? , "
-                        + " cap = ? , "
+                        + " Username = ? ,"
+                        + " Email = ? ,"
+                        + " Password = ? ,"
+                        + " Nome = ? , "
+                        + " Cognome = ? , "
+                        + " Indirizzo = ? , "
+                        + " Stato = ? , "
+                        + " Citta = ? , "
+                        + " Cap = ? , "
                         + " WHERE "
-                        + " id_utente = ?";
+                        + " Id_utente = ?";
 
                 ps = conn.prepareStatement(sql);
                 i = 1;
@@ -187,9 +187,9 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
 
             String sql
                     = " UPDATE utente "
-                    + " SET deleted='Y' "
+                    + " SET Deleted='Y' "
                     + " WHERE "
-                    + " id_utente=?";
+                    + " Id_utente=?";
 
             ps = conn.prepareStatement(sql);
             ps.setLong(1, user.getid_utente());
@@ -216,7 +216,7 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
                     = " SELECT * "
                     + "   FROM utente "
                     + " WHERE "
-                    + "   username = ?";
+                    + "   Username = ?";
 
             ps = conn.prepareStatement(sql);
             ps.setString(1, username);
