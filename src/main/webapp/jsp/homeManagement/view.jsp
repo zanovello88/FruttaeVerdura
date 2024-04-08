@@ -26,10 +26,10 @@
 <main>
     <%if (loggedOn) {%>
     Benvenuto <%=loggedUser.getNome()%> <%=loggedUser.getCognome()%>!<br/>
-    Clicca sulla voce "Rubrica" del men&ugrave; per gestire i tuoi contatti.
+    Clicca sulla voce "Prodotti" per vedere i nostri prodotti.
     <%} else {%>
     Benvenuto.
-    Fai il logon per gestire la tua rubrica.
+    Fai il login per vedere i nostri prodotti, e vedere i tuoi ordini.
     <%}%>
 </main>
 <%@include file="/include/footer.inc"%>

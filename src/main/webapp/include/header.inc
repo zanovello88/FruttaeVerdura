@@ -21,7 +21,7 @@
 <header class="clearfix"><!-- Defining the header section of the page -->
 
   <h1 class="logo"><!-- Defining the logo element -->
-    Rubrica
+    Frutta e Verdura
   </h1>
 
   <form name="logoutForm" action="Dispatcher" method="post">
@@ -34,8 +34,8 @@
         <a href="Dispatcher?controllerAction=HomeManagement.view">Home</a>
       </li>
       <%if (loggedOn) {%>
-        <li <%=menuActiveLink.equals("Rubrica")?"class=\"active\"":""%>>
-          <a href="Dispatcher?controllerAction=AddressBookManagement.view">Rubrica</a>
+        <li <%=menuActiveLink.equals("Prodotti")?"class=\"active\"":""%>>
+          <a href="Dispatcher?controllerAction=AddressBookManagement.view">Prodotti</a>
         </li>
         <li><a href="javascript:logoutForm.submit()">Logout</a></li>
       <%}%>

@@ -300,3 +300,900 @@ Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
 	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
 	... 31 more
 
+apr 08, 2024 12:10:22 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 12:10:22 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 12:10:36 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 12:10:36 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 2:25:46 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 2:25:46 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 2:25:54 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 2:25:54 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 2:28:01 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 2:28:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 2:28:07 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 2:28:07 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 2:45:03 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 2:45:03 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 2:45:09 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 2:45:09 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 2:46:38 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 2:46:38 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 2:46:46 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 2:46:46 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 2:53:53 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 2:53:53 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 2:54:00 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 2:54:00 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 2:56:16 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 2:56:16 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 2:56:22 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 2:56:22 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 2:57:45 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 2:57:45 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 2:57:55 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 2:57:55 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 3:00:25 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 3:00:25 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 3:00:32 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 3:00:32 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 3:04:10 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 3:04:10 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 3:04:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 3:04:15 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 3:06:22 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 3:06:22 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 3:06:28 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 3:06:28 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 3:08:08 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 3:08:08 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 3:08:14 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 3:08:14 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: org.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: org.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 4:36:10 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 4:36:10 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 4:36:18 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 4:36:18 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 4:46:35 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 4:46:35 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 4:46:41 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 4:46:41 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 4:49:00 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 4:49:00 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 4:49:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 4:49:13 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.RuntimeException: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:25)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.logon(HomeManagement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1353)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1165)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory.beginTransaction(MySQLJDBCDAOFactory.java:21)
+	... 31 more
+
+apr 08, 2024 4:53:51 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 4:53:51 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 4:53:58 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 4:54:16 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+apr 08, 2024 4:54:25 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 4:54:32 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 4:54:39 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+apr 08, 2024 4:55:21 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 4:55:21 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 4:55:29 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 6:58:50 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 6:58:50 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 6:59:05 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 6:59:18 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+apr 08, 2024 6:59:41 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 6:59:47 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+apr 08, 2024 7:08:47 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:08:47 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:09:09 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:09:30 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:09:31 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:09:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:09:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:09:54 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:09:54 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:10:49 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:10:55 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:10:55 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:11:44 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:11:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:12:11 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:12:11 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:15:55 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:15:55 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:16:30 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:16:30 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:19:18 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:19:18 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:19:38 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 7:19:47 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 7:20:50 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:20:50 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:21:11 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+apr 08, 2024 7:23:23 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:23:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:23:32 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:23:38 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 7:26:26 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+apr 08, 2024 7:33:22 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:33:22 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:35:15 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:35:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:35:28 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:35:34 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 7:35:43 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+apr 08, 2024 7:37:42 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:37:42 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:38:13 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:38:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:40:03 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:40:03 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:40:44 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:40:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:41:42 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:41:42 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:45:35 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:45:35 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:46:43 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:46:43 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:47:17 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:47:17 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:48:04 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:48:04 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:49:33 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:49:33 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:50:01 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:50:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:50:47 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 08, 2024 7:50:47 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 08, 2024 7:51:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+apr 08, 2024 7:51:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
