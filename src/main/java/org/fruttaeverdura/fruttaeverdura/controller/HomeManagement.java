@@ -58,7 +58,7 @@ public class HomeManagement {
         }
 
     }
-/*
+
     public static void logon(HttpServletRequest request, HttpServletResponse response) {
 
         DAOFactory sessionDAOFactory= null;
@@ -93,7 +93,7 @@ public class HomeManagement {
                 applicationMessage = "Username e password errati!";
                 loggedUser=null;
             } else {
-                loggedUser = sessionUserDAO.create(user.getUserId(), null,null, user.getFirstname(), user.getSurname(),null);
+                loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, false, false);
             }
 
             daoFactory.commitTransaction();
@@ -122,7 +122,7 @@ public class HomeManagement {
         }
 
     }
-*/
+
     public static void logout(HttpServletRequest request, HttpServletResponse response) {
 
         DAOFactory sessionDAOFactory= null;

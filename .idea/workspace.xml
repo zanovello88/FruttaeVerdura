@@ -9,7 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="creazione file HomeManagement serve body header footer ecc" />
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="prova effettuata">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/adressbook.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CookieImpl/UtenteDAOCookieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CookieImpl/UtenteDAOCookieImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/UtenteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/UtenteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/UtenteDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/UtenteDAOMySQLJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/footer.inc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/footer.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/header.inc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/header.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/htmlHead.inc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/htmlHead.inc" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +32,7 @@
         <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -62,8 +74,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 10.1.20.executor": "Run",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/francescozanovello/Desktop/sito/FruttaeVerdura",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -186,6 +200,10 @@
       <workItem from="1712327051140" duration="387000" />
       <workItem from="1712327442835" duration="7000" />
       <workItem from="1712327481633" duration="1335000" />
+      <workItem from="1712329476955" duration="334000" />
+      <workItem from="1712329839823" duration="13000" />
+      <workItem from="1712392980910" duration="14000" />
+      <workItem from="1712568084507" duration="1918000" />
     </task>
     <task id="LOCAL-00001" summary="added basic files">
       <option name="closed" value="true" />
@@ -339,7 +357,31 @@
       <option name="project" value="LOCAL" />
       <updated>1712165016871</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="creazione file HomeManagement serve body header footer ecc">
+      <option name="closed" value="true" />
+      <created>1712329573835</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1712329573835</updated>
+    </task>
+    <task id="LOCAL-00021" summary="prova git">
+      <option name="closed" value="true" />
+      <created>1712329749754</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1712329749754</updated>
+    </task>
+    <task id="LOCAL-00022" summary="prova effettuata">
+      <option name="closed" value="true" />
+      <created>1712329803728</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1712329803728</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,6 +416,9 @@
     <MESSAGE value="creazione file PagamentoDAOMySQLJDBCImpl e OrdineDAOMySQLJDBCImpl" />
     <MESSAGE value="fine creazione file DAOMySQLImpl" />
     <MESSAGE value="modifiche a cartitemDAOMySQLJDBCImpl, da finire" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifiche a cartitemDAOMySQLJDBCImpl, da finire" />
+    <MESSAGE value="creazione file HomeManagement serve body header footer ecc" />
+    <MESSAGE value="prova git" />
+    <MESSAGE value="prova effettuata" />
+    <option name="LAST_COMMIT_MESSAGE" value="prova effettuata" />
   </component>
 </project>

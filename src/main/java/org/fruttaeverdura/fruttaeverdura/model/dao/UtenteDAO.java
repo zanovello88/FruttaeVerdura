@@ -1,5 +1,8 @@
 package org.fruttaeverdura.fruttaeverdura.model.dao;
 
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DataTruncationException;
 import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DuplicatedObjectException;
@@ -24,6 +27,7 @@ public interface UtenteDAO {
     public void update(Utente utente)throws DuplicatedObjectException;
     public void delete(Utente utente);
     public Utente findLoggedUser();
+    public Utente findByUsername(String username);
     /*public Utente findByUserId(Long id_utente);
     public void setAdminStatusOn(User user);
     public void setAdminStatusOff(User user);*/

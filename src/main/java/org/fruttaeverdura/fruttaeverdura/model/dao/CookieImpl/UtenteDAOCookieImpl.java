@@ -85,6 +85,10 @@ public class UtenteDAOCookieImpl implements UtenteDAO{
         return loggedUser;
 
     }
+    @Override
+    public Utente findByUsername(String username) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
     private String encode(Utente loggedUser) {
         String name = loggedUser.getNome().replace(" ","%fv");  // sostituisco lo spazio con %fv
         String surname = loggedUser.getCognome().replace(" ","%fv");    // sostituisco lo spazio

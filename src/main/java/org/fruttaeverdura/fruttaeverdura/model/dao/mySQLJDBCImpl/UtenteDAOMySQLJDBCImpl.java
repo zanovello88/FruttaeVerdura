@@ -204,6 +204,38 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
     public Utente findLoggedUser() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+    @Override
+    public Utente findByUsername(String username) {
+
+        PreparedStatement ps;
+        Utente user = null;
+
+        try {
+
+            String sql
+                    = " SELECT * "
+                    + "   FROM utente "
+                    + " WHERE "
+                    + "   username = ?";
+
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, username);
+
+            ResultSet resultSet = ps.executeQuery();
+
+            if (resultSet.next()) {
+                user = read(resultSet);
+            }
+            resultSet.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return user;
+
+    }
     Utente read(ResultSet rs) {
 
         Utente user = new Utente();
