@@ -6,6 +6,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.fruttaeverdura.fruttaeverdura.model.dao.ProdottoDAO;
 import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DataTruncationException;
 import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DuplicatedObjectException;
@@ -198,6 +201,71 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+    @Override
+    public List<Prodotto> findAll() {
+
+        PreparedStatement ps;
+        Prodotto product;
+        ArrayList<Prodotto> products = new ArrayList<Prodotto>();
+
+        try {
+
+            String sql
+                    = " SELECT *"
+                    + " FROM Prodotto"
+                    + " WHERE "
+                    + " deleted ='N'";
+
+            ps = conn.prepareStatement(sql);
+
+            ResultSet resultSet = ps.executeQuery();
+
+            while (resultSet.next()) {
+                product = read(resultSet);
+                products.add(product);
+            }
+
+            resultSet.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return products;
+    }
+    @Override
+    public Prodotto findByProdottoId(Long id_prod) {
+
+        PreparedStatement ps;
+        Prodotto prod = null;
+
+        try {
+
+            String sql
+                    = " SELECT *"
+                    + " FROM prodotto "
+                    + " WHERE "
+                    + "id_prod = ? AND "
+                    + "deleted = 'N'";
+
+            ps = conn.prepareStatement(sql);
+            ps.setLong(1, id_prod);
+
+            ResultSet resultSet = ps.executeQuery();
+
+            if (resultSet.next()) {
+                prod = read(resultSet);
+            }
+            resultSet.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return prod;
     }
     Prodotto read(ResultSet rs) {
         Prodotto prod = new Prodotto();
