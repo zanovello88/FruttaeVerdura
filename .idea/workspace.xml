@@ -9,9 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="correzione file UtenteDAOMySQLJDBCImpl.java">
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio view dei prodotti">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/header.inc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/header.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +66,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
@@ -215,6 +217,8 @@
       <workItem from="1712586954779" duration="589000" />
       <workItem from="1712587553780" duration="619000" />
       <workItem from="1712595225258" duration="3669000" />
+      <workItem from="1712669104427" duration="2239000" />
+      <workItem from="1712674855505" duration="2161000" />
     </task>
     <task id="LOCAL-00001" summary="added basic files">
       <option name="closed" value="true" />
@@ -408,7 +412,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712572008259</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="inizio view dei prodotti">
+      <option name="closed" value="true" />
+      <created>1712615595648</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1712615595648</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,6 +460,7 @@
     <MESSAGE value="prova effettuata" />
     <MESSAGE value="continuo sito, errore nel collegamento al db" />
     <MESSAGE value="correzione file UtenteDAOMySQLJDBCImpl.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="correzione file UtenteDAOMySQLJDBCImpl.java" />
+    <MESSAGE value="inizio view dei prodotti" />
+    <option name="LAST_COMMIT_MESSAGE" value="inizio view dei prodotti" />
   </component>
 </project>
