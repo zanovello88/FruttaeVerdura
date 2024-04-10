@@ -203,39 +203,6 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
         }
     }
     @Override
-    public List<Prodotto> findAll() {
-
-        PreparedStatement ps;
-        Prodotto product;
-        ArrayList<Prodotto> products = new ArrayList<Prodotto>();
-
-        try {
-
-            String sql
-                    = " SELECT *"
-                    + " FROM prodotto"
-                    + " WHERE "
-                    + " deleted ='1'";
-
-            ps = conn.prepareStatement(sql);
-
-            ResultSet resultSet = ps.executeQuery();
-
-            while (resultSet.next()) {
-                product = read(resultSet);
-                products.add(product);
-            }
-
-            resultSet.close();
-            ps.close();
-
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-
-        return products;
-    }
-    @Override
     public Prodotto findByProdottoId(Long id_prod) {
 
         PreparedStatement ps;
@@ -292,6 +259,39 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
             while (resultSet.next()) {
                 prod = read(resultSet);
                 products.add(prod);
+            }
+
+            resultSet.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return products;
+    }
+    @Override
+    public List<Prodotto> findAll() {
+
+        PreparedStatement ps;
+        Prodotto product;
+        ArrayList<Prodotto> products = new ArrayList<Prodotto>();
+
+        try {
+
+            String sql
+                    = " SELECT *"
+                    + " FROM prodotto"
+                    + " WHERE "
+                    + " deleted ='1'";
+
+            ps = conn.prepareStatement(sql);
+
+            ResultSet resultSet = ps.executeQuery();
+
+            while (resultSet.next()) {
+                product = read(resultSet);
+                products.add(product);
             }
 
             resultSet.close();
