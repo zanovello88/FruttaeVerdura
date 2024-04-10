@@ -81,7 +81,7 @@ public class ProductManagement {
             }
         }
 
-        /*
+/*
         public static void insertView(HttpServletRequest request, HttpServletResponse response) {
 
             DAOFactory sessionDAOFactory=null;
@@ -451,13 +451,12 @@ public class ProductManagement {
             }
 
         }
-/*
+
         public static void searchView(HttpServletRequest request, HttpServletResponse response) {
 
             DAOFactory sessionDAOFactory= null;
             DAOFactory daoFactory = null;
-            User loggedUser;
-            Language language;
+            Utente loggedUser;
 
             Logger logger = LogService.getApplicationLogger();
 
@@ -469,20 +468,17 @@ public class ProductManagement {
                 sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
                 sessionDAOFactory.beginTransaction();
 
-                UserDAO sessionUserDAO = sessionDAOFactory.getUserDAO();
+                UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
                 loggedUser = sessionUserDAO.findLoggedUser();
-                LanguageDAO sessionLanguageDAO = sessionDAOFactory.getLanguageDAO();
-                language = sessionLanguageDAO.findlanguage();
 
                 daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
                 daoFactory.beginTransaction();
 
-                wineSearch(daoFactory, sessionDAOFactory, request);
+                prodSearch(daoFactory, sessionDAOFactory, request);
 
                 daoFactory.commitTransaction();
                 sessionDAOFactory.commitTransaction();
 
-                request.setAttribute("language",language);
                 request.setAttribute("loggedOn",loggedUser!=null);
                 request.setAttribute("loggedUser", loggedUser);
                 request.setAttribute("viewUrl", "adminManagement/wineManagement");
@@ -503,7 +499,7 @@ public class ProductManagement {
             }
 
         }
-*/
+
     private static List<Prodotto> productRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
 
         ProdottoDAO prodottoDAO = daoFactory.getProdottoDAO();
@@ -522,16 +518,14 @@ public class ProductManagement {
             request.setAttribute("wines", wines);
 
         }
+*/
+        private static void prodSearch(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
 
-        private static void wineSearch(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
-
-            WineDAO wineDAO = daoFactory.getWineDAO();
-            List<Wine> wines;
-            wines = wineDAO.findByName(request.getParameter("searchString"));
-            request.setAttribute("wines", wines);
+            ProdottoDAO wineDAO = daoFactory.getProdottoDAO();
+            List<Prodotto> products;
+            products = wineDAO.findByName(request.getParameter("searchString"));
+            request.setAttribute("products", products);
         }
 
     }
 
- */
-}

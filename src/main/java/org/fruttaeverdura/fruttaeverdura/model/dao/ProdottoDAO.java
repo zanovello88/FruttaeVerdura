@@ -24,8 +24,9 @@ public interface ProdottoDAO {
     public void delete(Prodotto prodotto);
     public List<Prodotto> findAll();
     public Prodotto findByProdottoId(Long id_prod);
-    /*
+
     public List<Prodotto> findByName(String nome_prod);
+    /*
     public List<Prodotto> filterByCategory(String categoria);
      */
 

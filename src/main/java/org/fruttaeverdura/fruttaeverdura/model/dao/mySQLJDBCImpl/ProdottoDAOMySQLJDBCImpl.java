@@ -213,9 +213,9 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
 
             String sql
                     = " SELECT *"
-                    + " FROM Prodotto"
+                    + " FROM prodotto"
                     + " WHERE "
-                    + " deleted ='N'";
+                    + " deleted ='1'";
 
             ps = conn.prepareStatement(sql);
 
@@ -266,6 +266,42 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
         }
 
         return prod;
+    }
+    @Override
+    public List<Prodotto> findByName(String name) {
+
+        PreparedStatement ps;
+        Prodotto prod;
+        ArrayList<Prodotto> products = new ArrayList<Prodotto>();
+        name = "%" + name + "%";
+
+        try {
+
+            String sql
+                    = " SELECT *"
+                    + " FROM prodotto "
+                    + " WHERE "
+                    + "nome LIKE ? AND "
+                    + "deleted = 'N'";
+
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, name);
+
+            ResultSet resultSet = ps.executeQuery();
+
+            while (resultSet.next()) {
+                prod = read(resultSet);
+                products.add(prod);
+            }
+
+            resultSet.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return products;
     }
     Prodotto read(ResultSet rs) {
         Prodotto prod = new Prodotto();
