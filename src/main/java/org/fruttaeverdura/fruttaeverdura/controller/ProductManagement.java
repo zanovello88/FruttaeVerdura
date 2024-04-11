@@ -494,7 +494,7 @@ public class ProductManagement extends HttpServlet {
 
         }
 
-    private static List<Prodotto> productRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
+    public static List<Prodotto> productRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
 
         ProdottoDAO prodDAO = daoFactory.getProdottoDAO();
         List<Prodotto> products;

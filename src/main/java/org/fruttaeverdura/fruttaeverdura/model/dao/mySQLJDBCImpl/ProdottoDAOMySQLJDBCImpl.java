@@ -283,7 +283,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
                     = " SELECT *"
                     + " FROM prodotto"
                     + " WHERE "
-                    + " deleted ='1'";
+                    + " deleted ='0'";
 
             ps = conn.prepareStatement(sql);
 
@@ -306,7 +306,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
     Prodotto read(ResultSet rs) {
         Prodotto prod = new Prodotto();
         try {
-            prod.setid_prod(rs.getLong("id_prod"));
+            prod.setid_prod(rs.getLong("Id_prod"));
         } catch (SQLException sqle) {
         }
         try {
@@ -326,7 +326,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
         } catch (SQLException sqle) {
         }
         try {
-            prod.setquantita_disponibile(rs.getInt("quantita_disponibile"));
+            prod.setquantita_disponibile(rs.getInt("quantità_disp"));
         } catch (SQLException sqle) {
         }
         try {
@@ -338,7 +338,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
         } catch (SQLException sqle) {
         }
         try {
-            prod.setblocked_prod(rs.getBoolean("blocked_prod"));
+            prod.setblocked_prod(rs.getBoolean("blocked"));
         } catch (SQLException sqle) {
         }
         try {

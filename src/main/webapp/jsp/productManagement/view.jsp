@@ -116,7 +116,7 @@
             <div class="product-details">
                 <div class="product-name"><%=products.get(i).getnome_prod()%></div>
                 <div class="product-description"><%=products.get(i).getdescrizione()%></div>
-                <div class="product-price"><%=products.get(i).getprezzo()%> €</div>
+                <div class="product-price"><%=products.get(i).getprezzo()%> €/kg</div>
             </div>
             </a>
         </div>

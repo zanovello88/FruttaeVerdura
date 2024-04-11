@@ -29,7 +29,17 @@
     Clicca sulla voce "Prodotti" per vedere i nostri prodotti.
     <%} else {%>
     Benvenuto.
-    Fai il login per vedere i nostri prodotti, e vedere i tuoi ordini.
+    Fai il login per vedere i nostri prodotti, e vedere i tuoi ordini.<br/>
+    Se non sei registrato fai click qui
+    <button style="background-color: #73ad21;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;"
+            onclick="location.href='Dispatcher?controllerAction=HomeManagement.registerView'">Registrati
+    </button>
     <%}%>
 </main>
 <%@include file="/include/footer.inc"%>

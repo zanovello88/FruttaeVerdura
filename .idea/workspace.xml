@@ -9,11 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="i prodotti si vedono ora non resta che implementarli">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="i prodotti si vedono ora non resta che implementarli, v2">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/registerView.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/ProductManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/ProductManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/ProdottoDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/ProdottoDAOMySQLJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/stile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/stile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,9 +32,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
         <option value="CSS File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -224,7 +228,8 @@
       <workItem from="1712753959502" duration="6163000" />
       <workItem from="1712777939225" duration="5035000" />
       <workItem from="1712785455136" duration="3563000" />
-      <workItem from="1712821376719" duration="1666000" />
+      <workItem from="1712821376719" duration="2821000" />
+      <workItem from="1712844324702" duration="4297000" />
     </task>
     <task id="LOCAL-00001" summary="added basic files">
       <option name="closed" value="true" />
@@ -458,7 +463,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712788906425</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="i prodotti si vedono ora non resta che implementarli, v2">
+      <option name="closed" value="true" />
+      <created>1712823577359</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1712823577359</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="prova github" />
     <MESSAGE value="mo utente creato" />
     <MESSAGE value="creazione nuovi mo" />
     <MESSAGE value="scrittura mo utente&#10;creazione nuovi mo" />
@@ -501,6 +513,7 @@
     <MESSAGE value="inizio view dei prodotti v1" />
     <MESSAGE value="inizio view dei prodotti v2" />
     <MESSAGE value="i prodotti si vedono ora non resta che implementarli" />
-    <option name="LAST_COMMIT_MESSAGE" value="i prodotti si vedono ora non resta che implementarli" />
+    <MESSAGE value="i prodotti si vedono ora non resta che implementarli, v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="i prodotti si vedono ora non resta che implementarli, v2" />
   </component>
 </project>
