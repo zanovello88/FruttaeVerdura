@@ -310,7 +310,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
         } catch (SQLException sqle) {
         }
         try {
-            prod.setnome_prod(rs.getString("nome_prod"));
+            prod.setnome_prod(rs.getString("Nome"));
         } catch (SQLException sqle) {
         }
         try {

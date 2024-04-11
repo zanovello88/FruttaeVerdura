@@ -19,8 +19,8 @@
     String applicationMessage = (String) request.getAttribute("applicationMessage");
     String menuActiveLink = "Prodotti";
 
-    Prodotto prodotto = (Prodotto) request.getAttribute("wine");
-    List<Prodotto> products = null;
+    Prodotto prodotto = (Prodotto) request.getAttribute("prodotto");
+    List<Prodotto> products = (List<Prodotto>) request.getAttribute("products");;
     boolean preferencesEnable = false;
     try {
         products = (List<Prodotto>) request.getAttribute("products");
@@ -112,7 +112,7 @@
     <%for(i = 0; i < products.size(); i++){%>
         <div class="product">
             <a href="javascript:productViewFunc(<%=products.get(i).getid_prod()%>)">
-            <img src=<%=products.get(i).getimg_path()%> alt="${prodotto.getnome_prod()}">
+            <img src=<%=products.get(i).getimg_path()%>  alt="<%=products.get(i).getnome_prod()%>">
             <div class="product-details">
                 <div class="product-name"><%=products.get(i).getnome_prod()%></div>
                 <div class="product-description"><%=products.get(i).getdescrizione()%></div>
