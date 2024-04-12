@@ -1907,3 +1907,21 @@ apr 11, 2024 5:17:32 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher 
 INFO: HomeManagement register
 apr 11, 2024 5:17:32 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement register
 INFO: Tentativo di inserimento di un username già esistente.
+apr 12, 2024 4:44:13 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 12, 2024 4:44:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 12, 2024 4:44:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+apr 12, 2024 4:44:25 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 12, 2024 4:44:32 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+apr 12, 2024 4:44:33 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 12, 2024 4:46:20 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+apr 12, 2024 4:46:20 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+apr 12, 2024 4:46:21 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView

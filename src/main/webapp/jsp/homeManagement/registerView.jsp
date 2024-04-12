@@ -102,16 +102,16 @@
 <div class="container">
     <h1>Registrazione</h1>
     <form name="registerForm" action="Dispatcher" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        <label for="cognome">Cognome:</label>
-        <input type="text" id="cognome" name="cognome" required>
+        <label for="username">Nome utente:</label>
+        <input type="text" id="username" name="username" required>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
-        <label for="username">Nome utente:</label>
-        <input type="text" id="username" name="username" required>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" required>
         <input type="submit" value="Registrati">
     </form>
     <div class="link-container">
