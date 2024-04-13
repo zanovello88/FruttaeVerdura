@@ -253,7 +253,7 @@ public class HomeManagement {
 
                 applicationMessage = "Registrazione avvenuta con successo. Clicca su Login per effettuare l'accesso";
                 request.setAttribute("viewUrl", "homeManagement/view");
-                System.out.println("ciao");
+
 
             } catch (DuplicatedObjectException e) {
                 applicationMessage = "Username già in uso.";
