@@ -21,8 +21,8 @@ public interface UtenteDAO {
             String stato,
             String citta,
             Long cap,
-            boolean admin,
-            boolean blocked
+            String admin,
+            String blocked
             /*bolean deleted*/)throws DuplicatedObjectException;
     public void update(Utente utente)throws DuplicatedObjectException;
     public void delete(Utente utente);

@@ -96,7 +96,7 @@ public class HomeManagement {
                 applicationMessage = "Username e password errati!";
                 loggedUser=null;
             } else {
-                loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, false, false);
+                loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, "N", "N");
             }
 
             daoFactory.commitTransaction();
@@ -226,8 +226,6 @@ public class HomeManagement {
             daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
             daoFactory.beginTransaction();
 
-            productRetrieve(daoFactory, sessionDAOFactory, request);
-
             Long user_id;
             try {
                 user_id = loggedUser.getid_utente();
@@ -237,7 +235,6 @@ public class HomeManagement {
 
             UtenteDAO userDAO = daoFactory.getUtenteDAO();
             Utente user;
-
             try {
 
                 user = userDAO.create(
@@ -251,8 +248,8 @@ public class HomeManagement {
                         null,
                         null,
                         null,
-                        false,
-                        false);
+                        "N",
+                        "N");
 
                 applicationMessage = "Registrazione avvenuta con successo. Clicca su Login per effettuare l'accesso";
                 request.setAttribute("viewUrl", "homeManagement/view");

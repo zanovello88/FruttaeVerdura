@@ -34,18 +34,17 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
             String stato,
             String citta,
             Long cap,
-            boolean admin,
-            boolean blocked
+            String admin,
+            String blocked
             /*boolean deleted*/) throws DuplicatedObjectException{
 
         PreparedStatement ps;
         Utente user = new Utente();
-        user.setUsername(username);
-        user.setemail(email);
-        user.setPassword(password);
         user.setNome(nome);
         user.setCognome(cognome);
-
+        user.setemail(email);
+        user.setPassword(password);
+        user.setUsername(username);
 
         try {
             //controllo se USERNAME esiste già in una tupla
@@ -67,7 +66,7 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
             exist = resultSet.next();
             //se esiste
             if (exist) {
-                deleted = resultSet.getString("username").equals(user.getUsername());
+                deleted = resultSet.getString("Username").equals(user.getUsername());
             }
 
             resultSet.close();
@@ -77,31 +76,30 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
             else {
                 sql
                         = " INSERT INTO utente "
-                        + "     (Username,"
+                        + "     (Nome,"
+                        + "     Cognome,"
                         + "     Email,"
                         + "     Password,"
-                        + "     Nome,"
-                        + "     Cognome,"
+                        + "     Admin,"
+                        + "     Deleted,"
                         + "     Indirizzo,"
                         + "     Stato,"
-                        + "     Citta,"
-                        + "     Cap,"
-                        + "     Admin,"
+                        + "     Città,"
                         + "     Blocked,"
-                        + "     Deleted "
+                        + "     Cap,"
+                        + "     Username "
                         + "   ) "
-                        + " VALUES (?,?,?,?,?,null,null,null,null,'N','N', 'N')";
+                        + " VALUES (?,?,?,?,'N','N','/','/','/','N',1, ?)";
 
                 ps = conn.prepareStatement(sql);
                 i = 1;
-                ps.setString(i++, user.getUsername());
-                ps.setString(i++, user.getemail());
-                ps.setString(i++, user.getPassword());
                 ps.setString(i++, user.getNome());
                 ps.setString(i++, user.getCognome());
+                ps.setString(i++, user.getemail());
+                ps.setString(i++, user.getPassword());
+                ps.setString(i++, user.getUsername());
 
                 ps.executeUpdate();
-
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -240,51 +238,51 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
 
         Utente user = new Utente();
         try {
-            user.setid_utente(rs.getLong("id_utente"));
+            user.setid_utente(rs.getLong("Id_utente"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setCognome(rs.getString("username"));
+            user.setUsername(rs.getString("Username"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setemail(rs.getString("email"));
+            user.setemail(rs.getString("Email"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setPassword(rs.getString("password"));
+            user.setPassword(rs.getString("Password"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setNome(rs.getString("nome"));
+            user.setNome(rs.getString("Nome"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setCognome(rs.getString("cognome"));
+            user.setCognome(rs.getString("Cognome"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setindirizzo(rs.getString("indirizzo"));
+            user.setindirizzo(rs.getString("Indirizzo"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setstato(rs.getString("stato"));
+            user.setstato(rs.getString("Stato"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setcitta(rs.getString("citta"));
+            user.setcitta(rs.getString("Città"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setcap(rs.getLong("cap"));
+            user.setcap(rs.getLong("CAP"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setadmin(rs.getString("admin").equals("Y"));
+            user.setAdmin(rs.getString("Admin"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setblocked(rs.getString("blocked").equals("Y"));
+            user.setAdmin(rs.getString("Blocked"));
         } catch (SQLException sqle) {
         }
         return user;

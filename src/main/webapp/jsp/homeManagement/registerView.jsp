@@ -102,24 +102,22 @@
 <div class="container">
     <h1>Registrazione</h1>
     <form name="registerForm" action="Dispatcher" method="post">
-        <label for="username">Nome utente:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
         <label for="cognome">Cognome:</label>
         <input type="text" id="cognome" name="cognome" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="username">Nome utente:</label>
+        <input type="text" id="username" name="username" required>
+        <input type="hidden" name="controllerAction" value="HomeManagement.register"/>
         <input type="submit" value="Registrati">
     </form>
     <div class="link-container">
         <p>Sei già registrato? <a href="Dispatcher?controllerAction=HomeManagement.view">Effettua il login</a></p>
     </div>
 </div>
-<form id="registerForm" name="registerForm" method="post" action="Dispatcher">
-    <input type="hidden" name="controllerAction" value="HomeManagement.register"/>
-</form>
 </body>
 </html>

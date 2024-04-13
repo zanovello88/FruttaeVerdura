@@ -11,9 +11,9 @@ public class Utente {
     private String stato;
     private String citta;
     private Long cap;
-    private boolean admin;
-    private boolean blocked;
-    private boolean deleted;
+    private String admin;
+    private String blocked;
+    private String deleted;
 
     /*1:N*/
     private Ordine[] ordini;
@@ -43,10 +43,28 @@ public class Utente {
     public void setcitta(String citta){this.citta=citta;}
     public Long getcap() {return cap;}
     public void setcap(Long cap){this.cap=cap;}
-    public boolean isadmin() {return admin;}
-    public void setadmin(boolean admin){this.admin=admin;}
-    public boolean isblocked() {return blocked;}
-    public void setblocked(boolean blocked){this.blocked=blocked;}
-    public boolean isdeleted() {return deleted;}
-    public void setdeleted(boolean deleted){this.deleted=deleted;}
+
+    public String getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(String admin) {
+        this.admin = admin;
+    }
+
+    public String getBlocked() {
+        return blocked;
+    }
+
+    public void setBlocked(String blocked) {
+        this.blocked = blocked;
+    }
+
+    public String getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(String deleted) {
+        this.deleted = deleted;
+    }
 }

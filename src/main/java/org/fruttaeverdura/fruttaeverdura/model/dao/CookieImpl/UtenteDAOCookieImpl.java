@@ -19,7 +19,7 @@ public class UtenteDAOCookieImpl implements UtenteDAO{
     @Override
     public Utente create(
             Long id_utente,
-            String usename,
+            String username,
             String email,
             String password,
             String nome,
@@ -28,8 +28,8 @@ public class UtenteDAOCookieImpl implements UtenteDAO{
             String stato,
             String citta,
             Long cap,
-            boolean admin,
-            boolean blocked
+            String admin,
+            String blocked
             //boolean deleted
     ) {
 
@@ -37,7 +37,7 @@ public class UtenteDAOCookieImpl implements UtenteDAO{
         loggedUser.setid_utente(id_utente);
         loggedUser.setNome(nome);
         loggedUser.setCognome(cognome);
-        loggedUser.setadmin(admin);
+        loggedUser.setAdmin(admin);
 
         Cookie cookie;
         cookie = new Cookie("loggedUser", encode(loggedUser));
@@ -93,7 +93,7 @@ public class UtenteDAOCookieImpl implements UtenteDAO{
         String name = loggedUser.getNome().replace(" ","%fv");  // sostituisco lo spazio con %fv
         String surname = loggedUser.getCognome().replace(" ","%fv");    // sostituisco lo spazio
         String encodedLoggedUser;
-        encodedLoggedUser = loggedUser.getid_utente() + "#" + name + "#" + surname + "#" + loggedUser.isadmin();
+        encodedLoggedUser = loggedUser.getid_utente() + "#" + name + "#" + surname + "#" + loggedUser.getAdmin();
         return encodedLoggedUser;
     }
     private Utente decode(String encodedLoggedUser) {
@@ -107,7 +107,7 @@ public class UtenteDAOCookieImpl implements UtenteDAO{
         loggedUser.setid_utente(Long.parseLong(values[0]));
         loggedUser.setNome(nameD);
         loggedUser.setCognome(surnameD);
-        loggedUser.setadmin(Boolean.parseBoolean(values[3]));
+        loggedUser.setAdmin((values[3]));
 
         return loggedUser;
     }
