@@ -19,7 +19,7 @@
     String applicationMessage = (String) request.getAttribute("applicationMessage");
     String menuActiveLink = "Prodotti";
 
-    List<Prodotto> products = (List<Prodotto>) request.getAttribute("products");;
+    List<Prodotto> products = (List<Prodotto>) request.getAttribute("products");
 
     int i;
 %>
