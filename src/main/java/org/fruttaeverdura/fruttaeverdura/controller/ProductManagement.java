@@ -405,13 +405,13 @@ public class ProductManagement extends HttpServlet {
 
                 Long id_prod = Long.parseLong(request.getParameter("id_prod"));
 
-                ProdottoDAO wineDAO = daoFactory.getProdottoDAO();
-                Prodotto prod = wineDAO.findByProdottoId(id_prod);
+                ProdottoDAO prodDAO = daoFactory.getProdottoDAO();
+                Prodotto prod = prodDAO.findByProdId(id_prod);
 
                 //faccio la delete e catcho la Null pointer exception che avviene nel
                 //caso un utente aggiorni la pagina dopo aver cliccato sul pulsante cestino
                 try{
-                    wineDAO.delete(prod);
+                    prodDAO.delete(prod);
                 }
                 catch(NullPointerException e){
                     request.setAttribute("viewUrl", "adminManagement/view");

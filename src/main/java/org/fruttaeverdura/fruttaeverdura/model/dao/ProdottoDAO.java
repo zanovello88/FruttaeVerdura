@@ -23,7 +23,7 @@ public interface ProdottoDAO {
     public void updateAvalaibility(Long id_prod, int quantita_disponibile);
     public void delete(Prodotto prodotto);
     public List<Prodotto> findAll();
-    public Prodotto findByProdottoId(Long id_prod);
+    public Prodotto findByProdId(Long id_prod);
 
     public List<Prodotto> findByName(String nome_prod);
     /*

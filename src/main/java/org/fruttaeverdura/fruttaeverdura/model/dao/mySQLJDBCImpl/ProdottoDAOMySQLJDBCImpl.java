@@ -203,7 +203,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
         }
     }
     @Override
-    public Prodotto findByProdottoId(Long id_prod) {
+    public Prodotto findByProdId(Long id_prod) {
 
         PreparedStatement ps;
         Prodotto prod = null;

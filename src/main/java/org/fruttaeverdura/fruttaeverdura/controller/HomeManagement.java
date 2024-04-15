@@ -1,12 +1,18 @@
 package org.fruttaeverdura.fruttaeverdura.controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 
+import org.fruttaeverdura.fruttaeverdura.model.dao.OrdineDAO;
+import org.fruttaeverdura.fruttaeverdura.model.dao.ProdottoDAO;
+import org.fruttaeverdura.fruttaeverdura.model.mo.Ordine;
+import org.fruttaeverdura.fruttaeverdura.model.mo.Prodotto;
 import org.fruttaeverdura.fruttaeverdura.services.config.Configuration;
 import org.fruttaeverdura.fruttaeverdura.services.logservice.LogService;
 import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DuplicatedObjectException;
@@ -326,5 +332,128 @@ public class HomeManagement {
             }
         }
 
+    }
+    public static void productView(HttpServletRequest request, HttpServletResponse response) {
+
+        DAOFactory sessionDAOFactory= null;
+        DAOFactory daoFactory = null;
+        Utente loggedUser;
+        String applicationMessage = null;
+        Logger logger = LogService.getApplicationLogger();
+
+        try {
+
+            Map sessionFactoryParameters=new HashMap<String,Object>();
+            sessionFactoryParameters.put("request",request);
+            sessionFactoryParameters.put("response",response);
+            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
+            sessionDAOFactory.beginTransaction();
+
+            UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
+            loggedUser = sessionUserDAO.findLoggedUser();
+
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
+            daoFactory.beginTransaction();
+
+            Long id_prod = Long.parseLong(request.getParameter("id_prod"));
+            ProdottoDAO prodDAO = daoFactory.getProdottoDAO();
+            Prodotto prod = prodDAO.findByProdId(id_prod);
+
+            /*
+            List<Ordine> orders = new ArrayList<Ordine>();
+            if(loggedUser != null && !loggedUser.isAdmin()) {
+                OrdineDAO orderDAO = daoFactory.getOrdineDAO();
+                orders = orderDAO.findOrders(loggedUser);
+            }
+            */
+            daoFactory.commitTransaction();
+            sessionDAOFactory.commitTransaction();
+
+            request.setAttribute("loggedOn",loggedUser!=null);
+            request.setAttribute("loggedUser", loggedUser);
+            request.setAttribute("applicationMessage", applicationMessage);
+            request.setAttribute("prodotto", prod);
+            request.setAttribute("viewUrl", "productManagement/view");
+
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "Controller Error", e);
+            try {
+                if (sessionDAOFactory != null) sessionDAOFactory.rollbackTransaction();
+            } catch (Throwable t) {
+            }
+            throw new RuntimeException(e);
+
+        } finally {
+            try {
+                if (sessionDAOFactory != null) sessionDAOFactory.closeTransaction();
+            } catch (Throwable t) {
+            }
+        }
+
+    }
+    public static void searchView(HttpServletRequest request, HttpServletResponse response) {
+
+        DAOFactory sessionDAOFactory= null;
+        DAOFactory daoFactory = null;
+        Utente loggedUser;
+        Logger logger = LogService.getApplicationLogger();
+
+        try {
+
+            Map sessionFactoryParameters=new HashMap<String,Object>();
+            sessionFactoryParameters.put("request",request);
+            sessionFactoryParameters.put("response",response);
+            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
+            sessionDAOFactory.beginTransaction();
+
+            UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
+            loggedUser = sessionUserDAO.findLoggedUser();
+
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
+            daoFactory.beginTransaction();
+
+            prodSearch(daoFactory, sessionDAOFactory, request);
+
+            /*if(loggedUser != null && !"N".equals(loggedUser.getAdmin())) {
+                try {
+                    long user_id = loggedUser.getid_utente();
+                    preferencesRetrieve(daoFactory, sessionDAOFactory, request, user_id);
+
+                } catch (NullPointerException e) {
+                    logger.log(Level.SEVERE, "Controller Error (user_id)", e);
+                }
+            }*/
+
+            daoFactory.commitTransaction();
+            sessionDAOFactory.commitTransaction();
+
+            request.setAttribute("searchMode", true);
+            request.setAttribute("searchedItem", request.getParameter("searchString"));
+            request.setAttribute("loggedOn",loggedUser!=null);
+            request.setAttribute("loggedUser", loggedUser);
+            request.setAttribute("viewUrl", "homeManagement/view");
+
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "Controller Error", e);
+            try {
+                if (sessionDAOFactory != null) sessionDAOFactory.rollbackTransaction();
+            } catch (Throwable t) {
+            }
+            throw new RuntimeException(e);
+
+        } finally {
+            try {
+                if (sessionDAOFactory != null) sessionDAOFactory.closeTransaction();
+            } catch (Throwable t) {
+            }
+        }
+
+    }
+    private static void prodSearch(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
+
+        ProdottoDAO prodottoDAO = daoFactory.getProdottoDAO();
+        List<Prodotto> products;
+        products = prodottoDAO.findByName(request.getParameter("searchString"));
+        request.setAttribute("products", products);
     }
 }

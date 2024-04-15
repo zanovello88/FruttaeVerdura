@@ -19,15 +19,8 @@
     String applicationMessage = (String) request.getAttribute("applicationMessage");
     String menuActiveLink = "Prodotti";
 
-    Prodotto prodotto = (Prodotto) request.getAttribute("prodotto");
     List<Prodotto> products = (List<Prodotto>) request.getAttribute("products");;
-    boolean preferencesEnable = false;
-    try {
-        products = (List<Prodotto>) request.getAttribute("products");
-        if(!products.isEmpty() && products != null) {
-            preferencesEnable = true;
-        }
-    } catch (NullPointerException e) { }
+
     int i;
 %>
 <!DOCTYPE html>
@@ -89,12 +82,6 @@
             document.AddToCartForm.requestSubmit();
         }
 
-        function AddToWishlist(wine_id) {
-            alert("Aggiunto alla wishlist");
-            document.AddToWishlistForm.wine_id.value = wine_id;
-            document.AddToWishlistForm.requestSubmit();
-        }
-
         function productViewFunc(wine_id) {
             f = document.productView;
             f.wine_id.value = wine_id;
@@ -110,27 +97,21 @@
     <h1>Lista Prodotti</h1>
     <%-- Iterate through the products and display them --%>
     <%for(i = 0; i < products.size(); i++){%>
-        <div class="product">
-            <a href="javascript:productViewFunc(<%=products.get(i).getid_prod()%>)">
+    <div class="product">
+        <a href="javascript:productViewFunc(<%=products.get(i).getid_prod()%>)">
             <img src=<%=products.get(i).getimg_path()%>  alt="<%=products.get(i).getnome_prod()%>">
             <div class="product-details">
                 <div class="product-name"><%=products.get(i).getnome_prod()%></div>
                 <div class="product-description"><%=products.get(i).getdescrizione()%></div>
                 <div class="product-price"><%=products.get(i).getprezzo()%> €/kg</div>
             </div>
-            </a>
-        </div>
+        </a>
+    </div>
     <%}%>
 
     <form name="AddToCartForm" method="post" action="Dispatcher">
         <input type="hidden" name="wine_id"/>
         <input type="hidden" name="controllerAction" value="CartManagement.AddWine"/>
-        <input type="hidden" name="viewUrl" value="homeManagement/view"/>
-    </form>
-
-    <form name="AddToWishlistForm" method="post" action="Dispatcher">
-        <input type="hidden" name="wine_id"/>
-        <input type="hidden" name="controllerAction" value="WishlistManagement.AddWine"/>
         <input type="hidden" name="viewUrl" value="homeManagement/view"/>
     </form>
 
