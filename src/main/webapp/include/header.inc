@@ -33,26 +33,37 @@
       <li <%=menuActiveLink.equals("Home")?"class=\"active\"":""%>>
         <a href="Dispatcher?controllerAction=HomeManagement.view">Home</a>
       </li>
-      <%if (loggedOn) {%>
         <li <%=menuActiveLink.equals("Prodotti")?"class=\"active\"":""%>>
           <a href="Dispatcher?controllerAction=ProductManagement.view">Prodotti</a>
         </li>
+        <%if (loggedOn) {%>
         <li><a href="javascript:logoutForm.submit()">Logout</a></li>
       <%}%>
     </ul>
   </nav>
 
   <%if (!loggedOn) {%>
-    <section id="login" class="clearfix">
-      <form name="logonForm" action="Dispatcher" method="post">
-        <label for="username">Utente</label>
-        <input type="text" id="username"  name="username" maxlength="40" required>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" maxlength="40" required>
-        <input type="hidden" name="controllerAction" value="HomeManagement.logon"/>
-        <input type="submit" value="Ok">
-      </form>
-    </section>
+    <div style="text-align: right; padding: 20px;">
+        <button style="background-color: #ffffff;
+                color: #000000;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                margin-right: 20px;"
+                onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView'">Accedi
+        </button>
+        <button style="background-color: #ffffff;
+                color: #000000;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;"
+                onclick="location.href='Dispatcher?controllerAction=HomeManagement.registerView'">Registrati
+        </button>
+    </div>
   <%}%>
 
 </header>

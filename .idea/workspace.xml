@@ -9,16 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio pagina di registrazione">
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="fine creazione pagine di registrazione versione finale">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/loginView.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CookieImpl/UtenteDAOCookieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CookieImpl/UtenteDAOCookieImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/UtenteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/UtenteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/UtenteDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/UtenteDAOMySQLJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Utente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Utente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/header.inc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/header.inc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/registerView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/registerView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +229,8 @@
       <workItem from="1712785455136" duration="3563000" />
       <workItem from="1712821376719" duration="2821000" />
       <workItem from="1712844324702" duration="4297000" />
-      <workItem from="1712997834265" duration="10025000" />
+      <workItem from="1712997834265" duration="10172000" />
+      <workItem from="1713167922364" duration="3923000" />
     </task>
     <task id="LOCAL-00001" summary="added basic files">
       <option name="closed" value="true" />
@@ -480,7 +480,31 @@
       <option name="project" value="LOCAL" />
       <updated>1712933214374</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="fine creazione pagine di registrazione">
+      <option name="closed" value="true" />
+      <created>1713017145606</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1713017145606</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fine creazione pagine di registrazione">
+      <option name="closed" value="true" />
+      <created>1713017221003</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1713017221003</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fine creazione pagine di registrazione versione finale">
+      <option name="closed" value="true" />
+      <created>1713017247704</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1713017247704</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,8 +522,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creazione nuovi mo" />
-    <MESSAGE value="scrittura mo utente&#10;creazione nuovi mo" />
     <MESSAGE value="fine scrittura mo" />
     <MESSAGE value="fine scrittura mo, con get / set delle relazioni" />
     <MESSAGE value="scrittura DAO, errori in CookieDAOFactory e MySQLJDBCDAOFactory" />
@@ -523,6 +545,8 @@
     <MESSAGE value="i prodotti si vedono ora non resta che implementarli" />
     <MESSAGE value="i prodotti si vedono ora non resta che implementarli, v2" />
     <MESSAGE value="inizio pagina di registrazione" />
-    <option name="LAST_COMMIT_MESSAGE" value="inizio pagina di registrazione" />
+    <MESSAGE value="fine creazione pagine di registrazione" />
+    <MESSAGE value="fine creazione pagine di registrazione versione finale" />
+    <option name="LAST_COMMIT_MESSAGE" value="fine creazione pagine di registrazione versione finale" />
   </component>
 </project>
