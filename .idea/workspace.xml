@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio vetrina home">
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio vetrina home v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" afterDir="false" />
@@ -227,6 +227,7 @@
       <workItem from="1712844324702" duration="4297000" />
       <workItem from="1712997834265" duration="10172000" />
       <workItem from="1713167922364" duration="18473000" />
+      <workItem from="1713295829160" duration="802000" />
     </task>
     <task id="LOCAL-00001" summary="added basic files">
       <option name="closed" value="true" />
