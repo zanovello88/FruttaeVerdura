@@ -414,15 +414,13 @@ public class HomeManagement {
 
             prodSearch(daoFactory, sessionDAOFactory, request);
 
-            /*if(loggedUser != null && !"N".equals(loggedUser.getAdmin())) {
+            if(loggedUser != null && !"N".equals(loggedUser.getAdmin())) {
                 try {
                     long user_id = loggedUser.getid_utente();
-                    preferencesRetrieve(daoFactory, sessionDAOFactory, request, user_id);
-
                 } catch (NullPointerException e) {
                     logger.log(Level.SEVERE, "Controller Error (user_id)", e);
                 }
-            }*/
+            }
 
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
@@ -447,6 +445,100 @@ public class HomeManagement {
             } catch (Throwable t) {
             }
         }
+
+    }
+    public static void changePage(HttpServletRequest request, HttpServletResponse response) {
+
+        DAOFactory sessionDAOFactory= null;
+        DAOFactory daoFactory = null;
+        Utente loggedUser = null;
+        String applicationMessage = null;
+        Logger logger = LogService.getApplicationLogger();
+
+        try {
+
+            Map sessionFactoryParameters=new HashMap<String,Object>();
+            sessionFactoryParameters.put("request",request);
+            sessionFactoryParameters.put("response",response);
+            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
+            sessionDAOFactory.beginTransaction();
+
+            UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
+            loggedUser = sessionUserDAO.findLoggedUser();
+
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
+            daoFactory.beginTransaction();
+
+            productRetrieve(daoFactory, sessionDAOFactory, request);
+            showcaseWineRetrieve(daoFactory, sessionDAOFactory, request);
+
+            /*List<Ordine> orders = new ArrayList<Ordine>();
+            if(loggedUser != null && !"N".equals(loggedUser.getAdmin())) {
+                OrdineDAO orderDAO = daoFactory.getOrdineDAO();
+                orders = orderDAO.findOrders(loggedUser);
+            }*/
+
+            int arrayPos;
+            try {
+                arrayPos = Integer.parseInt(request.getParameter("arrayPos"));
+            } catch(NumberFormatException | NullPointerException e) {
+                arrayPos = 0;
+            }
+
+            daoFactory.commitTransaction();
+            sessionDAOFactory.commitTransaction();
+
+            request.setAttribute("arrayPos", arrayPos);
+            request.setAttribute("loggedOn",loggedUser!=null);
+            request.setAttribute("loggedUser", loggedUser);
+            request.setAttribute("applicationMessage", applicationMessage);
+            request.setAttribute("viewUrl", "homeManagement/view");
+
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "Controller Error", e);
+            try {
+                if (sessionDAOFactory != null) sessionDAOFactory.rollbackTransaction();
+            } catch (Throwable t) {
+            }
+            throw new RuntimeException(e);
+
+        } finally {
+            try {
+                if (sessionDAOFactory != null) sessionDAOFactory.closeTransaction();
+            } catch (Throwable t) {
+            }
+        }
+
+    }
+    private static void showcaseWineRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
+
+        showcaseRetrieve(daoFactory, sessionDAOFactory, request);
+
+        List<Prodotto> products = new ArrayList<Prodotto>();
+
+        try {
+            List<Showcase> showcases = (List<Showcase>)request.getAttribute("showcases");
+            ProdottoDAO prodottoDAO = daoFactory.getProdottoDAO();
+            Prodotto prodotto;
+
+            for(int i = 0; i < showcases.size(); i++) {
+
+                prodotto = prodottoDAO.findByProdId(showcases.get(i).getId_prod());
+                products.add(prodotto);
+            }
+        } catch(Exception e) {  }
+
+        if(!products.isEmpty()) {
+            request.setAttribute("showcase_wines", products);
+        }
+
+    }
+    private static void showcaseRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
+
+        ShowcaseDAO showcaseDAO = daoFactory.getShowcaseDAO();
+        List<Showcase> showcases;
+        showcases = showcaseDAO.findAll();
+        request.setAttribute("showcases", showcases);
 
     }
     private static void prodSearch(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
