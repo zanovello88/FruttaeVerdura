@@ -9,17 +9,15 @@ import java.util.logging.Logger;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 
-import org.fruttaeverdura.fruttaeverdura.model.dao.OrdineDAO;
-import org.fruttaeverdura.fruttaeverdura.model.dao.ProdottoDAO;
+import org.fruttaeverdura.fruttaeverdura.model.dao.*;
 import org.fruttaeverdura.fruttaeverdura.model.mo.Ordine;
 import org.fruttaeverdura.fruttaeverdura.model.mo.Prodotto;
+import org.fruttaeverdura.fruttaeverdura.model.mo.Showcase;
 import org.fruttaeverdura.fruttaeverdura.services.config.Configuration;
 import org.fruttaeverdura.fruttaeverdura.services.logservice.LogService;
 import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DuplicatedObjectException;
 
 import org.fruttaeverdura.fruttaeverdura.model.mo.Utente;
-import org.fruttaeverdura.fruttaeverdura.model.dao.DAOFactory;
-import org.fruttaeverdura.fruttaeverdura.model.dao.UtenteDAO;
 
 import static org.fruttaeverdura.fruttaeverdura.controller.ProductManagement.productRetrieve;
 
