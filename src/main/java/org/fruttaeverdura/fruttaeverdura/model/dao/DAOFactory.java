@@ -24,6 +24,7 @@ public abstract class DAOFactory {
     public abstract OrdineDAO getOrdineDAO();
     public abstract cartitemDAO getcartitemDAO();
     public abstract CarrelloDAO getCarrelloDAO();
+    public abstract ShowcaseDAO getShowcaseDAO();
 
     public static DAOFactory getDAOFactory(String whichFactory, Map factoryParameters) {
 

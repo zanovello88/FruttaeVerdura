@@ -79,4 +79,6 @@ public class MySQLJDBCDAOFactory extends DAOFactory {
 
     @Override
     public CarrelloDAO getCarrelloDAO() { return new CarrelloDAOMySQLJDBCImpl(connection); }
+    @Override
+    public ShowcaseDAO getShowcaseDAO() { return new ShowcaseDAOMySQLJDBCImpl(connection); }
 }
