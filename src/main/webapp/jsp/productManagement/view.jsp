@@ -93,7 +93,7 @@
             font-weight: bold;
             margin-bottom: 5px;
         }
-        .product-description {
+        .product-sold {
             color: #666;
             margin-bottom: 10px;
         }
@@ -213,7 +213,7 @@
                 <img src=<%=products.get(i).getimg_path()%>  alt="<%=products.get(i).getnome_prod()%>">
                 <div class="product-details">
                     <div class="product-name"><%=products.get(i).getnome_prod()%></div>
-                    <div class="product-description"><%=products.get(i).getdescrizione()%></div>
+                    <div class="product-sold"><%=products.get(i).getsede_acquisto()%></div>
                     <div class="product-price"><%=products.get(i).getprezzo()%> €/kg</div>
                 </div>
             </a>

@@ -36,76 +36,100 @@
 
         function mainOnLoadHandler() {}
     </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: 200px; /* Adjust the height as needed */
+            object-fit: cover; /* Ensures the image covers the specified height and width */
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto; /* Centers the image horizontally */
+        }
+        h1 {
+            font-size: 24px;
+            margin-top: 0;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .description {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+    </style>
     <%@include file="/include/htmlHead.inc"%>
 </head>
 <body class="bg-gray-500">
 <%@include file="/include/header.inc"%>
 <main class="w-full ">
     <%--PRODUCT DATA--%>
-    <div id="main-container" class="flex flex-col px-32 mb-8">
-        <%if(!loggedOn){%>
-        <div class="w-1/2 mx-auto container bg-gray-100 rounded-md mt-12 py-4 flex flex-row justify-start">
-            <div class="ml-4 mr-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="heroicon-ui fill-current text-gray-500" d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm0-9a1 1 0 011 1v4a1 1 0 01-2 0v-4a1 1 0 011-1zm0-4a1 1 0 110 2 1 1 0 010-2z"/></svg>
+        <div class="container">
+            <div id="image-section">
+                <img src="<%=prodotto.getimg_path()%>" alt="Product Image">
             </div>
-            <p>Accedi per aggiungere un prodotto al carrello</p>
-        </div>
-        <%}%>
-        <div class="flex flex-row">
-            <div id="image-section" class="float w-1/2 py-12 pr-8 mt-5 md:flex-shrink-0">
-                <img class="float-right rounded-md w-1/2 max-w-md" src="<%=prodotto.getimg_path()%>" alt="stock wine image">
-            </div>
-            <section id="info-section" class="w-1/2 py-12">
-                <h1 class="pt-3 text-gray-900 font-bold text-2xl"><%=prodotto.getnome_prod()%></h1>
-                <p class="pt-3 text-gray-900 font-regular">
-                    <span class="font-medium text-lg">
-                        Sede acquisto
-                    </span><%=prodotto.getsede_acquisto()%>
+            <div id="info-section">
+                <h1><%=prodotto.getnome_prod()%></h1>
+                <p>
+                    <span class="font-medium text-lg">Sede acquisto:</span> <%=prodotto.getsede_acquisto()%>
                 </p>
-                <%--<p class="pt-3 text-gray-900 font-regular">
-                   <span class="font-medium text-lg">
-                       Alcool
-                   </span> <%=wine.getAlcool()%>%
+                <p class="price">
+                    <%=prodotto.getprezzo()%> &euro;/Kg
                 </p>
-                <p class="pt-3 text-gray-900 font-regular">
-                    <span class="font-medium text-lg">
-                        <%if (languageString.equals("ita")){%>Formato<%}if (languageString.equals("eng")){ %>Size<% }%>
-                    </span><%=wine.getFormat()%>
-                </p>
-                <p class="pt-3 text-gray-900 font-regular">
-                    <span class="font-medium text-lg">
-                        <%if (languageString.equals("ita")){%>Annata<%}if (languageString.equals("eng")){ %>Wine age<% }%>
-                    </span><%=wine.getAnnata()%>
-                </p>
-                <p class="pt-3 text-gray-900 font-regular">
-                    <span class="font-medium text-lg">
-                        <%if (languageString.equals("ita")){%>Denominazione<%}if (languageString.equals("eng")){ %>Designation of Origin<% }%>
-                    </span><%=wine.getDenominazione()%>
-                </p>
-                <p class="pt-3 text-gray-900 font-regular">
-                    <span class="font-medium text-lg">
-                        <%if (languageString.equals("ita")){%>Provenienza<%}if (languageString.equals("eng")){ %>Provenance<% }%>
-                    </span><%=wine.getProvenance()%>
-                </p>--%>
-                <p class="pt-3 text-gray-900 text-3xl">
-                    <%=prodotto.getprezzo()%> &euro;
-                </p>
-                <%if(loggedOn){%>
-                <div class="float">
-                    <a class="zoom-animation float-left bg-gray-700 hover:bg-blue-dark text-white font-bold px-4 py-2 mt-6 rounded-full w-28" href="javascript:AddToCart(<%=prodotto.getid_prod()%>)">
-                        Aggiungi al carrello
-                    </a>
+                <% if(!loggedOn) { %>
+                <div class="w-full mx-auto bg-gray-100 rounded-md mt-12 py-4 px-8 flex items-center justify-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="text-gray-500 mr-4">
+                        <path class="heroicon-ui fill-current" d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm0-9a1 1 0 011 1v4a1 1 0 01-2 0v-4a1 1 0 011-1zm0-4a1 1 0 110 2 1 1 0 010-2z"/>
+                    </svg>
+                    <p class="text-gray-700">
+                        Accedi per aggiungere un prodotto al carrello
+                    </p>
                 </div>
-                <%}%>
-            </section>
+                <% } %>
+                <% if(loggedOn) { %>
+                <a class="btn" href="javascript:AddToCart(<%=prodotto.getid_prod()%>)">Aggiungi al carrello</a>
+                <% } %>
+            </div>
+            <div class="description">
+                <h2>Descrizione</h2>
+                <p><%=prodotto.getdescrizione()%></p>
+            </div>
         </div>
-        <section class="mx-auto container p-4 border-t border-gray-300">
-            <h1 class="my-4 pt-3 text-gray-900 font-bold text-2xl">
-                Descrizione
-            </h1>
-            <p><%=prodotto.getdescrizione()%></p>
-        </section>
-    </div>
 
     <form name="AddToCartForm" method="post" action="Dispatcher">
         <input type="hidden" name="wine_id"/>
