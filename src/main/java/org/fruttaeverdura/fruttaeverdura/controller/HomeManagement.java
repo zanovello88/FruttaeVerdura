@@ -371,7 +371,7 @@ public class HomeManagement {
             request.setAttribute("loggedUser", loggedUser);
             request.setAttribute("applicationMessage", applicationMessage);
             request.setAttribute("prodotto", prod);
-            request.setAttribute("viewUrl", "productManagement/view");
+            request.setAttribute("viewUrl", "productManagement/productDetails");
 
         } catch (Exception e) {
             logger.log(Level.SEVERE, "Controller Error", e);
@@ -427,7 +427,7 @@ public class HomeManagement {
             request.setAttribute("searchedItem", request.getParameter("searchString"));
             request.setAttribute("loggedOn",loggedUser!=null);
             request.setAttribute("loggedUser", loggedUser);
-            request.setAttribute("viewUrl", "homeManagement/view");
+            request.setAttribute("viewUrl", "productManagement/view");
 
         } catch (Exception e) {
             logger.log(Level.SEVERE, "Controller Error", e);

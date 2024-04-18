@@ -9,11 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="creazione vetrina come mo/dao ecc...">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/29366bc1-6a03-4b5e-8619-2909b71d1c47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/29366bc1-6a03-4b5e-8619-2909b71d1c47.xml" afterDir="false" />
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio sezione di ricerca">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/productDetails.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +230,8 @@
       <workItem from="1712997834265" duration="10172000" />
       <workItem from="1713167922364" duration="18473000" />
       <workItem from="1713295829160" duration="802000" />
-      <workItem from="1713381139922" duration="2097000" />
+      <workItem from="1713381139922" duration="2482000" />
+      <workItem from="1713445404019" duration="2676000" />
     </task>
     <task id="LOCAL-00001" summary="added basic files">
       <option name="closed" value="true" />
@@ -518,7 +521,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713193424079</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="inizio sezione di ricerca">
+      <option name="closed" value="true" />
+      <created>1713383821038</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1713383821038</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +547,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="scrittura DAO, errori in CookieDAOFactory e MySQLJDBCDAOFactory" />
     <MESSAGE value="correzione errori DAOFactory e MySQLJDBCDAOFactory" />
     <MESSAGE value="creazione UtenteDAOMySQLJDBCImpl" />
     <MESSAGE value="creazione ProdottoDAOMySQLJDBCImpl" />
@@ -561,6 +571,18 @@
     <MESSAGE value="fine creazione pagine di registrazione versione finale" />
     <MESSAGE value="creazione accesso come button" />
     <MESSAGE value="inizio vetrina home" />
-    <option name="LAST_COMMIT_MESSAGE" value="inizio vetrina home" />
+    <MESSAGE value="inizio sezione di ricerca" />
+    <option name="LAST_COMMIT_MESSAGE" value="inizio sezione di ricerca" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp</url>
+          <line>178</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
