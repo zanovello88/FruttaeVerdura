@@ -108,9 +108,15 @@
                 <p>
                     <span class="font-medium text-lg">Sede acquisto:</span> <%=prodotto.getsede_acquisto()%>
                 </p>
+                <%if (prodotto.getcategoria().equals("altro")) {%>
+                <p class="price">
+                    <%=prodotto.getprezzo()%> &euro; al pezzo
+                </p>
+                <%} else {%>
                 <p class="price">
                     <%=prodotto.getprezzo()%> &euro;/Kg
                 </p>
+                <%}%>
                 <% if(!loggedOn) { %>
                 <div class="w-full mx-auto bg-gray-100 rounded-md mt-12 py-4 px-8 flex items-center justify-start">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="text-gray-500 mr-4">

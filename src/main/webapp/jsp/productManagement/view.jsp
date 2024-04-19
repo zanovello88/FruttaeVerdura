@@ -207,7 +207,9 @@
     <div class="container">
         <h1>Lista Prodotti</h1>
         <%-- Iterate through the products and display them --%>
+        <h2 id="frutta-title" style="text-align: center">Frutta</h2>
         <%for(i = 0; i < products.size(); i++){%>
+        <%if (products.get(i).getcategoria().equals("frutta")) {%>
         <div class="product">
             <a href="javascript:productViewFunc(<%=products.get(i).getid_prod()%>)">
                 <img src=<%=products.get(i).getimg_path()%>  alt="<%=products.get(i).getnome_prod()%>">
@@ -218,6 +220,37 @@
                 </div>
             </a>
         </div>
+        <%}%>
+        <%}%>
+        <h2 id="verdura-title" style="text-align: center">Verdura</h2>
+        <%for(i = 0; i < products.size(); i++){%>
+        <%if (products.get(i).getcategoria().equals("verdura")) {%>
+        <div class="product">
+            <a href="javascript:productViewFunc(<%=products.get(i).getid_prod()%>)">
+                <img src=<%=products.get(i).getimg_path()%>  alt="<%=products.get(i).getnome_prod()%>">
+                <div class="product-details">
+                    <div class="product-name"><%=products.get(i).getnome_prod()%></div>
+                    <div class="product-sold"><%=products.get(i).getsede_acquisto()%></div>
+                    <div class="product-price"><%=products.get(i).getprezzo()%> €/kg</div>
+                </div>
+            </a>
+        </div>
+        <%}%>
+        <%}%>
+        <h2 id="altro-title" style="text-align: center">Altro</h2>
+        <%for(i = 0; i < products.size(); i++){%>
+        <%if (products.get(i).getcategoria().equals("altro")) {%>
+        <div class="product">
+            <a href="javascript:productViewFunc(<%=products.get(i).getid_prod()%>)">
+                <img src=<%=products.get(i).getimg_path()%>  alt="<%=products.get(i).getnome_prod()%>">
+                <div class="product-details">
+                    <div class="product-name"><%=products.get(i).getnome_prod()%></div>
+                    <div class="product-sold"><%=products.get(i).getsede_acquisto()%></div>
+                    <div class="product-price"><%=products.get(i).getprezzo()%> €</div>
+                </div>
+            </a>
+        </div>
+        <%}%>
         <%}%>
 
     <form name="AddToCartForm" method="post" action="Dispatcher">
