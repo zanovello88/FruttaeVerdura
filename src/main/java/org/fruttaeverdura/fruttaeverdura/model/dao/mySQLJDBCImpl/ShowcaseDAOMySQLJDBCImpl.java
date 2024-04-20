@@ -64,13 +64,13 @@ public class ShowcaseDAOMySQLJDBCImpl implements ShowcaseDAO {
             exist = resultSet.next();
             if (exist) {
                 deleted = resultSet.getString("deleted").equals("Y");
-                retrived_showcase_id = resultSet.getLong("showcase_id");
+                retrived_showcase_id = resultSet.getLong("idshowcase");
             }
 
             resultSet.close();
 
             if (exist && !deleted) {
-                throw new DuplicatedObjectException("ShowcaseDAOJDBCImpl.create: Tentativo di inserimento di un vino già in vetrina.");
+                throw new DuplicatedObjectException("ShowcaseDAOJDBCImpl.create: Tentativo di inserimento di un prodotto già in vetrina.");
             }
 
             if (exist && deleted) {
@@ -162,7 +162,7 @@ public class ShowcaseDAOMySQLJDBCImpl implements ShowcaseDAO {
     Showcase read(ResultSet rs) {
         Showcase showcase = new Showcase();
         try {
-            showcase.setShowcaseId(rs.getLong("showcase_id"));
+            showcase.setShowcaseId(rs.getLong("idshowcase"));
         } catch (SQLException sqle) {
         }
         try {

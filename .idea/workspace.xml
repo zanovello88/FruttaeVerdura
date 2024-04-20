@@ -9,13 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="fine productDetails.jsp">
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio e fine bottoni categoria in schermata home">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/AdminManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/ShowcaseManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/showcaseManagement.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/mandarini.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/productDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/productDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/ShowcaseDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/ShowcaseDAOMySQLJDBCImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -234,7 +236,8 @@
       <workItem from="1713445404019" duration="2984000" />
       <workItem from="1713450136602" duration="2063000" />
       <workItem from="1713454714539" duration="84000" />
-      <workItem from="1713532168162" duration="3460000" />
+      <workItem from="1713532168162" duration="3800000" />
+      <workItem from="1713621973110" duration="2482000" />
     </task>
     <task id="LOCAL-00001" summary="added basic files">
       <option name="closed" value="true" />
@@ -548,7 +551,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713452196896</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="inizio e fine bottoni categoria in schermata home">
+      <option name="closed" value="true" />
+      <created>1713538732010</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1713538732010</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +577,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creazione ProdottoDAOMySQLJDBCImpl" />
     <MESSAGE value="creazione CARTELLA services" />
     <MESSAGE value="sistemazione cartelle" />
     <MESSAGE value="creazione prime pagine jsp e html nella cartella webapp" />
@@ -591,7 +601,8 @@
     <MESSAGE value="inizio sezione di ricerca" />
     <MESSAGE value="fine sezione ricerca, inizio dettagli prodotto" />
     <MESSAGE value="fine productDetails.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="fine productDetails.jsp" />
+    <MESSAGE value="inizio e fine bottoni categoria in schermata home" />
+    <option name="LAST_COMMIT_MESSAGE" value="inizio e fine bottoni categoria in schermata home" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
