@@ -79,6 +79,6 @@
 
 </main>
 <div class="fixed w-full bottom-0">
-    <%@include file="/include/adminFooter.jsp"%>
+    <%@include file="/include/footer.inc"%>
 </div>
 </html>

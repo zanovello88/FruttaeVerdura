@@ -96,7 +96,7 @@
     <%@include file="/include/htmlHead.inc"%>
 </head>
 <body class="bg-gray-500">
-<%@include file="/include/header.inc"%>
+<%@include file="/include/header.jsp"%>
 <main class="w-full ">
     <%--PRODUCT DATA--%>
         <div class="container">

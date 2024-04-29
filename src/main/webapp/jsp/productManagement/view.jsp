@@ -175,7 +175,7 @@
     </script>
 </head>
 <body>
-<%@include file="/include/header.inc"%>
+<%@include file="/include/header.jsp"%>
     <div class="search-container">
         <form id="searchForm" name="searchForm" action="Dispatcher" method="post" class="search-form">
             <input type="hidden" name="controllerAction" value="HomeManagement.searchView">

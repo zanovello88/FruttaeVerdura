@@ -88,5 +88,5 @@
         <input type="hidden" name="controllerAction" value="ShowcaseManagement.insert"/>
     </form>
 </main>
-<%@include file="/include/adminFooter.jsp"%>
+<%@include file="/include/footer.inc"%>
 </html>

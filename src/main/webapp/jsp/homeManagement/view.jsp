@@ -74,7 +74,7 @@ To change this template use File | Settings | File Templates. da creare, pagina 
         </script>
     </head>
     <body>
-        <%@include file="/include/header.inc"%>
+        <%@include file="/include/header.jsp"%>
         <main>
             <%if (loggedOn) {%>
             Benvenuto <%=loggedUser.getNome()%> <%=loggedUser.getCognome()%>!<br/>
