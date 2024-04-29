@@ -5,9 +5,12 @@ import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DataTruncationExcep
 import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DuplicatedObjectException;
 import org.fruttaeverdura.fruttaeverdura.model.mo.Ordine;
 import org.fruttaeverdura.fruttaeverdura.model.mo.Pagamento;
+import org.fruttaeverdura.fruttaeverdura.model.mo.Utente;
 
 import java.math.BigDecimal;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class OrdineDAOMySQLJDBCImpl implements OrdineDAO {
     Connection conn;
@@ -144,6 +147,134 @@ public class OrdineDAOMySQLJDBCImpl implements OrdineDAO {
             ps.setLong(1, order.getid_ordine());
             ps.executeUpdate();
             ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    @Override
+    public List<Ordine> findOrders(Utente user) {
+
+        PreparedStatement ps;
+        Ordine order;
+        ArrayList<Ordine> order_tuples = new ArrayList<Ordine>();
+
+        try {
+
+            Long user_id = user.getid_utente();
+            String sql
+                    = " SELECT *"
+                    + " FROM `ordine`"
+                    + " WHERE "
+                    + " deleted ='N' AND"
+                    + " Id_user = ? "
+                    + " ORDER BY timestamp DESC ";
+
+            ps = conn.prepareStatement(sql);
+            int i = 1;
+            ps.setLong(i++, user_id);
+
+            ResultSet resultSet = ps.executeQuery();
+
+            while (resultSet.next()) {
+                order = read(resultSet);
+                order_tuples.add(order);
+            }
+
+            resultSet.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return order_tuples;
+    }
+
+    @Override
+    public List<Ordine> findBySingleOrder(Utente user, Timestamp timestamp) {
+
+        PreparedStatement ps;
+        Ordine order;
+        ArrayList<Ordine> order_tuples = new ArrayList<Ordine>();
+
+        try {
+
+            Long user_id = user.getid_utente();
+            String sql
+                    = " SELECT *"
+                    + " FROM `ordine`"
+                    + " WHERE "
+                    + " deleted ='N' AND"
+                    + " timestamp = ? AND"
+                    + " user_id = ? ";
+
+            ps = conn.prepareStatement(sql);
+            ps.setTimestamp(1, timestamp);
+            ps.setLong(2, user_id);
+
+            ResultSet resultSet = ps.executeQuery();
+
+            while (resultSet.next()) {
+                order = read(resultSet);
+                order_tuples.add(order);
+            }
+
+            resultSet.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return order_tuples;
+    }
+
+    @Override
+    public void updateStatus(Utente user, Timestamp timestamp, String status) {
+
+        PreparedStatement ps;
+        Ordine order;
+        ArrayList<Ordine> order_tuples = new ArrayList<Ordine>();
+
+        try {
+
+            Long user_id = user.getid_utente();
+            String sql
+                    = " SELECT *"
+                    + " FROM `ordine`"
+                    + " WHERE "
+                    + " deleted ='N' AND"
+                    + " timestamp = ? AND"
+                    + " Id_user = ? ";
+
+            ps = conn.prepareStatement(sql);
+            ps.setTimestamp(1, timestamp);
+            ps.setLong(2, user_id);
+
+            ResultSet resultSet = ps.executeQuery();
+
+            while (resultSet.next()) {
+                order = read(resultSet);
+                order_tuples.add(order);
+            }
+
+            resultSet.close();
+
+            sql
+                    = " UPDATE `order` "
+                    + " SET "
+                    + " status = ?"
+                    + " WHERE "
+                    + " deleted ='N' AND"
+                    + " timestamp = ? AND"
+                    + " Id_user = ? ";
+
+            ps = conn.prepareStatement(sql);
+            int i = 1;
+            ps.setString(i++, status);
+            ps.setTimestamp(i++, timestamp);
+            ps.setLong(i++, user_id);
+
+            ps.executeUpdate();
 
         } catch (SQLException e) {
             throw new RuntimeException(e);

@@ -28,6 +28,13 @@ public interface UtenteDAO {
     public void delete(Utente utente);
     public Utente findLoggedUser();
     public Utente findByUsername(String username);
+
+    List<Utente> searchByUsername(String username);
+
+    public List<Utente> findAll();
+    public Utente findByUserId(Long user_id);
+    public void setAdminStatusOn(Utente user);
+    public void setAdminStatusOff(Utente user);
     /*public Utente findByUserId(Long id_utente);
     public void setAdminStatusOn(User user);
     public void setAdminStatusOff(User user);*/

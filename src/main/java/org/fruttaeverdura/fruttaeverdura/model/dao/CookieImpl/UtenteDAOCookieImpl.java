@@ -6,6 +6,8 @@ import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+import java.util.List;
+
 
 public class UtenteDAOCookieImpl implements UtenteDAO{
     HttpServletRequest request;
@@ -86,6 +88,22 @@ public class UtenteDAOCookieImpl implements UtenteDAO{
 
     }
     @Override
+    public Utente findByUserId(Long user_id) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    @Override
+    public List<Utente> searchByUsername(String username) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void setAdminStatusOn(Utente user) { throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void setAdminStatusOff(Utente user) { throw new UnsupportedOperationException("Not supported yet.");
+    }
+    @Override
     public Utente findByUsername(String username) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
@@ -110,5 +128,9 @@ public class UtenteDAOCookieImpl implements UtenteDAO{
         loggedUser.setAdmin((values[3]));
 
         return loggedUser;
+    }
+    @Override
+    public List<Utente> findAll() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }

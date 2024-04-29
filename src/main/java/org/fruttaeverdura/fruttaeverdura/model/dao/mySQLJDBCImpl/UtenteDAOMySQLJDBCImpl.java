@@ -120,7 +120,7 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
                     = " SELECT COUNT(*)Username "
                     + " FROM utente "
                     + " WHERE "
-                    + " user_id != ? AND "
+                    + " Id_utente != ? AND "
                     + " Username = ?";
 
             ps = conn.prepareStatement(sql);
@@ -203,6 +203,41 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
         throw new UnsupportedOperationException("Not supported yet.");
     }
     @Override
+    public List<Utente> searchByUsername(String username) {
+
+        PreparedStatement ps;
+        Utente user;
+        ArrayList<Utente> users = new ArrayList<Utente>();
+
+        try {
+
+            String sql
+                    = "SELECT * "
+                    + "FROM utente "
+                    + "WHERE "
+                    + "Username=? AND "
+                    + "Deleted = 'N'";
+
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, username);
+
+            ResultSet resultSet = ps.executeQuery();
+
+            if (resultSet.next()) {
+                user = read(resultSet);
+                users.add(user);
+            }
+            resultSet.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return users;
+    }
+
+    @Override
     public Utente findByUsername(String username) {
 
         PreparedStatement ps;
@@ -234,6 +269,114 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
         return user;
 
     }
+    @Override
+    public List<Utente> findAll() {
+
+        PreparedStatement ps;
+        Utente user;
+        ArrayList<Utente> users = new ArrayList<Utente>();
+
+        try {
+
+            String sql
+                    = " SELECT *"
+                    + " FROM utente"
+                    + " WHERE "
+                    + " deleted ='N'";
+
+            ps = conn.prepareStatement(sql);
+
+            ResultSet resultSet = ps.executeQuery();
+
+            while (resultSet.next()) {
+                user = read(resultSet);
+                users.add(user);
+            }
+
+            resultSet.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return users;
+    }
+    @Override
+    public Utente findByUserId(Long user_id) {
+
+        PreparedStatement ps;
+        Utente user = null;
+
+        try {
+
+            String sql
+                    = " SELECT * "
+                    + " FROM utente "
+                    + " WHERE "
+                    + " Id_utente = ? AND "
+                    + "Deleted = 'N'";
+
+            ps = conn.prepareStatement(sql);
+            ps.setLong(1, user_id);
+
+            ResultSet resultSet = ps.executeQuery();
+
+            if (resultSet.next()) {
+                user = read(resultSet);
+            }
+            resultSet.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return user;
+    }
+    @Override
+    public void setAdminStatusOn(Utente user) {
+
+        PreparedStatement ps;
+        try {
+
+            String sql
+                    = " UPDATE utente "
+                    + " SET Admin='Y' "
+                    + " WHERE "
+                    + " Id_utente=?";
+
+            ps = conn.prepareStatement(sql);
+            ps.setLong(1, user.getid_utente());
+            ps.executeUpdate();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void setAdminStatusOff(Utente user) {
+
+        PreparedStatement ps;
+        try {
+
+            String sql
+                    = " UPDATE utente "
+                    + " SET Admin='N' "
+                    + " WHERE "
+                    + " Id_utente=?";
+
+            ps = conn.prepareStatement(sql);
+            ps.setLong(1, user.getid_utente());
+            ps.executeUpdate();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     Utente read(ResultSet rs) {
 
         Utente user = new Utente();
@@ -242,7 +385,11 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
         } catch (SQLException sqle) {
         }
         try {
-            user.setUsername(rs.getString("Username"));
+            user.setNome(rs.getString("Nome"));
+        } catch (SQLException sqle) {
+        }
+        try {
+            user.setCognome(rs.getString("Cognome"));
         } catch (SQLException sqle) {
         }
         try {
@@ -254,11 +401,11 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
         } catch (SQLException sqle) {
         }
         try {
-            user.setNome(rs.getString("Nome"));
+            user.setAdmin(rs.getString("Admin"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setCognome(rs.getString("Cognome"));
+            user.setDeleted(rs.getString("Deleted"));
         } catch (SQLException sqle) {
         }
         try {
@@ -274,15 +421,15 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
         } catch (SQLException sqle) {
         }
         try {
+            user.setBlocked(rs.getString("Blocked"));
+        } catch (SQLException sqle) {
+        }
+        try {
             user.setcap(rs.getLong("CAP"));
         } catch (SQLException sqle) {
         }
         try {
-            user.setAdmin(rs.getString("Admin"));
-        } catch (SQLException sqle) {
-        }
-        try {
-            user.setAdmin(rs.getString("Blocked"));
+            user.setUsername(rs.getString("Username"));
         } catch (SQLException sqle) {
         }
         return user;

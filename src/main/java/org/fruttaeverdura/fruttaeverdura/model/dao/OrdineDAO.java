@@ -6,6 +6,7 @@ import org.fruttaeverdura.fruttaeverdura.model.mo.Ordine;
 import org.fruttaeverdura.fruttaeverdura.model.mo.Utente;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 public interface OrdineDAO {
     public Ordine create(
@@ -21,7 +22,9 @@ public interface OrdineDAO {
     )throws DuplicatedObjectException, DataTruncationException;
     public void update(Ordine ordine)throws DuplicatedObjectException;
     public void delete(Ordine ordine);
-    /*public List<Order> findOrders(User user);
-    public List<Order> findBySingleOrder(User user, Timestamp timestamp);
-    public void updateStatus(User user, Timestamp timestamp, String status);*/
+    public List<Ordine> findOrders(Utente user);
+
+    public List<Ordine> findBySingleOrder(Utente user, Timestamp timestamp);
+
+    public void updateStatus(Utente user, Timestamp timestamp, String status);
 }
