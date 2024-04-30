@@ -80,7 +80,7 @@
     <p>Da qui puoi gestire i prodotti, la vetrina e gli utenti del tuo e-commerce di frutta e verdura.</p>
 </div>
     <form name="prodManagementForm" method="post" action="Dispatcher">
-        <input type="hidden" name="controllerAction" value="WineManagement.view"/>
+        <input type="hidden" name="controllerAction" value="ProductManagement.viewManagement"/>
     </form>
 
     <form name="userManagementForm" method="post" action="Dispatcher">

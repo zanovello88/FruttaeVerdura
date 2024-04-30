@@ -86,7 +86,65 @@ public class ProductManagement extends HttpServlet {
         }
     }
 
+    public static void viewManagement(HttpServletRequest request, HttpServletResponse response) {
 
+        DAOFactory sessionDAOFactory= null;
+        DAOFactory daoFactory = null;
+        Utente loggedUser;
+        String applicationMessage = null;
+
+        Logger logger = LogService.getApplicationLogger();
+
+        try {
+
+            Map sessionFactoryParameters=new HashMap<String,Object>();
+            sessionFactoryParameters.put("request",request);
+            sessionFactoryParameters.put("response",response);
+            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
+            sessionDAOFactory.beginTransaction();
+
+            UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
+            loggedUser = sessionUserDAO.findLoggedUser();
+
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
+            daoFactory.beginTransaction();
+
+            List<Prodotto> products = productRetrieve(daoFactory, sessionDAOFactory, request);
+
+            int maxViewSize;
+            if(products.size() < 8) {
+                maxViewSize = products.size();
+            } else{
+                maxViewSize = 8;
+            }
+            try {
+                maxViewSize = Integer.parseInt(request.getParameter("maxViewSize"));
+            } catch(NumberFormatException | NullPointerException e) { }
+
+            daoFactory.commitTransaction();
+            sessionDAOFactory.commitTransaction();
+
+            request.setAttribute("maxViewSize", maxViewSize);
+            request.setAttribute("loggedUser", loggedUser);
+            request.setAttribute("loggedOn",loggedUser!=null);
+            request.setAttribute("applicationMessage", applicationMessage);
+            request.setAttribute("viewUrl", "adminManagement/productManagement");
+
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "Controller Error", e);
+            try {
+                if (sessionDAOFactory != null) sessionDAOFactory.rollbackTransaction();
+            } catch (Throwable t) {
+            }
+            throw new RuntimeException(e);
+
+        } finally {
+            try {
+                if (sessionDAOFactory != null) sessionDAOFactory.closeTransaction();
+            } catch (Throwable t) {
+            }
+        }
+    }
 
     public static void insertView(HttpServletRequest request, HttpServletResponse response) {
 
@@ -107,7 +165,7 @@ public class ProductManagement extends HttpServlet {
 
                 request.setAttribute("loggedOn",loggedUser!=null);
                 request.setAttribute("loggedUser", loggedUser);
-                request.setAttribute("viewUrl", "adminManagement/wineInsModView");
+                request.setAttribute("viewUrl", "adminManagement/prodInsModView");
 
             } catch (Exception e) {
                 logger.log(Level.SEVERE, "Controller Error", e);
@@ -150,24 +208,24 @@ public class ProductManagement extends HttpServlet {
 
                 ProdottoDAO productDAO = daoFactory.getProdottoDAO();
 
-                BigDecimal price = new BigDecimal(request.getParameter("prezzo"));
-                int quantita_disponibile = Integer.parseInt(request.getParameter("quantita_disponibile"));
-                Boolean blocked = new Boolean(request.getParameter("blocked"));
+                BigDecimal price = new BigDecimal(request.getParameter("Prezzo"));
+                int quantita_disponibile = Integer.parseInt(request.getParameter("Quantità_disp"));
+                boolean blocked = Boolean.parseBoolean(request.getParameter("Blocked"));
 
-                String photo = request.getParameter("product_image");
+                String photo = request.getParameter("img_path");
                 //se la foto non è inserita metto di deafault questa
                 if(photo.isEmpty()){
                     photo = "https://media.istockphoto.com/id/1472933890/vector/no-image-vector-symbol-missing-available-icon-no-gallery-for-this-moment-placeholder.jpg?s=612x612&w=0&k=20&c=Rdn-lecwAj8ciQEccm0Ep2RX50FCuUJOaEM8qQjiLL0=" ;
                 }
 
                 //se la denominazione non è inserita metto di default questa
-                String acq = request.getParameter("sede_acquisto");
+                String acq = request.getParameter("Sede_acquisto");
                 if (acq.isEmpty()){
                     acq = "---";
                 }
 
                 //se l'annata non è inserita metto di default questa
-                String des = request.getParameter("descrizione");
+                String des = request.getParameter("Descrizione");
                 if (des.isEmpty()){
                     des = "---";
                 }
@@ -175,12 +233,12 @@ public class ProductManagement extends HttpServlet {
                 try {
 
                     ProdottoDAO.create(
-                            request.getParameter("nome_prod"),
-                            request.getParameter("sede_acquisto"),
-                            request.getParameter("descrizione"),
+                            request.getParameter("Nome"),
+                            request.getParameter("Sede_acquisto"),
+                            request.getParameter("Descrizione"),
                             price,
                             quantita_disponibile,
-                            request.getParameter("categoria"),
+                            request.getParameter("Categoria"),
                             blocked,
                             photo
                     );
@@ -200,7 +258,7 @@ public class ProductManagement extends HttpServlet {
                 request.setAttribute("loggedOn",loggedUser!=null);
                 request.setAttribute("loggedUser", loggedUser);
                 request.setAttribute("applicationMessage", applicationMessage);
-                request.setAttribute("viewUrl", "adminManagement/wineManagement");
+                request.setAttribute("viewUrl", "adminManagement/productManagement");
 
             } catch (Exception e) {
                 logger.log(Level.SEVERE, "Controller Error", e);
@@ -220,7 +278,7 @@ public class ProductManagement extends HttpServlet {
             }
 
         }
-/*
+
         public static void modifyView(HttpServletRequest request, HttpServletResponse response) {
 
             DAOFactory sessionDAOFactory=null;
@@ -246,7 +304,7 @@ public class ProductManagement extends HttpServlet {
                 Long id_prod = Long.parseLong(request.getParameter("id_prod"));
 
                 ProdottoDAO prodottoDAO = daoFactory.getProdottoDAO();
-                Prodotto prod = ProdottoDAO.findByProdottoId(id_prod);
+                Prodotto prod = ProdottoDAO.findByProdId(id_prod);
 
                 daoFactory.commitTransaction();
                 sessionDAOFactory.commitTransaction();
@@ -277,8 +335,7 @@ public class ProductManagement extends HttpServlet {
             DAOFactory sessionDAOFactory= null;
             DAOFactory daoFactory = null;
             String applicationMessage = null;
-            User loggedUser;
-            Language language;
+            Utente loggedUser;
 
             Logger logger = LogService.getApplicationLogger();
 
@@ -290,20 +347,18 @@ public class ProductManagement extends HttpServlet {
                 sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
                 sessionDAOFactory.beginTransaction();
 
-                UserDAO sessionUserDAO = sessionDAOFactory.getUserDAO();
+                UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
                 loggedUser = sessionUserDAO.findLoggedUser();
-                LanguageDAO sessionLanguageDAO = sessionDAOFactory.getLanguageDAO();
-                language = sessionLanguageDAO.findlanguage();
 
                 daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
                 daoFactory.beginTransaction();
 
-                Long wine_id = Long.parseLong(request.getParameter("wine_id"));
+                Long id_prod = Long.parseLong(request.getParameter("id_prod"));
 
-                WineDAO wineDAO = daoFactory.getWineDAO();
-                Wine wine = wineDAO.findByWineId(wine_id);
+                ProdottoDAO prodottoDAO = daoFactory.getProdottoDAO();
+                Prodotto prodotto = prodottoDAO.findByProdId(id_prod);
 
-                String photo = request.getParameter("product_image");
+                String photo = request.getParameter("img_path");
                 //se la foto non è inserita metto di deafault questa
                 if(photo.isEmpty()){
                     photo = "https://media.istockphoto.com/id/1472933890/vector/no-image-vector-symbol-missing-available-icon-no-gallery-for-this-moment-placeholder.jpg?s=612x612&w=0&k=20&c=Rdn-lecwAj8ciQEccm0Ep2RX50FCuUJOaEM8qQjiLL0=" ;
@@ -424,7 +479,7 @@ public class ProductManagement extends HttpServlet {
 
                 request.setAttribute("loggedOn",loggedUser!=null);
                 request.setAttribute("loggedUser", loggedUser);
-                request.setAttribute("viewUrl", "productManagement.view");
+                request.setAttribute("viewUrl", "adminManagement/productManagement");
 
             } catch (Exception e) {
                 logger.log(Level.SEVERE, "Controller Error", e);
@@ -475,7 +530,7 @@ public class ProductManagement extends HttpServlet {
 
                 request.setAttribute("loggedOn",loggedUser!=null);
                 request.setAttribute("loggedUser", loggedUser);
-                request.setAttribute("viewUrl", "adminManagement/wineManagement");
+                request.setAttribute("viewUrl", "adminManagement/productManagement");
 
             } catch (Exception e) {
                 logger.log(Level.SEVERE, "Controller Error", e);

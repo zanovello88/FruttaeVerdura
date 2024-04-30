@@ -8,7 +8,7 @@ import org.fruttaeverdura.fruttaeverdura.model.mo.Prodotto;
 import java.util.List;
 
 public interface ProdottoDAO {
-    public Prodotto create(
+    Prodotto create(
             //Long id_prod,
             String nome_prod,
             String sede_acquisto,
