@@ -9,15 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio implementazione admin, UserManagement. Da sistemare il getAdmin">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/prodInsModView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/productManagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio implementazione prodotti, ProductManagement. Da sistemare il getAdmin.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/ProductManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/ProductManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/ProdottoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/ProdottoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +239,8 @@
       <workItem from="1714385401626" duration="804000" />
       <workItem from="1714393932739" duration="12627000" />
       <workItem from="1714422308822" duration="71000" />
-      <workItem from="1714464631065" duration="5589000" />
+      <workItem from="1714464631065" duration="5766000" />
+      <workItem from="1714641882421" duration="2550000" />
     </task>
     <task id="LOCAL-00001" summary="added basic files">
       <option name="closed" value="true" />
@@ -589,7 +586,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714422241238</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="inizio implementazione prodotti, ProductManagement. Da sistemare il getAdmin.">
+      <option name="closed" value="true" />
+      <created>1714470616305</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1714470616305</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +612,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creazione file PagamentoDAOMySQLJDBCImpl e OrdineDAOMySQLJDBCImpl" />
     <MESSAGE value="fine creazione file DAOMySQLImpl" />
     <MESSAGE value="modifiche a cartitemDAOMySQLJDBCImpl, da finire" />
     <MESSAGE value="creazione file HomeManagement serve body header footer ecc" />
@@ -632,7 +636,8 @@
     <MESSAGE value="inizio implementazione admin" />
     <MESSAGE value="inizio implementazione admin v2" />
     <MESSAGE value="inizio implementazione admin, UserManagement. Da sistemare il getAdmin" />
-    <option name="LAST_COMMIT_MESSAGE" value="inizio implementazione admin, UserManagement. Da sistemare il getAdmin" />
+    <MESSAGE value="inizio implementazione prodotti, ProductManagement. Da sistemare il getAdmin." />
+    <option name="LAST_COMMIT_MESSAGE" value="inizio implementazione prodotti, ProductManagement. Da sistemare il getAdmin." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -137,7 +137,7 @@ public class HomeManagement {
                 applicationMessage = "Username e password errati!";
                 loggedUser=null;
             } else {
-                loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, "N", "N");
+                loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, user.getAdmin(), user.getBlocked());
             }
 
             daoFactory.commitTransaction();
@@ -285,11 +285,11 @@ public class HomeManagement {
                         request.getParameter("password"),
                         request.getParameter("nome"),
                         request.getParameter("cognome"),
+                        "via",
+                        "stato",
+                        "città",
                         null,
-                        null,
-                        null,
-                        null,
-                        "N",
+                        "Y",
                         "N");
 
                 applicationMessage = "Registrazione avvenuta con successo. Clicca su Login per effettuare l'accesso";
