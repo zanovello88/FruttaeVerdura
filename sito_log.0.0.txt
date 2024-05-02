@@ -6397,3 +6397,393 @@ mag 02, 2024 12:08:26 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher
 INFO: HomeManagement logon
 mag 02, 2024 12:08:28 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
 INFO: HomeManagement logout
+mag 02, 2024 2:57:35 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 2:57:35 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 2:57:38 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+mag 02, 2024 2:57:46 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+mag 02, 2024 2:57:51 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 2:57:55 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 2:57:56 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+mag 02, 2024 2:57:57 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+mag 02, 2024 2:58:03 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+mag 02, 2024 2:58:07 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+mag 02, 2024 2:58:08 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+mag 02, 2024 2:58:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+mag 02, 2024 2:58:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 2:58:16 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 2:58:54 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement delete
+mag 02, 2024 2:58:54 PM org.fruttaeverdura.fruttaeverdura.controller.ProductManagement delete
+SEVERE: Controller Error
+java.lang.RuntimeException: java.sql.SQLSyntaxErrorException: Unknown column 'id_prodotto' in 'where clause'
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.ProdottoDAOMySQLJDBCImpl.delete(ProdottoDAOMySQLJDBCImpl.java:202)
+	at org.fruttaeverdura.fruttaeverdura.controller.ProductManagement.delete(ProductManagement.java:469)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'id_prodotto' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.ProdottoDAOMySQLJDBCImpl.delete(ProdottoDAOMySQLJDBCImpl.java:198)
+	... 31 more
+
+mag 02, 2024 3:00:43 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:00:43 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:00:45 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:00:46 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:00:48 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement delete
+mag 02, 2024 3:00:48 PM org.fruttaeverdura.fruttaeverdura.controller.ProductManagement delete
+SEVERE: Controller Error
+java.lang.RuntimeException: java.sql.SQLSyntaxErrorException: Unknown column 'id_prodotto' in 'where clause'
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.ProdottoDAOMySQLJDBCImpl.delete(ProdottoDAOMySQLJDBCImpl.java:202)
+	at org.fruttaeverdura.fruttaeverdura.controller.ProductManagement.delete(ProductManagement.java:469)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'id_prodotto' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.ProdottoDAOMySQLJDBCImpl.delete(ProdottoDAOMySQLJDBCImpl.java:198)
+	... 31 more
+
+mag 02, 2024 3:05:49 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:05:49 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:05:51 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:05:53 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:05:55 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement delete
+mag 02, 2024 3:05:55 PM org.fruttaeverdura.fruttaeverdura.controller.ProductManagement delete
+SEVERE: Controller Error
+java.lang.RuntimeException: java.sql.SQLException: Incorrect integer value: 'Y' for column 'Deleted' at row 1
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.ProdottoDAOMySQLJDBCImpl.delete(ProdottoDAOMySQLJDBCImpl.java:202)
+	at org.fruttaeverdura.fruttaeverdura.controller.ProductManagement.delete(ProductManagement.java:469)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLException: Incorrect integer value: 'Y' for column 'Deleted' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.ProdottoDAOMySQLJDBCImpl.delete(ProdottoDAOMySQLJDBCImpl.java:198)
+	... 31 more
+
+mag 02, 2024 3:08:09 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:08:09 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:08:11 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 02, 2024 3:08:14 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+mag 02, 2024 3:08:20 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 02, 2024 3:08:21 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:08:22 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:08:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement delete
+mag 02, 2024 3:08:47 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:08:47 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:08:48 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:08:49 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:11:38 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:11:38 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:11:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 02, 2024 3:11:46 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+mag 02, 2024 3:11:55 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:11:56 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:13:23 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:13:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:13:25 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 02, 2024 3:13:30 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+mag 02, 2024 3:13:39 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:13:40 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:15:27 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:15:27 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:15:29 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:16:17 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:16:17 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:16:19 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:16:19 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:16:24 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 02, 2024 3:16:29 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:16:55 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:16:55 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:16:57 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:16:57 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:16:59 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:17:18 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:17:18 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:17:20 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:17:21 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:17:26 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:17:38 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement searchView
+mag 02, 2024 3:17:41 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement searchView
+mag 02, 2024 3:17:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement searchView
+mag 02, 2024 3:17:51 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement searchView
+mag 02, 2024 3:18:20 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:18:20 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:18:22 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:18:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:18:24 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:18:28 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement searchView
+mag 02, 2024 3:20:12 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:20:12 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:20:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:20:14 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:20:35 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:20:35 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:20:37 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:20:38 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:23:07 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:23:07 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:23:08 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:23:09 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:24:11 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:24:11 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:24:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:24:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:24:58 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:24:58 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:25:00 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:25:00 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:25:15 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:25:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:25:16 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:25:17 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:25:32 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:25:32 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:25:33 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:25:35 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:29:46 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:29:46 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:29:48 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:29:49 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:30:35 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:30:35 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:30:36 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:30:37 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:31:51 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:31:51 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:31:52 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:31:53 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:32:21 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 02, 2024 3:32:21 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:32:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 02, 2024 3:32:24 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 02, 2024 3:32:50 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement searchView
+mag 02, 2024 3:33:12 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement searchView
+mag 02, 2024 3:36:25 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 02, 2024 3:36:26 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout

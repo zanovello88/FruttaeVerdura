@@ -80,7 +80,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
 
             // leggo deleted e prod_id solo se esiste, altrimento ricevo nullPointer Exception
             if (exist) {
-                deleted = resultSet.getString("deleted").equals("Y");
+                deleted = resultSet.getString("deleted").equals("1");
                 retrived_prod_id = resultSet.getLong("prod_id");
             }
 
@@ -93,7 +93,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
             if (exist && deleted){
                 sql
                         = " UPDATE prodotto "
-                        + " SET deleted = 'N' "
+                        + " SET deleted = '0' "
                         + " WHERE id_prodotto = ? ";
                 ps = conn.prepareStatement(sql);
                 i = 1;
@@ -112,7 +112,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
                         + "     blocked_prod,"
                         + "     img_path "
                         + "   ) "
-                        + " VALUES (?,?,?,?,?,?,?,?,'N',?)";
+                        + " VALUES (?,?,?,?,?,?,?,?,'0',?)";
 
                 ps = conn.prepareStatement(sql);
                 i = 1;
@@ -149,7 +149,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
                     + " FROM prodotto "
                     + " WHERE "
                     + "id_prod = ? AND "
-                    + "deleted = 'N'";
+                    + "deleted = '0'";
 
             ps = conn.prepareStatement(sql);
             ps.setLong(1, id_prod);
@@ -189,9 +189,9 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
 
             String sql
                     = " UPDATE prodotto "
-                    + " SET deleted='Y' "
+                    + " SET deleted='1' "
                     + " WHERE "
-                    + " id_prodotto=?";
+                    + " Id_prod=?";
 
             ps = conn.prepareStatement(sql);
             ps.setLong(1, prod.getid_prod());
@@ -215,7 +215,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
                     + " FROM prodotto "
                     + " WHERE "
                     + "id_prod = ? AND "
-                    + "deleted = 'N'";
+                    + "deleted = '0'";
 
             ps = conn.prepareStatement(sql);
             ps.setLong(1, id_prod);
@@ -249,7 +249,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
                     + " FROM prodotto "
                     + " WHERE "
                     + "nome LIKE ? AND "
-                    + "deleted = 'N'";
+                    + "deleted = '0'";
 
             ps = conn.prepareStatement(sql);
             ps.setString(1, name);
