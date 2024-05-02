@@ -16,7 +16,7 @@
     boolean loggedOn = (Boolean) request.getAttribute("loggedOn");
     Utente loggedUser = (Utente) request.getAttribute("loggedUser");
     String applicationMessage = (String) request.getAttribute("applicationMessage");
-    String menuActiveLink = "Gestione Vini";
+    String menuActiveLink = "Gestione Prodotti";
     List<Prodotto> products = (List<Prodotto>) request.getAttribute("products");
 
     int maxViewSize;

@@ -26,6 +26,7 @@ public interface ProdottoDAO {
     public Prodotto findByProdId(Long id_prod);
 
     public List<Prodotto> findByName(String nome_prod);
+    public void modify(Prodotto prodotto)  throws DuplicatedObjectException, DataTruncationException;
     /*
     public List<Prodotto> filterByCategory(String categoria);
      */

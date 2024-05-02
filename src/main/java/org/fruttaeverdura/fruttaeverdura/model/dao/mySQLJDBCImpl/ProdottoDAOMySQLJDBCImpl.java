@@ -139,6 +139,97 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
         return prod;
     }
     @Override
+    public void modify(Prodotto prodotto) throws DuplicatedObjectException, org.fruttaeverdura.fruttaeverdura.model.dao.exception.DataTruncationException, DataTruncationException {
+        PreparedStatement ps;
+        try {
+
+            String sql
+                    = " SELECT Id_prod "
+                    + " FROM prodotto "
+                    + " WHERE "
+//                    + " deleted ='N' AND "
+                    + " Nome = ? AND"
+                    + " Sede_acquisto = ? AND"
+                    + " Descrizione = ? AND"
+                    + " Prezzo = ? AND"
+                    + " Quantità_disp = ? AND "
+                    + " Categoria = ? AND "
+               //     + " Deleted = ? AND "
+                //    + " Blocked = ? AND "
+                    + " img_path = ? AND ";
+//                    + " wine_id <> ?";
+
+            ps = conn.prepareStatement(sql);
+            int i = 1;
+            ps.setString(i++, prodotto.getnome_prod());
+            ps.setString(i++, prodotto.getsede_acquisto());
+            ps.setString(i++, prodotto.getdescrizione());
+            ps.setBigDecimal(i++, prodotto.getprezzo());
+            ps.setInt(i++, prodotto.getquantita_disponibile());
+            ps.setString(i++, prodotto.getcategoria());
+            ps.setString(i++, prodotto.getimg_path());
+            //ps.setLong(i++, prodotto.getid_prod());
+
+            ResultSet resultSet = ps.executeQuery();
+
+            boolean exist;
+            boolean deleted = true;
+            Long retrived_id_prod = null;
+            exist = resultSet.next();
+
+            // leggo deleted e id_prod solo se esiste, altrimento ricevo nullPointer Exception
+            if (exist) {
+                deleted = resultSet.getString("deleted").equals("1");
+                retrived_id_prod = resultSet.getLong("id_prod");
+            }
+
+            if (exist) {
+                throw new DuplicatedObjectException("ProdottoDAOJDBCImpl.create: Un prodotto con queste caratteristiche e' gia presente nel db.");
+            }
+
+            if (exist && deleted){
+                sql = "update prodotto set Deleted='0' where id_prod=?";
+                ps = conn.prepareStatement(sql);
+                i = 1;
+                ps.setLong(i++, retrived_id_prod);
+                ps.executeUpdate();
+            }
+
+            sql
+                    = " UPDATE prodotto "
+                    + " SET "
+                    + " Nome = ?,"
+                    + " Sede_acquisto = ?,"
+                    + " Descrizione = ? ,"
+                    + " Prezzo = ? ,"
+                    + " Quantità_disp = ? , "
+                    + " Categoria = ? , "
+                    + " img_path = ? , "
+                    + " WHERE "
+                    + "   Id_prod = ? ";
+
+            ps = conn.prepareStatement(sql);
+            i = 1;
+            ps.setString(i++, prodotto.getnome_prod());
+            ps.setString(i++, prodotto.getsede_acquisto());
+            ps.setString(i++, prodotto.getdescrizione());
+            ps.setBigDecimal(i++, prodotto.getprezzo());
+            ps.setInt(i++, prodotto.getquantita_disponibile());
+            ps.setString(i++, prodotto.getcategoria());
+            ps.setString(i++, prodotto.getimg_path());
+            ps.setLong(i++, prodotto.getid_prod());
+
+            try {
+                ps.executeUpdate();
+            } catch(Exception e) /*MysqlDataTruncation*/{
+                throw new DataTruncationException("Importo massimo consentito: sei cifre intere e due decimali.");
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    @Override
     public void updateAvalaibility(Long id_prod, int quantita_disponibile) {
         PreparedStatement ps;
         try {
