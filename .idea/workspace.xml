@@ -9,15 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="sistemazione pagina productManagement.jsp">
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio pagina prodInsModView.jsp">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/ProductManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/ProductManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/ProdottoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/ProdottoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/ProdottoDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/ProdottoDAOMySQLJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/adminHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/adminHeader.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/prodInsModView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/prodInsModView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/productManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/productManagement.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/userManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/userManagement.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +247,8 @@
       <workItem from="1714464631065" duration="5766000" />
       <workItem from="1714641882421" duration="2647000" />
       <workItem from="1714654649107" duration="2369000" />
-      <workItem from="1714663307756" duration="6696000" />
+      <workItem from="1714663307756" duration="6776000" />
+      <workItem from="1714721383256" duration="13136000" />
     </task>
     <task id="LOCAL-00001" summary="added basic files">
       <option name="closed" value="true" />
@@ -616,7 +618,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714657008966</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="inizio pagina prodInsModView.jsp">
+      <option name="closed" value="true" />
+      <created>1714680744762</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1714680744762</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +644,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creazione file HomeManagement serve body header footer ecc" />
     <MESSAGE value="prova git" />
     <MESSAGE value="prova effettuata" />
     <MESSAGE value="continuo sito, errore nel collegamento al db" />
@@ -659,17 +668,7 @@
     <MESSAGE value="inizio implementazione prodotti, ProductManagement. Da sistemare il getAdmin." />
     <MESSAGE value="correzione errore admin" />
     <MESSAGE value="sistemazione pagina productManagement.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="sistemazione pagina productManagement.jsp" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp</url>
-          <line>178</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="inizio pagina prodInsModView.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="inizio pagina prodInsModView.jsp" />
   </component>
 </project>

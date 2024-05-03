@@ -37,28 +37,29 @@
                 alert("Il campo " + EventTriggerName + " richiede un numero");
         }
 
-        function StaticFormCheck(){
-            var prezzoValue = (document.insModForm.price.value);
-            var avalaibilityValue = (document.insModForm.avalaibility.value);
+        function StaticFormCheck() {
+            var prezzoValue = document.getElementById("Prezzo").value;
+            var avalaibilityValue = document.getElementById("Quantità_disp").value;
 
-            if(isNaN(prezzoValue)){
-                alert("Il campo PREZZO richiede un numero");
+            if (isNaN(prezzoValue)) {
+                alert("Il campo PREZZO richiede un numero valido");
                 return false;
             }
 
-            if(isNaN(avalaibilityValue)){
-                alert("Il campo QUANTITY richiede un numero");
+            if (isNaN(avalaibilityValue)) {
+                alert("Il campo QUANTITÀ richiede un numero valido");
                 return false;
             }
 
             return true;
         }
 
+
         function submitProduct() {
             if (StaticFormCheck()) {
                 // alert("campi ok");
                 document.insModForm.controllerAction.value = "ProductManagement."+status;
-                document.insModForm.requestSubmit();
+                document.insModForm.submit();
             }
         }
 
@@ -70,72 +71,133 @@
             // document.insModForm.addEventListener("submit", submitWine);
             document.insModForm.Invia.addEventListener("click", submitProduct);
             document.insModForm.backButton.addEventListener("click", goback);
-            document.insModForm.price.addEventListener("change", DynamicFormCheck);
-            document.insModForm.avalaibility.addEventListener("change", DynamicFormCheck);
+            document.insModForm.Prezzo.addEventListener("change", DynamicFormCheck);
+            document.insModForm.Quantità_disp.addEventListener("change", DynamicFormCheck);
         }
     </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Stile per il contenitore principale */
+        main {
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Stile per gli elementi del modulo */
+        form div {
+            margin-bottom: 15px;
+        }
+
+        /* Stile per le etichette */
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        /* Stile per gli input */
+        input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Stile per i pulsanti */
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Stile per il pulsante Annulla */
+        input[name="backButton"] {
+            background-color: #f44336;
+        }
+
+        input[name="backButton"]:hover {
+            background-color: #d32f2f;
+        }
+    </style>
 </head>
-<body class="bg-gray-500">
+<body>
 <%@include file="/include/adminHeader.jsp"%>
 <main>
     <h1>Gestione <%=(action.equals("modify")) ? "Modifica prodotto" : "Nuovo Prodotto"%></h1>
     <section>
         <form name="insModForm" action="Dispatcher" method="post">
             <div>
-                <label for="name"><span class="font-medium">Nome</span></label>
-                <input type="text" id="name" name="name"
-                       value="<%=(action.equals("modify")) ? prodotto.getnome_prod() : ""%>"
+                <label for="Nome">Nome</label>
+                <input type="text" id="Nome" name="Nome"
+                       value="<%= (action.equals("modify")) ? prodotto.getnome_prod() : "" %>"
                        required size="20" maxlength="50"/>
             </div>
-            <div class="field">
-                <label for="product_image"><span class="font-medium">URL/Path dell'immagine del prodotto</span></label>
-                <input class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-4 mt-2" type="text" id="product_image" name="product_image"
-                       value="<%=(action.equals("modify")) ? prodotto.getimg_path() : ""%>"
+            <div>
+                <label for="img_path">URL/Path dell'immagine del prodotto</label>
+                <input type="text" id="img_path" name="img_path"
+                       value="<%= (action.equals("modify")) ? prodotto.getimg_path() : "" %>"
                        size="20" maxlength="256"/>
             </div>
-            <div class="field">
-                <label for="price"><span class="font-medium">Prezzo</span></label>
-                <input class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-4 mt-2" type="text" id="price" name="price"
-                       value="<%=(action.equals("modify")) ? prodotto.getprezzo() : ""%>"
+            <div>
+                <label for="Prezzo">Prezzo</label>
+                <input type="text" id="Prezzo" name="Prezzo"
+                       value="<%= (action.equals("modify")) ? prodotto.getprezzo() : "" %>"
                        required size="20" maxlength="8"/>
             </div>
-            <div class="field">
-                <label for="avalaibility"><span class="font-medium">Quantita</span></label>
-                <input class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-4 mt-2" type="text" id="avalaibility" name="avalaibility"
-                       value="<%=(action.equals("modify")) ? prodotto.getquantita_disponibile() : ""%>"
+            <div>
+                <label for="Quantità_disp">Quantità</label>
+                <input type="text" id="Quantità_disp" name="Quantità_disp"
+                       value="<%= (action.equals("modify")) ? prodotto.getquantita_disponibile() : "" %>"
                        required size="20" maxlength="50"/>
             </div>
-            <div class="field">
-                <label for="provenance"><span class="font-medium">Sede acquisto</span></label>
-                <input class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-4 mt-2" type="text" id="provenance" name="provenance"
-                       value="<%=(action.equals("modify")) ? prodotto.getsede_acquisto() : ""%>"
+            <div>
+                <label for="Sede_acquisto">Sede acquisto</label>
+                <input type="text" id="Sede_acquisto" name="Sede_acquisto"
+                       value="<%= (action.equals("modify")) ? prodotto.getsede_acquisto() : "" %>"
                        required size="20" maxlength="50"/>
             </div>
-            <div class="field">
-                <label for="category"><span class="font-medium">Categoria</span></label>
-                <input type="radio" id="category" name="category" value="Frutta" <%=(action.equals("modify") && prodotto.getcategoria().equals("Frutta")) ? "checked" : ""%>/> Frutta
-                <input type="radio" id="category1" name="category" value="Vedura" <%=(action.equals("modify") && prodotto.getcategoria().equals("Verdura")) ? "checked" : ""%> /> Vedura
-                <input type="radio" id="category3" name="category" value="Altro" <%=(action.equals("modify") && prodotto.getcategoria().equals("Altro")) ? "checked" : ""%> /> Altro
+            <div>
+                <label for="Categoria">Categoria</label>
+                <input type="text" id="Categoria" name="Categoria"
+                       value="<%= (action.equals("modify")) ? prodotto.getcategoria() : "" %>"
+                       required size="20" maxlength="50"/>
             </div>
-            <div class="field">
-                <label for="description"><span class="font-medium">Descrizione</span></label>
-                <input class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-4 mt-2" type="text" id="description" name="description"
-                       value="<%=(action.equals("modify")) ? prodotto.getdescrizione() : ""%>"
+            <div>
+                <label for="Descrizione">Descrizione</label>
+                <input type="text" id="Descrizione" name="Descrizione"
+                       value="<%= (action.equals("modify")) ? prodotto.getdescrizione() : "" %>"
                        required size="20" maxlength="2048"/>
             </div>
-            <div class="field my-4">
-                <input type="button" name ="Invia" class="bg-gray-700 hover:bg-green-500 hover:text-black text-white font-bold py-2 px-4 rounded-full w-20" value="Invia"/>
-                <input type="button" name="backButton" class="bg-red-400 hover:bg-blue-dark text-white font-bold py-2 px-4 rounded-full w-24 ml-2" value="Annulla"/>
+            <div>
+                <input type="button" name="Invia" value="Invia" onclick="submitProduct()"/>
+                <input type="button" name="backButton" value="Annulla" onclick="goback()"/>
             </div>
             <%if (action.equals("modify")) {%>
-            <input type="hidden" name="id_prod" value="<%=prodotto.getid_prod()%>"/>
+            <input type="hidden" name="id_prod" value="<%= prodotto.getid_prod() %>"/>
             <%}%>
             <input type="hidden" name="controllerAction"/>
         </form>
     </section>
 
     <form name="backForm" method="post" action="Dispatcher">
-        <input type="hidden" name="controllerAction" value="AdminManagement.view"/>
+        <input type="hidden" name="controllerAction" value="ProductManagement.viewManagement"/>
     </form>
 
 </main>

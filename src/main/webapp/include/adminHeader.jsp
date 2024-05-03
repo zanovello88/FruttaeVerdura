@@ -12,15 +12,17 @@
             </div>
             <div style="position: relative; display: inline-block;">
                 <section>
-                    <a id="homeadmin" style="padding-left: 0.75rem; display: inline-block;" href="Dispatcher?controllerAction=AdminManagement.view">
+                    <a id="homeadmin" style="padding-left: 0.75rem; display: inline-block; color: #007bff" href="Dispatcher?controllerAction=AdminManagement.view">
                         <svg fill="#ffffff" width="24" height="24" viewBox="0 0 24 24" id="key" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9,12H21m-1,0V10m-4,2V10M6,9a3,3,0,1,0,3,3A3,3,0,0,0,6,9Z" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path>
                         </svg>
+                        <br>Porta alla home di amministrazione
                     </a>
-                    <a id="home" href="javascript:HomeForm.requestSubmit()" style="padding-left: 0.75rem; display: inline-block;">
+                    <a id="home" href="javascript:HomeForm.requestSubmit()" style="padding-left: 0.75rem; display: inline-block; color: #007bff">
                         <svg fill="#ffffff" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 3s-6.186 5.34-9.643 8.232c-.203.184-.357.452-.357.768 0 .553.447 1 1 1h2v7c0 .553.447 1 1 1h3c.553 0 1-.448 1-1v-4h4v4c0 .552.447 1 1 1h3c.553 0 1-.447 1-1v-7h2c.553 0 1-.447 1-1 0-.316-.154-.584-.383-.768-3.433-2.892-9.617-8.232-9.617-8.232z"/>
                         </svg>
+                        <br>Porta alla home del sito
                     </a>
                 </section>
             </div>
