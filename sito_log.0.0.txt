@@ -9633,3 +9633,447 @@ mag 06, 2024 11:32:42 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher
 INFO: AdminManagement view
 mag 06, 2024 11:32:43 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
 INFO: ProductManagement viewManagement
+mag 06, 2024 11:33:52 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 11:33:52 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 11:33:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 11:33:55 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement view
+mag 06, 2024 11:33:58 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement view
+mag 06, 2024 11:34:02 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 11:34:04 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 11:34:05 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 06, 2024 11:34:21 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+mag 06, 2024 2:23:03 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 2:23:03 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 2:23:05 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+mag 06, 2024 2:23:10 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+mag 06, 2024 2:23:12 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:23:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:23:48 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 2:23:48 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 2:23:50 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:23:51 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:26:15 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 2:26:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 2:26:17 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:26:18 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:26:20 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:32:13 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 2:32:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 2:32:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:32:16 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:32:18 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:33:30 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:33:32 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:36:09 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 2:36:09 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 2:36:11 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:36:12 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 06, 2024 2:36:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:36:16 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:36:22 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:36:28 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement searchView
+mag 06, 2024 2:36:31 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement searchView
+mag 06, 2024 2:36:34 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement searchView
+mag 06, 2024 2:43:29 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:43:30 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:43:40 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:43:50 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement searchView
+mag 06, 2024 2:43:56 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement searchView
+mag 06, 2024 2:47:01 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 2:47:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 2:47:04 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:47:05 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:47:07 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:47:17 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:47:18 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:47:22 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:47:24 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:49:21 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:52:46 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 2:52:46 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 2:52:48 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:52:49 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 06, 2024 2:52:52 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:52:53 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:52:55 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:53:30 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:53:31 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:53:34 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:55:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:55:16 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:55:20 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:55:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 2:55:30 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 06, 2024 2:55:37 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:55:38 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:56:38 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 2:56:38 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 2:56:40 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:56:41 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:56:42 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:56:43 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insert
+mag 06, 2024 2:56:49 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:56:50 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insert
+mag 06, 2024 2:56:50 PM org.fruttaeverdura.fruttaeverdura.controller.ShowcaseManagement insert
+INFO: Tentativo di inserimento di prodotto già in vetrina
+mag 06, 2024 2:56:51 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:56:53 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insert
+mag 06, 2024 2:56:53 PM org.fruttaeverdura.fruttaeverdura.controller.ShowcaseManagement insert
+INFO: Tentativo di inserimento di prodotto già in vetrina
+mag 06, 2024 2:56:56 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:57:33 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 2:57:33 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 2:57:34 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 2:57:35 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 2:57:39 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement delete
+mag 06, 2024 2:57:43 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:57:45 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insert
+mag 06, 2024 2:58:05 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement delete
+mag 06, 2024 2:58:34 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 2:58:36 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insert
+mag 06, 2024 2:58:43 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement delete
+mag 06, 2024 3:02:11 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:02:11 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:02:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:02:14 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:02:18 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:02:19 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 06, 2024 3:02:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:02:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:02:33 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:02:34 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement view
+mag 06, 2024 3:02:37 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:03:23 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:03:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:03:24 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:03:25 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:03:50 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:03:50 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:03:53 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:03:54 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:08:26 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:08:26 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:08:28 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:08:29 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:09:14 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:09:14 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:09:17 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:09:18 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:11:41 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:11:41 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:11:43 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:11:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:14:04 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:14:04 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:14:05 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:14:06 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:14:11 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:15:18 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:15:18 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:15:19 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:15:20 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:16:19 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:16:19 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:16:21 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:16:22 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:18:19 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:18:19 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:18:21 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:18:22 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:18:49 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:18:49 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:18:51 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:18:51 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:19:16 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:19:16 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:19:17 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:19:18 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:19:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:25:29 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:25:29 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:25:31 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:25:32 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:25:34 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:25:41 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement searchView
+mag 06, 2024 3:25:42 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement searchView
+mag 06, 2024 3:25:53 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement searchView
+mag 06, 2024 3:26:11 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement searchView
+mag 06, 2024 3:26:23 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:26:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:26:25 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:26:26 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:26:27 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:27:58 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:27:58 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:27:59 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:28:00 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:28:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:28:25 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:28:25 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:28:28 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:28:30 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:28:31 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:30:12 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:30:12 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:30:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:30:14 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:30:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:30:32 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:30:32 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:30:34 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:30:35 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:30:36 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:30:59 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:30:59 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:31:00 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:31:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:31:03 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:31:33 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:31:33 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:31:34 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:31:35 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:31:37 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:32:58 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:32:58 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:33:00 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:33:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:33:02 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:34:12 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:34:12 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:34:15 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:34:16 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:34:17 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:34:57 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:34:57 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:34:58 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 06, 2024 3:35:00 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:35:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:35:02 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:35:20 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 06, 2024 3:35:20 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 06, 2024 3:35:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:35:24 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 06, 2024 3:35:26 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+mag 06, 2024 3:35:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insert
+mag 06, 2024 3:35:54 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 06, 2024 3:35:55 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view

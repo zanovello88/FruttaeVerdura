@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: francescozanovello
-  Date: 20/04/24
-  Time: 16:43
-  To change this template use File | Settings | File Templates.
---%>
 <%@page session="false"%>
 <%@page import="org.fruttaeverdura.fruttaeverdura.model.mo.Utente"%>
 <%@page import="org.fruttaeverdura.fruttaeverdura.model.mo.Prodotto"%>
@@ -25,14 +18,114 @@
 <html>
 <head>
     <%@include file="/include/htmlHead.inc"%>
+    <style>
+        /* Stile generale */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f3f4f6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Stili per gli elementi della pagina */
+        p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button, input[type="button"] {
+            cursor: pointer;
+        }
+
+        /* Stili per le sezioni specifiche */
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .product-item {
+            width: calc(33.33% - 20px);
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .product-item p {
+            font-weight: bold;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Stili per i form */
+        .form-container {
+            margin-top: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type="text"], .form-container input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        /* Aggiunta transizione al passaggio del mouse */
+        .delete-icon svg {
+            transition: fill 0.3s ease;
+        }
+
+        .delete-icon:hover svg {
+            fill: red;
+        }
+        .plus-icon svg {
+            transition: fill 0.3s ease;
+        }
+        .plus-icon:hover svg {
+            fill: deepskyblue;
+        }
+    </style>
     <script language="javascript">
 
         function insertShowcase() {
             document.insertForm.requestSubmit();
         }
 
-        function deleteElement(wine_id) {
-            document.deleteForm.wine_id.value = wine_id;
+        function deleteElement(id_prod) {
+            document.deleteForm.id_prod.value = id_prod;
             document.deleteForm.requestSubmit();
         }
 
@@ -40,26 +133,28 @@
 
     </script>
 </head>
-<body class="bg-gray-500">
+<body>
 <%@include file="/include/adminHeader.jsp"%>
-<main class="w-full flex flex-col justify-center items-center bg-gray-500">
-    <div class="mt-8 flex flex-row justify-between items-stretch">
-        <p class="uppercase font-bold text-black text-xl">Vetrina</p>
+<main>
+    <div>
+        <h1>Vetrina</h1>
     </div>
 
-    <div class="mt-8 flex flex-row justify-between items-stretch">
-        <p class="uppercase font-medium text-black text-xl">Vini presenti in vetrina</p>
-        <a class="ml-2 mt-1" href="javascript:insertWineForm.requestSubmit()">
+    <div class="form-container">
+        <p>Prodotti presenti in vetrina</p>
+        <div class="plus-icon">
+        <a href="javascript:insertProdForm.requestSubmit()">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="heroicon-ui" d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm1-9h2a1 1 0 010 2h-2v2a1 1 0 01-2 0v-2H9a1 1 0 010-2h2V9a1 1 0 012 0v2z"/></svg>
         </a>
     </div>
+    </div>
     <br>
-    <div class="container mx-auto flex flex-wrap justify-center pb-12">
+    <div class="container product-list">
         <%for (i = 0; i < showcases.size(); i++) {%>
-        <div class="relative w-full md:w-1/3 xl:w-1/4 sm:w-1/3 p-6 flex flex-col border justify-center">
-            <p class="float-left pt-3 text-gray-900 font-medium pr-4 "><%=products.get(i).getnome_prod()%></p>
-            <div class="float-right flex flex-no-wrap flex-row ">
-                <a class="ml-2" href="javascript:deleteElement(<%=showcases.get(i).getId_prod()%>)">
+        <div class="product-item">
+            <p><%=products.get(i).getnome_prod()%></p>
+            <div class="delete-icon">
+                <a href="javascript:deleteElement(<%=showcases.get(i).getId_prod()%>)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="heroicon-ui fill-current text-red-400" d="M8 6V4c0-1.1.9-2 2-2h4a2 2 0 012 2v2h5a1 1 0 010 2h-1v12a2 2 0 01-2 2H6a2 2 0 01-2-2V8H3a1 1 0 110-2h5zM6 8v12h12V8H6zm8-2V4h-4v2h4zm-4 4a1 1 0 011 1v6a1 1 0 01-2 0v-6a1 1 0 011-1zm4 0a1 1 0 011 1v6a1 1 0 01-2 0v-6a1 1 0 011-1z"/></svg>
                 </a>
             </div>
@@ -69,16 +164,17 @@
 
     <%--        APPLICATION FORM--%>
 
-    <form name="insertWineForm" method="post" action="Dispatcher">
+    <form name="insertProdForm" method="post" action="Dispatcher">
         <input type="hidden" name="controllerAction" value="ShowcaseManagement.insertView"/>
     </form>
     <form name="deleteForm" method="post" action="Dispatcher">
-        <input type="hidden" name="wine_id"/>
+        <input type="hidden" name="id_prod"/>
         <input type="hidden" name="controllerAction" value="ShowcaseManagement.delete"/>
     </form>
 
 </main>
-<div class="fixed w-full bottom-0">
+<div>
     <%@include file="/include/footer.inc"%>
 </div>
+</body>
 </html>

@@ -9,16 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="sistemazione generale lato admin">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="fine gestione prodotti, sistemazione css vario">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/ProductManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/ProductManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/ProdottoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/ProdottoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/ProdottoDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/ProdottoDAOMySQLJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/productManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/productManagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/userManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/userManagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/ShowcaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/ShowcaseManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/ShowcaseDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/ShowcaseDAOMySQLJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/showcaseInsModView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/showcaseInsModView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/showcaseManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/showcaseManagement.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +248,8 @@
       <workItem from="1714721383256" duration="13321000" />
       <workItem from="1714743164462" duration="15000" />
       <workItem from="1714813957872" duration="132000" />
-      <workItem from="1714983191402" duration="4541000" />
+      <workItem from="1714983191402" duration="4864000" />
+      <workItem from="1714997654945" duration="4565000" />
     </task>
     <task id="LOCAL-00001" summary="added basic files">
       <option name="closed" value="true" />
@@ -637,7 +635,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714742760214</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fine gestione prodotti, sistemazione css vario">
+      <option name="closed" value="true" />
+      <created>1714988018882</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1714988018882</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,7 +661,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="prova effettuata" />
     <MESSAGE value="continuo sito, errore nel collegamento al db" />
     <MESSAGE value="correzione file UtenteDAOMySQLJDBCImpl.java" />
     <MESSAGE value="inizio view dei prodotti" />
@@ -680,6 +685,7 @@
     <MESSAGE value="sistemazione pagina productManagement.jsp" />
     <MESSAGE value="inizio pagina prodInsModView.jsp" />
     <MESSAGE value="sistemazione generale lato admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="sistemazione generale lato admin" />
+    <MESSAGE value="fine gestione prodotti, sistemazione css vario" />
+    <option name="LAST_COMMIT_MESSAGE" value="fine gestione prodotti, sistemazione css vario" />
   </component>
 </project>

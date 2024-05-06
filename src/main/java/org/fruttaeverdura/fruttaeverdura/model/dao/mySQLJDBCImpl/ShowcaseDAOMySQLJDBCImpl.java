@@ -63,7 +63,7 @@ public class ShowcaseDAOMySQLJDBCImpl implements ShowcaseDAO {
             Long retrived_showcase_id = null;
             exist = resultSet.next();
             if (exist) {
-                deleted = resultSet.getString("deleted").equals("Y");
+                deleted = resultSet.getString("deleted").equals("1");
                 retrived_showcase_id = resultSet.getLong("idshowcase");
             }
 
@@ -170,7 +170,7 @@ public class ShowcaseDAOMySQLJDBCImpl implements ShowcaseDAO {
         } catch (SQLException sqle) {
         }
         try {
-            showcase.setDeleted(rs.getString("deleted").equals("Y"));
+            showcase.setDeleted(rs.getString("deleted").equals("1"));
         } catch (SQLException sqle) {
         }
         return showcase;

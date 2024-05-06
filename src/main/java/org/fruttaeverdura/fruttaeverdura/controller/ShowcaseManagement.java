@@ -252,7 +252,7 @@ public class ShowcaseManagement {
                 applicationMessage = "Error: " + e;
             }
 
-            request.setAttribute("wines", products);
+            request.setAttribute("products", products);
             request.setAttribute("loggedOn",loggedUser!=null);
             request.setAttribute("loggedUser", loggedUser);
             request.setAttribute("applicationMessage", applicationMessage);
