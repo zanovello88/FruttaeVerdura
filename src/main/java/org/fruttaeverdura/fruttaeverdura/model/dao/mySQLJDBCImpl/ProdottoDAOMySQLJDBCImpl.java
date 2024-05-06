@@ -31,7 +31,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
             int quantita_disponibile,
             String categoria,
             //boolean deleted_prod
-            boolean blocked,
+            //boolean blocked,
             String img_path) throws DuplicatedObjectException, DataTruncationException {
 
         PreparedStatement ps;
@@ -42,7 +42,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
         prod.setprezzo(prezzo);
         prod.setquantita_disponibile(quantita_disponibile);
         prod.setcategoria(categoria);
-        prod.setblocked_prod(blocked);
+        //prod.setblocked_prod(blocked);
         prod.setimg_path(img_path);
 
         try {
@@ -51,13 +51,12 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
                     = " SELECT * "
                     + " FROM prodotto "
                     + " WHERE "
-                    + " nome_prod = ? AND"
-                    + " sede_acquisto = ? AND"
-                    + " descrizione = ? AND"
-                    + " prezzo = ? AND"
-                    + " quantita_disponibile = ? AND "
-                    + " categoria = ? AND "
-                    + " blocked = ? AND "
+                    + " Nome = ? AND"
+                    + " Sede_acquisto = ? AND"
+                    + " Descrizione = ? AND"
+                    + " Prezzo = ? AND"
+                    + " Quantità_disp = ? AND "
+                    + " Categoria = ? AND "
                     + " img_path = ? ";
 
             ps = conn.prepareStatement(sql);
@@ -68,7 +67,7 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
             ps.setBigDecimal(i++, prod.getprezzo());
             ps.setInt(i++, prod.getquantita_disponibile());
             ps.setString(i++, prod.getcategoria());
-            ps.setBoolean(i++, prod.isblocked_prod());
+            //ps.setBoolean(i++, prod.isblocked_prod());
             ps.setString(i++, prod.getimg_path());
 
             ResultSet resultSet = ps.executeQuery();
@@ -80,8 +79,8 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
 
             // leggo deleted e prod_id solo se esiste, altrimento ricevo nullPointer Exception
             if (exist) {
-                deleted = resultSet.getString("deleted").equals("1");
-                retrived_prod_id = resultSet.getLong("prod_id");
+                deleted = resultSet.getString("Deleted").equals("1");
+                retrived_prod_id = resultSet.getLong("Id_prod");
             }
 
             resultSet.close();
@@ -93,8 +92,8 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
             if (exist && deleted){
                 sql
                         = " UPDATE prodotto "
-                        + " SET deleted = '0' "
-                        + " WHERE id_prodotto = ? ";
+                        + " SET Deleted = '0' "
+                        + " WHERE Id_prod = ? ";
                 ps = conn.prepareStatement(sql);
                 i = 1;
                 ps.setLong(i++, retrived_prod_id);
@@ -103,16 +102,15 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
             else {
                 sql
                         = " INSERT INTO prodotto "
-                        + "     (nome_prod,"
-                        + "     sede_acquisto,"
-                        + "     descrizione,"
-                        + "     prezzo,"
-                        + "     quantita_disponibile,"
-                        + "     categoria,"
-                        + "     blocked_prod,"
+                        + "     (Nome,"
+                        + "     Sede_acquisto,"
+                        + "     Descrizione,"
+                        + "     Prezzo,"
+                        + "     Quantità_disp,"
+                        + "     Categoria,"
                         + "     img_path "
                         + "   ) "
-                        + " VALUES (?,?,?,?,?,?,?,?,'0',?)";
+                        + " VALUES (?,?,?,?,?,?,?)";
 
                 ps = conn.prepareStatement(sql);
                 i = 1;
@@ -122,7 +120,6 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
                 ps.setBigDecimal(i++, prod.getprezzo());
                 ps.setInt(i++, prod.getquantita_disponibile());
                 ps.setString(i++, prod.getcategoria());
-                ps.setBoolean(i++, prod.isblocked_prod());
                 ps.setString(i++, prod.getimg_path());
 
                 try {

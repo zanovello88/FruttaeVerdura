@@ -182,103 +182,91 @@ public class ProductManagement extends HttpServlet {
                 }
             }
         }
-/*
-        public static void insert(HttpServletRequest request, HttpServletResponse response) {
 
-            DAOFactory sessionDAOFactory= null;
-            DAOFactory daoFactory = null;
-            String applicationMessage = null;
-            Utente loggedUser;
+    public static void insert(HttpServletRequest request, HttpServletResponse response) {
 
-            Logger logger = LogService.getApplicationLogger();
+        DAOFactory sessionDAOFactory= null;
+        DAOFactory daoFactory = null;
+        String applicationMessage = null;
+        Utente loggedUser;
+
+        Logger logger = LogService.getApplicationLogger();
+
+        try {
+
+            Map sessionFactoryParameters=new HashMap<String,Object>();
+            sessionFactoryParameters.put("request",request);
+            sessionFactoryParameters.put("response",response);
+            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
+            sessionDAOFactory.beginTransaction();
+
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
+            daoFactory.beginTransaction();
+
+            UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
+            loggedUser = sessionUserDAO.findLoggedUser();
+
+            ProdottoDAO prodottoDAO = daoFactory.getProdottoDAO();
+
+            BigDecimal price = new BigDecimal(request.getParameter("Prezzo"));
+            int avalaibility = Integer.parseInt(request.getParameter("Quantità_disp"));
+
+            String photo = request.getParameter("img_path");
+            //se la foto non è inserita metto di deafault questa
+            if(photo.isEmpty()){
+                photo = "https://media.istockphoto.com/id/1472933890/vector/no-image-vector-symbol-missing-available-icon-no-gallery-for-this-moment-placeholder.jpg?s=612x612&w=0&k=20&c=Rdn-lecwAj8ciQEccm0Ep2RX50FCuUJOaEM8qQjiLL0=" ;
+            }
+
 
             try {
 
-                Map sessionFactoryParameters=new HashMap<String,Object>();
-                sessionFactoryParameters.put("request",request);
-                sessionFactoryParameters.put("response",response);
-                sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
-                sessionDAOFactory.beginTransaction();
+                prodottoDAO.create(
+                        request.getParameter("Nome"),
+                        request.getParameter("Sede_acquisto"),
+                        request.getParameter("Descrizione"),
+                        price,
+                        avalaibility,
+                        request.getParameter("Categoria"),
+                        //request.getParameter("Blocked"),
+                        photo
+                );
 
-                daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
-                daoFactory.beginTransaction();
-
-                UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
-                loggedUser = sessionUserDAO.findLoggedUser();
-
-                ProdottoDAO productDAO = daoFactory.getProdottoDAO();
-
-                BigDecimal price = new BigDecimal(request.getParameter("Prezzo"));
-                int quantita_disponibile = Integer.parseInt(request.getParameter("Quantità_disp"));
-                boolean blocked = Boolean.parseBoolean(request.getParameter("Blocked"));
-
-                String photo = request.getParameter("img_path");
-                //se la foto non è inserita metto di deafault questa
-                if(photo.isEmpty()){
-                    photo = "https://media.istockphoto.com/id/1472933890/vector/no-image-vector-symbol-missing-available-icon-no-gallery-for-this-moment-placeholder.jpg?s=612x612&w=0&k=20&c=Rdn-lecwAj8ciQEccm0Ep2RX50FCuUJOaEM8qQjiLL0=" ;
-                }
-
-                //se la denominazione non è inserita metto di default questa
-                String acq = request.getParameter("Sede_acquisto");
-                if (acq.isEmpty()){
-                    acq = "---";
-                }
-
-                //se l'annata non è inserita metto di default questa
-                String des = request.getParameter("Descrizione");
-                if (des.isEmpty()){
-                    des = "---";
-                }
-
-                try {
-
-                    ProdottoDAO.create(
-                            request.getParameter("Nome"),
-                            request.getParameter("Sede_acquisto"),
-                            request.getParameter("Descrizione"),
-                            price,
-                            quantita_disponibile,
-                            request.getParameter("Categoria"),
-                            blocked,
-                            photo
-                    );
-
-                } catch (DuplicatedObjectException e) {
-                    applicationMessage = "Prodotto già esistente";
-                    logger.log(Level.INFO, "Tentativo di inserimento di prodotto già esistente");
-                } catch (DataTruncationException e) {
-                    applicationMessage = "importo massimo consentito: sei cifre intere e due decimali.";
-                }
-
-                productRetrieve(daoFactory, sessionDAOFactory, request);
-
-                daoFactory.commitTransaction();
-                sessionDAOFactory.commitTransaction();
-
-                request.setAttribute("loggedOn",loggedUser!=null);
-                request.setAttribute("loggedUser", loggedUser);
-                request.setAttribute("applicationMessage", applicationMessage);
-                request.setAttribute("viewUrl", "adminManagement/productManagement");
-
-            } catch (Exception e) {
-                logger.log(Level.SEVERE, "Controller Error", e);
-                try {
-                    if (daoFactory != null) daoFactory.rollbackTransaction();
-                    if (sessionDAOFactory != null) sessionDAOFactory.rollbackTransaction();
-                } catch (Throwable t) {
-                }
-                throw new RuntimeException(e);
-
-            } finally {
-                try {
-                    if (daoFactory != null) daoFactory.closeTransaction();
-                    if (sessionDAOFactory != null) sessionDAOFactory.closeTransaction();
-                } catch (Throwable t) {
-                }
+            } catch (DuplicatedObjectException e) {
+                applicationMessage = "Vino già esistente";
+                logger.log(Level.INFO, "Tentativo di inserimento di vino già esistente");
+            } catch (DataTruncationException e) {
+                applicationMessage = "importo massimo consentito: sei cifre intere e due decimali.";
             }
 
+            productRetrieve(daoFactory, sessionDAOFactory, request);
+
+            daoFactory.commitTransaction();
+            sessionDAOFactory.commitTransaction();
+
+            request.setAttribute("loggedOn",loggedUser!=null);
+            request.setAttribute("loggedUser", loggedUser);
+            request.setAttribute("applicationMessage", applicationMessage);
+            request.setAttribute("viewUrl", "adminManagement/productManagement");
+
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "Controller Error", e);
+            try {
+                if (daoFactory != null) daoFactory.rollbackTransaction();
+                if (sessionDAOFactory != null) sessionDAOFactory.rollbackTransaction();
+            } catch (Throwable t) {
+            }
+            throw new RuntimeException(e);
+
+        } finally {
+            try {
+                if (daoFactory != null) daoFactory.closeTransaction();
+                if (sessionDAOFactory != null) sessionDAOFactory.closeTransaction();
+            } catch (Throwable t) {
+            }
         }
-*/
+
+    }
+
     public static void modifyView(HttpServletRequest request, HttpServletResponse response) {
 
         DAOFactory sessionDAOFactory=null;

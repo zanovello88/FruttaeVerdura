@@ -17,7 +17,7 @@ public interface ProdottoDAO {
             int quantita_disponibile,
             String categoria,
             //boolean deleted_prod,
-            boolean blocked_prod,
+            //boolean blocked_prod,
             String img_path
     )throws DuplicatedObjectException, DataTruncationException;
     public void updateAvalaibility(Long id_prod, int quantita_disponibile);

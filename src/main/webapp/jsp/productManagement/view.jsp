@@ -108,7 +108,8 @@
              display: flex;
              justify-content: center; /* Centra la barra di ricerca */
              background-color: #ccc;
-             padding: 10px;
+             padding-top: 10px;
+             padding-bottom: 10px;
          }
 
         /* Stile per il form di ricerca */
