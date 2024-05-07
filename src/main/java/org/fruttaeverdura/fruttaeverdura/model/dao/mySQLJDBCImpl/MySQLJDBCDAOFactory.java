@@ -75,10 +75,7 @@ public class MySQLJDBCDAOFactory extends DAOFactory {
     public OrdineDAO getOrdineDAO() { return new OrdineDAOMySQLJDBCImpl(connection); }
 
     @Override
-    public cartitemDAO getcartitemDAO() { return new cartitemDAOMySQLJDBCImpl(connection); }
-
-    @Override
-    public CarrelloDAO getCarrelloDAO() { return new CarrelloDAOMySQLJDBCImpl(connection); }
+    public CartDAO getCartDAO() { return new CartDAOMySQLJDBCImpl(connection); }
     @Override
     public ShowcaseDAO getShowcaseDAO() { return new ShowcaseDAOMySQLJDBCImpl(connection); }
 }

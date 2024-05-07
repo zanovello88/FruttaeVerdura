@@ -17,14 +17,19 @@ public class Utente {
 
     /*1:N*/
     private Ordine[] ordini;
-    private Carrello carrello;
+    private Cart[] carts;
 
     public String getUsername() {return username;}
     public void setUsername(String username) {this.username = username;}
     public Ordine getordini(int index) {return this.ordini[index];}
     public void setordini(int index, Ordine ordini){this.ordini[index]=ordini;}
-    public Carrello getcarrello() {return carrello;}
-    public void setcarrello(Carrello carrello){this.carrello=carrello;}
+    public Cart[] getCarts() { return carts; }
+
+    public void setCarts(Cart[] carts) {this.carts = carts; }
+
+    public Cart getCarts(int index) { return this.carts[index]; }
+
+    public void setCarts(int index, Cart carts) {this.carts[index] = carts; }
     public Long getid_utente() {return id_utente;}
     public void setid_utente(Long id_utente){this.id_utente=id_utente;}
     public String getemail() {return email;}

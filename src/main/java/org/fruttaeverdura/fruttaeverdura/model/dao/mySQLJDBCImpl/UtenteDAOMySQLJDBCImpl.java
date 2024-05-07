@@ -6,14 +6,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.lang.Object;
 
-import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DataTruncationException;
 import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DuplicatedObjectException;
-import org.fruttaeverdura.fruttaeverdura.model.dao.CarrelloDAO;
 import org.fruttaeverdura.fruttaeverdura.model.mo.Utente;
 import org.fruttaeverdura.fruttaeverdura.model.dao.UtenteDAO;
-import org.fruttaeverdura.fruttaeverdura.model.dao.ProdottoDAO;
 
 public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
     Connection conn;

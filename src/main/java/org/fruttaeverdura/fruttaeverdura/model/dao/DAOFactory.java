@@ -2,8 +2,6 @@ package org.fruttaeverdura.fruttaeverdura.model.dao;
 
 import org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl.MySQLJDBCDAOFactory;
 import org.fruttaeverdura.fruttaeverdura.model.dao.CookieImpl.CookieDAOFactory;
-import org.fruttaeverdura.fruttaeverdura.model.mo.Carrello;
-import org.fruttaeverdura.fruttaeverdura.model.mo.Pagamento;
 
 import java.util.Map;
 
@@ -22,8 +20,7 @@ public abstract class DAOFactory {
     public abstract ProdottoDAO getProdottoDAO();
     public abstract PagamentoDAO getPagamentoDAO();
     public abstract OrdineDAO getOrdineDAO();
-    public abstract cartitemDAO getcartitemDAO();
-    public abstract CarrelloDAO getCarrelloDAO();
+    public abstract CartDAO getCartDAO();
     public abstract ShowcaseDAO getShowcaseDAO();
 
     public static DAOFactory getDAOFactory(String whichFactory, Map factoryParameters) {

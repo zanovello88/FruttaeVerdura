@@ -63,14 +63,10 @@ public class CookieDAOFactory extends DAOFactory {
     }
 
     @Override
-    public cartitemDAO getcartitemDAO() {
+    public CartDAO getCartDAO() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
-    public CarrelloDAO getCarrelloDAO() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
     @Override
     public ShowcaseDAO getShowcaseDAO() {
         throw new UnsupportedOperationException("Not supported yet.");

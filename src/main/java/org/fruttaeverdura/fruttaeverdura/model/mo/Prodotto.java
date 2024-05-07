@@ -14,11 +14,16 @@ public class Prodotto {
     private boolean blocked_prod;
     private String img_path;
 
-    /*M:N*/
-    private Carrello[] carrelli;
+    /*1:N*/
+    private Cart[] carts;
 
-    public Carrello getcarrelli(int index) {return this.carrelli[index];}
-    public void setcarrelli(int index, Carrello carrelli){this.carrelli[index]=carrelli;}
+    public Cart[] getCarts() { return carts; }
+
+    public void setCarts(Cart[] carts) {this.carts = carts; }
+
+    public Cart getCarts(int index) { return this.carts[index]; }
+
+    public void setCarts(int index, Cart carts) {this.carts[index] = carts; }
     public Long getid_prod() {return id_prod;}
     public void setid_prod(Long id_prod){this.id_prod=id_prod;}
     public String getnome_prod() {return nome_prod;}
