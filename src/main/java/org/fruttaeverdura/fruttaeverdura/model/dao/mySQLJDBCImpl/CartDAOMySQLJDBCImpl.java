@@ -90,7 +90,7 @@ public class CartDAOMySQLJDBCImpl implements CartDAO {
                     + "     quantity,"
                     + "     deleted "
                     + "   ) "
-                    + " VALUES (?,?,1,'N')";
+                    + " VALUES (?,?,1,'0')";
 
             ps = conn.prepareStatement(sql);
             i = 1;

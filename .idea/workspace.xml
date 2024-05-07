@@ -9,27 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio modifica home view">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/CartManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CartDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/CartDAOMySQLJDBCImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="eliminazione di mo e dao Carrello e cartitem, creazione mo e dao di Cart">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/cartManagement/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/29366bc1-6a03-4b5e-8619-2909b71d1c47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/29366bc1-6a03-4b5e-8619-2909b71d1c47.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CarrelloDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CookieImpl/CookieDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CookieImpl/CookieDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/cartitemDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/CarrelloDAOMySQLJDBCImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/MySQLJDBCDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/MySQLJDBCDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/UtenteDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/UtenteDAOMySQLJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/cartitemDAOMySQLJDBCImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Carrello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Prodotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Prodotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Utente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Utente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/cartitem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/CartManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/CartManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/CartDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/CartDAOMySQLJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/productDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/productDetails.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +32,8 @@
       <list>
         <option value="Interface" />
         <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -264,15 +252,7 @@
       <workItem from="1714813957872" duration="132000" />
       <workItem from="1714983191402" duration="4864000" />
       <workItem from="1714997654945" duration="4565000" />
-      <workItem from="1715083792277" duration="3906000" />
-    </task>
-    <task id="LOCAL-00001" summary="added basic files">
-      <option name="closed" value="true" />
-      <created>1711483640627</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1711483640627</updated>
+      <workItem from="1715083792277" duration="5930000" />
     </task>
     <task id="LOCAL-00002" summary="prova github">
       <option name="closed" value="true" />
@@ -658,7 +638,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714988018882</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="eliminazione di mo e dao Carrello e cartitem, creazione mo e dao di Cart">
+      <option name="closed" value="true" />
+      <created>1715089227987</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1715089227988</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -676,7 +664,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="continuo sito, errore nel collegamento al db" />
     <MESSAGE value="correzione file UtenteDAOMySQLJDBCImpl.java" />
     <MESSAGE value="inizio view dei prodotti" />
     <MESSAGE value="inizio view dei prodotti v1" />
@@ -701,6 +688,7 @@
     <MESSAGE value="inizio pagina prodInsModView.jsp" />
     <MESSAGE value="sistemazione generale lato admin" />
     <MESSAGE value="fine gestione prodotti, sistemazione css vario" />
-    <option name="LAST_COMMIT_MESSAGE" value="fine gestione prodotti, sistemazione css vario" />
+    <MESSAGE value="eliminazione di mo e dao Carrello e cartitem, creazione mo e dao di Cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="eliminazione di mo e dao Carrello e cartitem, creazione mo e dao di Cart" />
   </component>
 </project>

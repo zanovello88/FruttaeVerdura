@@ -21,7 +21,7 @@
     </schema>
     <schema id="6" parent="1" name="ecommerce">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-05-07.12:45:12</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-07.13:55:22</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <table id="7" parent="6" name="cart">
@@ -66,8 +66,6 @@
     </column>
     <column id="16" parent="7" name="quantity">
       <DasType>bigint|0s</DasType>
-      <DefaultExpression>0</DefaultExpression>
-      <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="17" parent="7" name="deleted">

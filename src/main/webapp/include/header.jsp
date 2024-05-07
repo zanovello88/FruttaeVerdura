@@ -38,6 +38,9 @@
         </li>
         <%if (loggedOn) {%>
         <li><a href="javascript:logoutForm.submit()">Logout</a></li>
+        <li <%=menuActiveLink.equals("Carrello")?"class=\"active\"":""%>>
+            <a href="Dispatcher?controllerAction=CartManagement.view">Carrello</a>
+        </li>
         <%}%>
     </ul>
   </nav>

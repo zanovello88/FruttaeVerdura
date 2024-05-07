@@ -88,7 +88,7 @@ public class CartManagement {
             UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
             loggedUser = sessionUserDAO.findLoggedUser();
 
-            Long id_prod = Long.parseLong(request.getParameter("prod_id"));
+            Long id_prod = Long.parseLong(request.getParameter("id_prod"));
             String viewUrl = new String(request.getParameter("viewUrl"));
 
             ProdottoDAO prodottoDAO = daoFactory.getProdottoDAO();

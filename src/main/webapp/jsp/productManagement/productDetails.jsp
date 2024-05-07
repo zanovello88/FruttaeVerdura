@@ -30,7 +30,7 @@
 
         function productViewFunc(id_prod) {
             f = document.productView;
-            f.id_prod.value = wine_id;
+            f.id_prod.value = id_prod;
             f.requestSubmit();
         }
 
@@ -138,9 +138,9 @@
         </div>
 
     <form name="AddToCartForm" method="post" action="Dispatcher">
-        <input type="hidden" name="wine_id"/>
-        <input type="hidden" name="controllerAction" value="CartManagement.AddWine"/>
-        <input type="hidden" name="viewUrl" value="homeManagement/view"/>
+        <input type="hidden" name="id_prod"/>
+        <input type="hidden" name="controllerAction" value="CartManagement.AddProduct"/>
+        <input type="hidden" name="viewUrl" value="productManagement/view"/>
     </form>
 
     <form name="productView" method="post" action="Dispatcher">
