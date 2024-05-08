@@ -41,6 +41,9 @@
         <li <%=menuActiveLink.equals("Carrello")?"class=\"active\"":""%>>
             <a href="Dispatcher?controllerAction=CartManagement.view">Carrello</a>
         </li>
+        <li <%=menuActiveLink.equals("Ordine")?"class=\"active\"":""%>>
+            <a href="Dispatcher?controllerAction=OrderManagement.view">Ordine</a>
+        </li>
         <%}%>
     </ul>
   </nav>

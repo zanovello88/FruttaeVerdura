@@ -1,6 +1,8 @@
 package org.fruttaeverdura.fruttaeverdura.controller;
 
 import org.fruttaeverdura.fruttaeverdura.model.dao.*;
+import org.fruttaeverdura.fruttaeverdura.model.mo.Order;
+import org.fruttaeverdura.fruttaeverdura.model.mo.Prodotto;
 import org.fruttaeverdura.fruttaeverdura.model.mo.Utente;
 import org.fruttaeverdura.fruttaeverdura.services.config.Configuration;
 import org.fruttaeverdura.fruttaeverdura.services.logservice.LogService;
@@ -8,6 +10,9 @@ import org.fruttaeverdura.fruttaeverdura.services.logservice.LogService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+import java.sql.Timestamp;
+import java.text.ParseException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -257,7 +262,7 @@ public class UserManagement {
             }
         }
     }
-/*
+
     public static void orderModView(HttpServletRequest request, HttpServletResponse response) {
 
         DAOFactory sessionDAOFactory= null;
@@ -357,8 +362,6 @@ public class UserManagement {
         }
 
     }
-/*
-
     public static void changeStatus(HttpServletRequest request, HttpServletResponse response) {
 
         DAOFactory sessionDAOFactory= null;
@@ -385,9 +388,9 @@ public class UserManagement {
             String status = request.getParameter("status");
             singleOrderRetrieve(daoFactory, sessionDAOFactory, request);
 
-            OrdineDAO orderDAO = daoFactory.getOrdineDAO();
-            List<Ordine> order_tuples = (List<Ordine>)request.getAttribute("order_tuples");
-            orderDAO.updateStatus(order_tuples.get(0).getutente(), order_tuples.get(0).getTimestamp(), status);
+            OrderDAO orderDAO = daoFactory.getOrderDAO();
+            List<Order> order_tuples = (List<Order>)request.getAttribute("order_tuples");
+            orderDAO.updateStatus(order_tuples.get(0).getUser(), order_tuples.get(0).getTimestamp(), status);
 
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
@@ -415,7 +418,7 @@ public class UserManagement {
         }
 
     }
-*/
+
     private static List<Utente> usersRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
 
         List<Utente> users;
@@ -434,7 +437,7 @@ public class UserManagement {
         request.setAttribute("users", users);
 
     }
- /*
+
     private static void singleOrderRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) throws ParseException {
 
         UtenteDAO userDAO = daoFactory.getUtenteDAO();
@@ -445,8 +448,8 @@ public class UserManagement {
 
         Timestamp order_timestamp = new java.sql.Timestamp(Long.parseLong(request.getParameter("order_date")));
 
-        OrdineDAO orderDAO = daoFactory.getOrdineDAO();
-        List<Ordine> order_tuples;
+        OrderDAO orderDAO = daoFactory.getOrderDAO();
+        List<Order> order_tuples;
         order_tuples = orderDAO.findBySingleOrder(user, order_timestamp);
         request.setAttribute("order_tuples", order_tuples);
 
@@ -456,19 +459,19 @@ public class UserManagement {
 
         int i = 0;
         for (i = 0; i < order_tuples.size(); i++) {
-            prod = prodDAO.findByProdId(order_tuples.get(i).getWine().getWineId());
-            wines.add(wine);
-            order_tuples.get(i).setWine(wine);
+            prod = prodDAO.findByProdId(order_tuples.get(i).getProduct().getid_prod());
+            products.add(prod);
+            order_tuples.get(i).setProduct(prod);
         }
     }
 
     private static void orderRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
 
 
-        UserDAO userDAO = daoFactory.getUserDAO();
-        UserDAO sessionUserDAO = sessionDAOFactory.getUserDAO();
+        UtenteDAO userDAO = daoFactory.getUtenteDAO();
+        UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
 
-        User user = userDAO.findByUserId(Long.parseLong(request.getParameter("user_id")));
+        Utente user = userDAO.findByUserId(Long.parseLong(request.getParameter("user_id")));
         request.setAttribute("user", user);
 
         OrderDAO orderDAO = daoFactory.getOrderDAO();
@@ -477,17 +480,15 @@ public class UserManagement {
         request.setAttribute("order_tuples", order_tuples);
 
         //test
-        WineDAO wineDAO = daoFactory.getWineDAO();
-        Wine wine = null;
-        ArrayList<Wine> wines = new ArrayList<Wine>() ;
+        ProdottoDAO prodottoDAO = daoFactory.getProdottoDAO();
+        Prodotto prodotto = null;
+        ArrayList<Prodotto> products = new ArrayList<Prodotto>() ;
 
         int i=0;
         for (i = 0; i < order_tuples.size(); i++) {
-            wine=wineDAO.findByWineId(order_tuples.get(i).getWine().getWineId());
-            wines.add(wine);
-            order_tuples.get(i).setWine(wine);
+            prodotto=prodottoDAO.findByProdId(order_tuples.get(i).getProduct().getid_prod());
+            products.add(prodotto);
+            order_tuples.get(i).setProduct(prodotto);
         }
     }
-
-     */
 }

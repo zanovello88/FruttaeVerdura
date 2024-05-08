@@ -236,8 +236,8 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
                     = " SELECT *"
                     + " FROM prodotto "
                     + " WHERE "
-                    + "id_prod = ? AND "
-                    + "deleted = '0'";
+                    + "Id_prod = ? AND "
+                    + "Deleted = '0'";
 
             ps = conn.prepareStatement(sql);
             ps.setLong(1, id_prod);
@@ -252,9 +252,9 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
             sql
                     = " UPDATE prodotto "
                     + " SET "
-                    + " quantita_disponibile = ? "
+                    + " Quantità_disp = ? "
                     + " WHERE "
-                    + " id_prod = ? ";
+                    + " Id_prod = ? ";
 
             int i = 1;
             ps = conn.prepareStatement(sql);
