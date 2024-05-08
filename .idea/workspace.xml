@@ -9,15 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="eliminazione di mo e dao Carrello e cartitem, creazione mo e dao di Cart">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/cartManagement/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/29366bc1-6a03-4b5e-8619-2909b71d1c47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/29366bc1-6a03-4b5e-8619-2909b71d1c47.xml" afterDir="false" />
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio carrello">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/CartManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/CartManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/CartDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/CartDAOMySQLJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/productDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/productDetails.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/cartManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/cartManagement/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,15 +248,8 @@
       <workItem from="1714813957872" duration="132000" />
       <workItem from="1714983191402" duration="4864000" />
       <workItem from="1714997654945" duration="4565000" />
-      <workItem from="1715083792277" duration="5930000" />
-    </task>
-    <task id="LOCAL-00002" summary="prova github">
-      <option name="closed" value="true" />
-      <created>1711718912225</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1711718912225</updated>
+      <workItem from="1715083792277" duration="6006000" />
+      <workItem from="1715152334632" duration="2617000" />
     </task>
     <task id="LOCAL-00003" summary="prova github">
       <option name="closed" value="true" />
@@ -646,7 +635,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715089227988</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="inizio carrello">
+      <option name="closed" value="true" />
+      <created>1715091074843</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1715091074843</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +661,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="correzione file UtenteDAOMySQLJDBCImpl.java" />
     <MESSAGE value="inizio view dei prodotti" />
     <MESSAGE value="inizio view dei prodotti v1" />
     <MESSAGE value="inizio view dei prodotti v2" />
@@ -689,6 +685,7 @@
     <MESSAGE value="sistemazione generale lato admin" />
     <MESSAGE value="fine gestione prodotti, sistemazione css vario" />
     <MESSAGE value="eliminazione di mo e dao Carrello e cartitem, creazione mo e dao di Cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="eliminazione di mo e dao Carrello e cartitem, creazione mo e dao di Cart" />
+    <MESSAGE value="inizio carrello" />
+    <option name="LAST_COMMIT_MESSAGE" value="inizio carrello" />
   </component>
 </project>

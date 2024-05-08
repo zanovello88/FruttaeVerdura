@@ -61,44 +61,149 @@
 
         function mainOnLoadHandler() {}
     </script>
+    <style>
+        /* Stile generale per il contenitore principale del carrello */
+        .cart-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Stile per l'intestazione del carrello */
+        .cart-header {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Stile per ciascun elemento del carrello */
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        /* Stile per l'immagine del prodotto nel carrello */
+        .cart-item img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        /* Stile per i dettagli del prodotto nel carrello */
+        .cart-item-details {
+            flex: 1;
+        }
+
+        /* Stile per le azioni (rimuovi, aggiungi, sottrai) del prodotto nel carrello */
+        .cart-item-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Stile per il prezzo del prodotto nel carrello */
+        .cart-item-price p {
+            font-weight: bold;
+        }
+
+        /* Stile per il totale del carrello */
+        .cart-total {
+            margin-top: 20px;
+        }
+
+        /* Stile per la sezione dei dettagli totali */
+        .total-details {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        /* Stile per ciascuna riga di dettagli totali */
+        .total-row {
+            flex: 1;
+            text-align: right;
+        }
+
+        /* Stile per i pulsanti del carrello */
+        .cart-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Stile per il pulsante "Procedi al pagamento" */
+        .cart-buttons button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        /* Stile per il link "Svuota il carrello" */
+        .cart-buttons a {
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        /* Effetto hover per il link "Svuota il carrello" */
+        .cart-buttons a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+
+    </style>
 </head>
-<body  class="bg-gray-500">
-<%@include file="/include/header.jsp"%>
-<main>
+<%@ include file="/include/header.jsp" %>
+<main class="cart-container">
     <div>
-        <div>
-            <p>Carrello</p>
+        <div class="cart-header">
+            <h2>Carrello</h2>
         </div>
-        <div>
-            <%for (i = 0; i < carts.size(); i++) {%>
-            <div>
+        <div style="text-align: center">
+            <h5>Le quantità relative a frutta e verdura sono a kg (1=1kg),<br> mentre il resto dei prodotti sono venduti all'uno</h5><br><br>
+        </div>
+        <div class="cart-items">
+            <% for (i = 0; i < carts.size(); i++) { %>
+            <div class="cart-item">
                 <section>
-                    <%--                          <div class="order-1 m-4 w-1/6">--%>
-                    <%--                              <img src="<%=carts.get(i).getWine().getProductImage()%>" class="rounded" alt="stock wine image">--%>
-                    <%--                          </div>--%>
                     <a href="#">
-                        <img src="<%=carts.get(i).getProdotto().getimg_path()%>" alt="stock wine image">
+                        <img src="<%= carts.get(i).getProdotto().getimg_path() %>" alt="Immagine prodotto">
                     </a>
-                    <div>
+                    <div class="cart-item-details">
                         <div>
-                            <div>
-                                <p><%=carts.get(i).getProdotto().getnome_prod()%> <span>(<%=carts.get(i).getProdotto().getprezzo()%> &euro;)</span></p>
-                            </div>
-                            <div>
-                                <a href="javascript:RemoveFromCart(<%=carts.get(i).getProdotto().getid_prod()%>)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17 11a1 1 0 010 2H7a1 1 0 010-2h10z"/></svg>
-                                </a>
-                                <p><%=carts.get(i).getQuantity()%></p>
-                                <a href="javascript:AddToCart(<%=carts.get(i).getProdotto().getid_prod()%>)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17 11a1 1 0 010 2h-4v4a1 1 0 01-2 0v-4H7a1 1 0 010-2h4V7a1 1 0 012 0v4h4z"/></svg>
-                                </a>
-                            </div>
+                            <p><%= carts.get(i).getProdotto().getnome_prod() %> <span>(<%= carts.get(i).getProdotto().getprezzo() %> &euro;)</span></p>
+                        </div>
+                        <div class="cart-item-actions">
+                            <a href="javascript:RemoveFromCart(<%=carts.get(i).getProdotto().getid_prod()%>)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17 11a1 1 0 010 2H7a1 1 0 010-2h10z"/></svg>
+                            </a>
+                            <p><%=carts.get(i).getQuantity()%></p>
+                            <a href="javascript:AddToCart(<%=carts.get(i).getProdotto().getid_prod()%>)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M17 11a1 1 0 010 2h-4v4a1 1 0 01-2 0v-4H7a1 1 0 010-2h4V7a1 1 0 012 0v4h4z"/></svg>
+                            </a>
                         </div>
                     </div>
                 </section>
                 <section>
-                    <div>
-                        <p><%=carts.get(i).getProdotto().getprezzo().multiply(new BigDecimal(carts.get(i).getQuantity()))%> &euro;</p>
+                    <div class="cart-item-price">
+                        <p><%= carts.get(i).getProdotto().getprezzo().multiply(new BigDecimal(carts.get(i).getQuantity())) %> &euro;</p>
                     </div>
                     <div>
                         <a href="javascript:RemoveBlockFromCart(<%=carts.get(i).getProdotto().getid_prod()%>)">
@@ -107,38 +212,40 @@
                     </div>
                 </section>
             </div>
-            <%}%>
+            <% } %>
         </div>
-        <%if(total_amount.compareTo(BigDecimal.ZERO) != 0) {%>
-        <div>
-            <div>
-                <div>
+        <% if(total_amount.compareTo(BigDecimal.ZERO) != 0) { %>
+        <div class="cart-total">
+            <div class="total-details">
+                <div class="total-row">
                     <p>Totale (IVA inclusa)</p>
-                    <p>Subtotale</p>
-                    <p>Spedizione (10% del totale)</p>
+                    <p><%= total_amount.setScale(2, RoundingMode.CEILING) %> &euro;</p>
                 </div>
-                <div>
-                    <p><%=total_amount.setScale(2, RoundingMode.CEILING)%> &euro;</p>
-                    <p><%=subtotal%> &euro;</p>
-                    <p><%=shipping.setScale(2, RoundingMode.CEILING)%> &euro;</p>
+                <div class="total-row">
+                    <p>Subtotale</p>
+                    <p><%= subtotal %> &euro;</p>
+                </div>
+                <div class="total-row">
+                    <p>Spedizione (10% del totale)</p>
+                    <p><%= shipping.setScale(2, RoundingMode.CEILING) %> &euro;</p>
                 </div>
             </div>
-            <div>
+            <div class="cart-buttons">
                 <button type="submit" form="CheckoutForm">
                     Procedi al pagamento
                 </button>
-                <a href="javascript: DeleteCart()" type="submit" form="">
+                <a href="javascript:DeleteCart()" type="submit" form="">
                     Svuota il carrello
                 </a>
             </div>
         </div>
-        <%} else {%>
+        <% } else { %>
         <div>
-            <p>Il carrello e' vuoto, prendi qualcosa</p>
+            <p>Il carrello è vuoto, prendi qualcosa</p>
         </div>
-        <%}%>
+        <% } %>
     </div>
-
+</main>
     <form name="productView" method="post" action="Dispatcher">
         <input type="hidden" name="id_prod"/>
         <input type="hidden" name="controllerAction" value="HomeManagement.productView"/>

@@ -10482,3 +10482,161 @@ mag 07, 2024 4:10:31 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher 
 INFO: CartManagement view
 mag 07, 2024 4:10:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
 INFO: CartManagement DeleteCart
+mag 08, 2024 9:15:38 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:15:38 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:15:40 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+mag 08, 2024 9:15:45 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+mag 08, 2024 9:15:46 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:16:15 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:16:15 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:16:16 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:16:21 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 08, 2024 9:16:23 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+mag 08, 2024 9:16:25 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+mag 08, 2024 9:16:27 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:23:21 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:23:21 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:23:23 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:23:28 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+mag 08, 2024 9:23:28 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+mag 08, 2024 9:23:33 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProduct
+mag 08, 2024 9:23:37 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProductBlock
+mag 08, 2024 9:26:47 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:26:47 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:26:49 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:26:51 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 08, 2024 9:26:52 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+mag 08, 2024 9:26:56 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+mag 08, 2024 9:26:57 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:27:23 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 08, 2024 9:27:25 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+mag 08, 2024 9:27:28 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+mag 08, 2024 9:27:29 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:28:54 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:28:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:28:55 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:29:34 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:29:34 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:29:36 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:32:44 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:32:44 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:32:46 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:33:27 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:33:27 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:33:29 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:33:57 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:33:57 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:33:59 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:38:56 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:38:56 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:38:58 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:51:38 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+mag 08, 2024 9:51:38 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+mag 08, 2024 9:51:46 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+mag 08, 2024 9:51:46 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+mag 08, 2024 9:53:13 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:53:13 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:53:15 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:53:52 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:53:52 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:53:55 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:54:22 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:54:22 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:54:23 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:54:53 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:54:53 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:54:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:57:03 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:57:03 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:57:29 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:57:43 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:57:43 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:57:45 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 9:59:00 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 9:59:00 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 9:59:01 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 10:00:44 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 10:00:44 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 10:00:45 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 10:01:10 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 10:01:10 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 10:01:12 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
