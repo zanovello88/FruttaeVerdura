@@ -14,15 +14,15 @@ public class Utente {
     private String admin;
     private String blocked;
     private String deleted;
+    private String card_n;
+    private Long cvc;
+    private String exp_date;
 
     /*1:N*/
-    private Ordine[] ordini;
     private Cart[] carts;
 
     public String getUsername() {return username;}
     public void setUsername(String username) {this.username = username;}
-    public Ordine getordini(int index) {return this.ordini[index];}
-    public void setordini(int index, Ordine ordini){this.ordini[index]=ordini;}
     public Cart[] getCarts() { return carts; }
 
     public void setCarts(Cart[] carts) {this.carts = carts; }
@@ -72,4 +72,15 @@ public class Utente {
     public void setDeleted(String deleted) {
         this.deleted = deleted;
     }
+    public String getCard_n() { return card_n; }
+
+    public void setCard_n(String card_n) { this.card_n = card_n;  }
+
+    public Long getCvc() { return cvc; }
+
+    public void setCvc(Long cvc) { this.cvc = cvc; }
+
+    public String getExp_date() { return exp_date; }
+
+    public void setExp_date(String exp_date) { this.exp_date = exp_date; }
 }

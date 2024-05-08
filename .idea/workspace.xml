@@ -9,10 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio carrello">
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="fine css carrello">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/OrderDAOMySQLJDBCImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/29366bc1-6a03-4b5e-8619-2909b71d1c47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/29366bc1-6a03-4b5e-8619-2909b71d1c47.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/UserManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/UserManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CookieImpl/CookieDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CookieImpl/CookieDAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CookieImpl/UtenteDAOCookieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CookieImpl/UtenteDAOCookieImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/OrdineDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/UtenteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/UtenteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/MySQLJDBCDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/MySQLJDBCDAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/OrdineDAOMySQLJDBCImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/UtenteDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/UtenteDAOMySQLJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Ordine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Pagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Pagamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Utente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Utente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/cartManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/cartManagement/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,10 +43,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -249,15 +266,7 @@
       <workItem from="1714983191402" duration="4864000" />
       <workItem from="1714997654945" duration="4565000" />
       <workItem from="1715083792277" duration="6006000" />
-      <workItem from="1715152334632" duration="2617000" />
-    </task>
-    <task id="LOCAL-00003" summary="prova github">
-      <option name="closed" value="true" />
-      <created>1711718999752</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1711718999752</updated>
+      <workItem from="1715152334632" duration="6425000" />
     </task>
     <task id="LOCAL-00004" summary="prova github">
       <option name="closed" value="true" />
@@ -643,7 +652,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715091074843</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="fine css carrello">
+      <option name="closed" value="true" />
+      <created>1715157051481</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1715157051481</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +678,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="inizio view dei prodotti" />
     <MESSAGE value="inizio view dei prodotti v1" />
     <MESSAGE value="inizio view dei prodotti v2" />
     <MESSAGE value="i prodotti si vedono ora non resta che implementarli" />
@@ -686,6 +702,7 @@
     <MESSAGE value="fine gestione prodotti, sistemazione css vario" />
     <MESSAGE value="eliminazione di mo e dao Carrello e cartitem, creazione mo e dao di Cart" />
     <MESSAGE value="inizio carrello" />
-    <option name="LAST_COMMIT_MESSAGE" value="inizio carrello" />
+    <MESSAGE value="fine css carrello" />
+    <option name="LAST_COMMIT_MESSAGE" value="fine css carrello" />
   </component>
 </project>

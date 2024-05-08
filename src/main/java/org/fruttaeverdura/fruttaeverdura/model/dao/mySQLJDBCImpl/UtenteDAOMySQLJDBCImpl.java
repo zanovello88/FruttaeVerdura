@@ -31,7 +31,10 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
             String citta,
             Long cap,
             String admin,
-            String blocked
+            String blocked,
+            String card_n,
+            Long cvc,
+            String exp_date
             /*boolean deleted*/) throws DuplicatedObjectException{
 
         PreparedStatement ps;
@@ -83,9 +86,12 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
                         + "     Città,"
                         + "     Blocked,"
                         + "     Cap,"
-                        + "     Username "
+                        + "     Username,"
+                        + "     card_n, "
+                        + "     cvc, "
+                        + "     exp_date, "
                         + "   ) "
-                        + " VALUES (?,?,?,?,'N','N','/','/','/','N',1, ?)";
+                        + " VALUES (?,?,?,?,'N','N','/','/','/','N',1, ?,'/','000','/')";
 
                 ps = conn.prepareStatement(sql);
                 i = 1;
@@ -426,6 +432,18 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
         }
         try {
             user.setUsername(rs.getString("Username"));
+        } catch (SQLException sqle) {
+        }
+        try {
+            user.setCard_n(rs.getString("card_n"));
+        } catch (SQLException sqle) {
+        }
+        try {
+            user.setCvc(rs.getLong("cvc"));
+        } catch (SQLException sqle) {
+        }
+        try {
+            user.setExp_date(rs.getString("exp_date"));
         } catch (SQLException sqle) {
         }
         return user;

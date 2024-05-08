@@ -10640,3 +10640,141 @@ mag 08, 2024 10:01:10 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher
 INFO: HomeManagement view
 mag 08, 2024 10:01:12 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
 INFO: CartManagement view
+mag 08, 2024 10:45:22 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 10:45:22 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 10:45:24 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 08, 2024 10:45:28 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 10:46:06 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+mag 08, 2024 10:46:06 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+mag 08, 2024 10:46:11 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProductBlock
+mag 08, 2024 10:46:17 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+mag 08, 2024 10:46:19 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+mag 08, 2024 10:46:33 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+mag 08, 2024 10:46:35 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 10:46:42 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 08, 2024 10:46:44 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+mag 08, 2024 10:46:49 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+mag 08, 2024 10:46:51 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 10:47:00 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+mag 08, 2024 10:47:00 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+mag 08, 2024 10:47:07 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement DeleteCart
+mag 08, 2024 10:49:14 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 10:49:14 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 10:49:16 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 10:50:38 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 10:50:38 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 10:50:39 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 10:50:43 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 08, 2024 10:50:46 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+mag 08, 2024 10:50:51 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+mag 08, 2024 10:50:52 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 10:51:31 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+mag 08, 2024 10:51:36 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+mag 08, 2024 10:51:40 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+mag 08, 2024 10:51:43 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 10:51:47 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+mag 08, 2024 10:51:48 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+mag 08, 2024 10:51:57 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+mag 08, 2024 10:51:58 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 10:52:03 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+mag 08, 2024 10:52:05 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+mag 08, 2024 10:52:10 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+mag 08, 2024 10:52:12 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 10:52:17 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement DeleteCart
+mag 08, 2024 11:12:26 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+mag 08, 2024 11:12:26 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 11:12:29 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+mag 08, 2024 11:12:31 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+mag 08, 2024 11:12:36 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+mag 08, 2024 11:12:39 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 08, 2024 11:12:41 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 11:12:44 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 08, 2024 11:12:46 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement view
+mag 08, 2024 11:12:50 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 08, 2024 11:12:51 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+mag 08, 2024 11:12:53 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 08, 2024 11:12:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+mag 08, 2024 11:12:58 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+mag 08, 2024 11:12:59 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+mag 08, 2024 11:13:02 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+mag 08, 2024 11:13:03 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+mag 08, 2024 11:13:08 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+mag 08, 2024 11:13:10 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 11:13:11 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+mag 08, 2024 11:13:12 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+mag 08, 2024 11:14:05 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+mag 08, 2024 11:14:07 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+mag 08, 2024 11:14:11 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+mag 08, 2024 11:14:14 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+mag 08, 2024 11:14:14 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+mag 08, 2024 11:14:27 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement DeleteCart
+mag 08, 2024 11:14:33 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout

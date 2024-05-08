@@ -19,7 +19,7 @@ public abstract class DAOFactory {
     public abstract UtenteDAO getUtenteDAO();
     public abstract ProdottoDAO getProdottoDAO();
     public abstract PagamentoDAO getPagamentoDAO();
-    public abstract OrdineDAO getOrdineDAO();
+    public abstract OrderDAO getOrderDAO();
     public abstract CartDAO getCartDAO();
     public abstract ShowcaseDAO getShowcaseDAO();
 

@@ -11,10 +11,7 @@ public class Pagamento {
     private String nome_carta;
 
     /*1:1*/
-    private Ordine ordine;
 
-    public Ordine getordine() {return ordine;}
-    public void setordine(Ordine ordine){this.ordine=ordine;}
     public Long getid_pagamento() {return id_pagamento;}
     public void setid_pagamento(Long id_pagamento){this.id_pagamento=id_pagamento;}
     public String getnumero_carta() {return numero_carta;}

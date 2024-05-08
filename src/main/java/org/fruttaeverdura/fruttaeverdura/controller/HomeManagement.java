@@ -10,7 +10,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 
 import org.fruttaeverdura.fruttaeverdura.model.dao.*;
-import org.fruttaeverdura.fruttaeverdura.model.mo.Ordine;
 import org.fruttaeverdura.fruttaeverdura.model.mo.Prodotto;
 import org.fruttaeverdura.fruttaeverdura.model.mo.Showcase;
 import org.fruttaeverdura.fruttaeverdura.services.config.Configuration;
@@ -137,7 +136,7 @@ public class HomeManagement {
                 applicationMessage = "Username e password errati!";
                 loggedUser=null;
             } else {
-                loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, user.getAdmin(), user.getBlocked());
+                loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, user.getAdmin(), user.getBlocked(), null, null,null);
             }
 
             daoFactory.commitTransaction();
@@ -290,7 +289,10 @@ public class HomeManagement {
                         "città",
                         null,
                         "Y",
-                        "N");
+                        "N",
+                        "numero_carta",
+                        null,
+                        "02/27");
 
                 applicationMessage = "Registrazione avvenuta con successo. Clicca su Login per effettuare l'accesso";
                 request.setAttribute("viewUrl", "homeManagement/view");

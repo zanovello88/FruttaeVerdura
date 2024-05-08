@@ -31,7 +31,10 @@ public class UtenteDAOCookieImpl implements UtenteDAO{
             String citta,
             Long cap,
             String admin,
-            String blocked
+            String blocked,
+            String card_n,
+            Long cvc,
+            String exp_date
             //boolean deleted
     ) {
 

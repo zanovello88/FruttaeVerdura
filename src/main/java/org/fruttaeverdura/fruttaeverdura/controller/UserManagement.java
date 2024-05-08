@@ -1,20 +1,13 @@
 package org.fruttaeverdura.fruttaeverdura.controller;
 
 import org.fruttaeverdura.fruttaeverdura.model.dao.*;
-import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DuplicatedObjectException;
-import org.fruttaeverdura.fruttaeverdura.model.mo.Ordine;
 import org.fruttaeverdura.fruttaeverdura.model.mo.Utente;
-import org.fruttaeverdura.fruttaeverdura.model.mo.Prodotto;
 import org.fruttaeverdura.fruttaeverdura.services.config.Configuration;
 import org.fruttaeverdura.fruttaeverdura.services.logservice.LogService;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.math.BigDecimal;
-import java.security.ProtectionDomain;
-import java.sql.Timestamp;
-import java.text.ParseException;
-import java.util.ArrayList;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

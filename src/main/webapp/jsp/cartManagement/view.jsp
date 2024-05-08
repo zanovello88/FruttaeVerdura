@@ -176,9 +176,11 @@
         <div class="cart-header">
             <h2>Carrello</h2>
         </div>
+        <% if(total_amount.compareTo(BigDecimal.ZERO) != 0) { %>
         <div style="text-align: center">
             <h5>Le quantità relative a frutta e verdura sono a kg (1=1kg),<br> mentre il resto dei prodotti sono venduti all'uno</h5><br><br>
         </div>
+        <% } %>
         <div class="cart-items">
             <% for (i = 0; i < carts.size(); i++) { %>
             <div class="cart-item">
@@ -240,7 +242,7 @@
             </div>
         </div>
         <% } else { %>
-        <div>
+        <div style="text-align: center">
             <p>Il carrello è vuoto, prendi qualcosa</p>
         </div>
         <% } %>
