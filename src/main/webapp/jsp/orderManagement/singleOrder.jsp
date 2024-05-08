@@ -109,7 +109,7 @@
 <main class="bg-gray-500">
     <div id="main-container">
         <div id="order-details">
-            <h1>Ordine del <%=dateFormatter.format(order_tuples.get(0).getTimestamp())%> alle: <%=timeFormatter.format(order_tuples.get(0).getTimestamp())%></h1>
+            <h1>Ordine del <%=dateFormatter.format(order_tuples.get(0).getTimestamp())%> alle <%=timeFormatter.format(order_tuples.get(0).getTimestamp())%></h1>
             <%for (i = 0; i < order_tuples.size(); i++) {%>
             <section class="order-item">
                 <h1 class="product-name"><%=order_tuples.get(i).getProduct().getnome_prod()%></h1>
