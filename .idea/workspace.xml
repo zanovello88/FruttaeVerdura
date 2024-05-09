@@ -9,10 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="fine del carrello, implementazione di checkout, order, singleOrder">
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="alle ora è senza :">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/orderManagement/singleOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/orderManagement/singleOrder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,15 +251,8 @@
       <workItem from="1715083792277" duration="6006000" />
       <workItem from="1715152334632" duration="6617000" />
       <workItem from="1715169495316" duration="9080000" />
-      <workItem from="1715198462296" duration="665000" />
-    </task>
-    <task id="LOCAL-00006" summary="creazione nuovi mo">
-      <option name="closed" value="true" />
-      <created>1711814299575</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1711814299575</updated>
+      <workItem from="1715198462296" duration="1013000" />
+      <workItem from="1715239779443" duration="7025000" />
     </task>
     <task id="LOCAL-00007" summary="scrittura mo utente&#10;creazione nuovi mo">
       <option name="closed" value="true" />
@@ -644,7 +638,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715179992918</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="alle ora è senza :">
+      <option name="closed" value="true" />
+      <created>1715199417966</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1715199417966</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +664,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="i prodotti si vedono ora non resta che implementarli" />
     <MESSAGE value="i prodotti si vedono ora non resta che implementarli, v2" />
     <MESSAGE value="inizio pagina di registrazione" />
     <MESSAGE value="fine creazione pagine di registrazione" />
@@ -687,6 +688,7 @@
     <MESSAGE value="fine css carrello" />
     <MESSAGE value="implementazione Order e inserimenti dati carta (pagamento) come attributi di Utente" />
     <MESSAGE value="fine del carrello, implementazione di checkout, order, singleOrder" />
-    <option name="LAST_COMMIT_MESSAGE" value="fine del carrello, implementazione di checkout, order, singleOrder" />
+    <MESSAGE value="alle ora è senza :" />
+    <option name="LAST_COMMIT_MESSAGE" value="alle ora è senza :" />
   </component>
 </project>
