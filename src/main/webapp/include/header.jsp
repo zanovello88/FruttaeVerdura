@@ -34,7 +34,7 @@
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #f9f9f9;
+        background-color: #186400;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -42,14 +42,14 @@
     }
 
     .dropdown-content a {
-        color: black;
+        color: #000000;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
     }
 
     .dropdown-content a:hover {
-        background-color: #f1f1f1;
+        background-color: #ffffff;
     }
 
     .dropdown:hover .dropdown-content {
@@ -58,10 +58,13 @@
     .dropbtn {
         padding: 10px 20px;  /* Aggiunge padding in alto e in basso, e aumenta il padding a destra */
         background-color: transparent;
-        color: #000000;
+        color: #ffffff;
         border: none;
         cursor: pointer;
         font-size: 28px; /* Aumenta la dimensione del font */
+    }
+    .dropbtn span {
+        font-size: 20px; /* Dimensione del font per il nome e cognome */
     }
 
 </style>
@@ -84,24 +87,31 @@
             <li <%=menuActiveLink.equals("Prodotti")?"class=\"active\"":""%>>
                 <a href="Dispatcher?controllerAction=ProductManagement.view">Prodotti</a>
             </li>
+            <% if (loggedOn) { %>
             <li <%=menuActiveLink.equals("Carrello")?"class=\"active\"":""%>>
                 <a href="Dispatcher?controllerAction=CartManagement.view">Carrello</a>
             </li>
+            <% } %>
         </ul>
     </nav>
 
     <% if (loggedOn) { %>
     <!-- Se l'utente è loggato, mostra il menu a tendina -->
     <li class="dropdown tendina">
-        <a href="#" class="dropbtn">&#9776;</a>
+        <a href="#" class="dropbtn">
+            <span class="name"><%=loggedUser.getNome()%> <%=loggedUser.getCognome()%></span> &#9776;
+        </a>
         <div class="dropdown-content">
+            <% if (loggedOn && loggedUser.getAdmin().equals("Y")) { %>
+            <a href="Dispatcher?controllerAction=AdminManagement.view">Amministrazione</a>
+            <% } %>
             <a href="Dispatcher?controllerAction=OrderManagement.view">Ordini</a>
             <a href="javascript:logoutForm.submit()">Logout</a>
         </div>
     </li>
     <% } %>
 
-    <!-- Se l'utente è loggato come amministratore, mostra il pulsante per l'amministrazione -->
+    <!-- Se l'utente è loggato come amministratore, mostra il pulsante per l'amministrazione
     <% if (loggedOn && loggedUser.getAdmin().equals("Y")) { %>
     <div style="text-align: right; padding: 20px;">
         <button style="background-color: #ffffff;
@@ -120,6 +130,7 @@
         </button>
     </div>
     <% } %>
+    -->
 
     <!-- Se l'utente non è loggato, mostra i pulsanti per l'accesso e la registrazione -->
     <% if (!loggedOn) { %>

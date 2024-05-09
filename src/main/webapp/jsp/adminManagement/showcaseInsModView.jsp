@@ -130,6 +130,31 @@
             height: 20px;
         }
 
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: calc(33.333% - 20px);
+            margin: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .product-info {
+            flex: 1; /* Occupa lo spazio rimanente */
+        }
+
+        .add-btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+
     </style>
     <script language="javascript">
 
@@ -161,11 +186,17 @@
     <div class="product-container">
         <%for (i = 0; i < products.size(); i++) {%>
         <div class="product">
-            <h2><%=products.get(i).getnome_prod()%></h2>
-            <p>Quantita' disponibile in magazzino: <%=products.get(i).getquantita_disponibile()%></p>
-            <button class="add-btn"><a href="javascript:insert(<%=products.get(i).getid_prod()%>)">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="heroicon-ui fill-current text-black" d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm1-9h2a1 1 0 010 2h-2v2a1 1 0 01-2 0v-2H9a1 1 0 010-2h2V9a1 1 0 012 0v2z"/></svg>
-                </a></button>
+            <div class="product-info">
+                <h2><%=products.get(i).getnome_prod()%></h2>
+                <p>Quantita' disponibile in magazzino: <%=products.get(i).getquantita_disponibile()%></p>
+            </div>
+            <div class="add-btn">
+                <a href="javascript:insert(<%=products.get(i).getid_prod()%>)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                        <path class="heroicon-ui fill-current text-black" d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm1-9h2a1 1 0 010 2h-2v2a1 1 0 01-2 0v-2H9a1 1 0 010-2h2V9a1 1 0 012 0v2z"/>
+                    </svg>
+                </a>
+            </div>
         </div>
         <%}%>
     </div>
