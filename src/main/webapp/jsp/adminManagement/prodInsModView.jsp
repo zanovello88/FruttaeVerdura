@@ -103,6 +103,22 @@
             display: block;
             font-weight: bold;
         }
+        /* Stile per il menu a tendina */
+        select {
+            width: calc(100% - 10px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #fff; /* Background bianco */
+            color: #333; /* Colore del testo */
+        }
+
+        /* Stile per le opzioni del menu a tendina */
+        select option {
+            background-color: #fff; /* Background bianco */
+            color: #333; /* Colore del testo */
+        }
 
         /* Stile per gli input */
         input[type="text"] {
@@ -174,16 +190,18 @@
                        required size="20" maxlength="50"/>
             </div>
             <div>
-                <label for="Categoria">Categoria</label>
-                <input type="text" id="Categoria" name="Categoria"
-                       value="<%= (action.equals("modify")) ? prodotto.getcategoria() : "" %>"
-                       required size="20" maxlength="50"/>
-            </div>
-            <div>
                 <label for="Descrizione">Descrizione</label>
                 <input type="text" id="Descrizione" name="Descrizione"
                        value="<%= (action.equals("modify")) ? prodotto.getdescrizione() : "" %>"
                        required size="20" maxlength="2048"/>
+            </div>
+            <div>
+                <label for="Categoria">Categoria</label>
+                <select id="Categoria" name="Categoria" required>
+                    <option value="frutta" <%=(action.equals("modify") && prodotto.getcategoria().equals("frutta")) ? "selected" : ""%>>Frutta</option>
+                    <option value="verdura" <%=(action.equals("modify") && prodotto.getcategoria().equals("verdura")) ? "selected" : ""%>>Verdura</option>
+                    <option value="altro" <%=(action.equals("modify") && prodotto.getcategoria().equals("altro")) ? "selected" : ""%>>Altro</option>
+                </select>
             </div>
             <div>
                 <input type="button" name="Invia" value="Invia" onclick="submitProduct()"/>

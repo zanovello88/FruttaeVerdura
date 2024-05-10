@@ -36,25 +36,21 @@
     <script language="javascript">
 
         function AddToCart(id_prod) {
-            alert("Aggiunto al carrello");
             document.AddToCartForm.id_prod.value = id_prod;
             document.AddToCartForm.requestSubmit();
         }
 
         function RemoveFromCart(id_prod) {
-            alert("Rimosso dal carrello");
             document.RemoveFromCartForm.id_prod.value = id_prod;
             document.RemoveFromCartForm.requestSubmit();
         }
 
         function RemoveBlockFromCart(id_prod) {
-            alert("Rimosso dal carrello");
             document.RemoveBlockFromCartForm.id_prod.value = id_prod;
             document.RemoveBlockFromCartForm.requestSubmit();
         }
 
         function DeleteCart() {
-            alert("Carrello svuotato");
             document.DeleteCartForm.requestSubmit();
         }
 
