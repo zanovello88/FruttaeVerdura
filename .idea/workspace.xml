@@ -9,13 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="fine home, sistemazione css vario">
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="sistemazione css vario">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/UserProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/userProfile/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/prodInsModView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/adminManagement/prodInsModView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/cartManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/cartManagement/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/productManagement/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,15 +255,8 @@
       <workItem from="1715198462296" duration="1013000" />
       <workItem from="1715239779443" duration="7228000" />
       <workItem from="1715256749937" duration="7537000" />
-      <workItem from="1715327215564" duration="3318000" />
-    </task>
-    <task id="LOCAL-00009" summary="fine scrittura mo, con get / set delle relazioni">
-      <option name="closed" value="true" />
-      <created>1711841641014</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1711841641014</updated>
+      <workItem from="1715327215564" duration="3476000" />
+      <workItem from="1715355904266" duration="1148000" />
     </task>
     <task id="LOCAL-00010" summary="scrittura DAO, errori in CookieDAOFactory e MySQLJDBCDAOFactory">
       <option name="closed" value="true" />
@@ -650,7 +642,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715264298018</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="sistemazione css vario">
+      <option name="closed" value="true" />
+      <created>1715330691819</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1715330691819</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -668,7 +668,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fine creazione pagine di registrazione" />
     <MESSAGE value="fine creazione pagine di registrazione versione finale" />
     <MESSAGE value="creazione accesso come button" />
     <MESSAGE value="inizio vetrina home" />
@@ -693,6 +692,7 @@
     <MESSAGE value="alle ora è senza :" />
     <MESSAGE value="inizio sistemazio css home" />
     <MESSAGE value="fine home, sistemazione css vario" />
-    <option name="LAST_COMMIT_MESSAGE" value="fine home, sistemazione css vario" />
+    <MESSAGE value="sistemazione css vario" />
+    <option name="LAST_COMMIT_MESSAGE" value="sistemazione css vario" />
   </component>
 </project>
