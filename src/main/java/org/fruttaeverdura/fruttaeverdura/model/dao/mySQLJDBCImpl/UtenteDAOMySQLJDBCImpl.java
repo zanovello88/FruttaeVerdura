@@ -154,6 +154,9 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
                         + " Città = ? , "
                         + " CAP = ? , "
                         + " Username = ? ,"
+                        + " card_n = ? , "
+                        + " cvc = ? , "
+                        + " exp_date = ? "
                         + " WHERE "
                         + " Id_utente = ?";
 
@@ -167,6 +170,9 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
                 ps.setString(i++, user.getcitta());
                 ps.setLong(i++, user.getcap());
                 ps.setString(i++, user.getUsername());
+                ps.setString(i++, user.getCard_n());
+                ps.setLong(i++, user.getCvc());
+                ps.setString(i++, user.getExp_date());
                 ps.setLong(i++, user.getid_utente());
 
                 ps.executeUpdate();
@@ -410,9 +416,9 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
 
             String sql
                     = " UPDATE utente "
-                    + " SET card_n = null, "
-                    + " cvc = null, "
-                    + " exp_date = null "
+                    + " SET card_n = 'mancante', "
+                    + " cvc = 0, "
+                    + " exp_date = 'mancante' "
                     + " WHERE Id_utente = ? ";
 
             ps = conn.prepareStatement(sql);

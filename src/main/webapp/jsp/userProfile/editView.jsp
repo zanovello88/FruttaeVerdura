@@ -81,6 +81,13 @@
         button[type="submit"]:hover {
             background-color: #558f1e;
         }
+        button[name="backButton"] {
+            background-color: #f44336;
+        }
+
+        button[name="backButton"]:hover {
+            background-color: #d32f2f;
+        }
     </style>
 
     <script language="javascript">
@@ -92,6 +99,9 @@
 
             if(isNaN(EventTriggerValue))
                 alert("Il campo " + EventTriggerName + " richiede un numero");
+        }
+        function goback() {
+            document.backForm.requestSubmit();
         }
 
         function mainOnLoadHandler(){}
@@ -110,31 +120,31 @@
                             <p>Info Utente</p>
                         </div>
                         <div>
-                            <label for="username">Nome Utente</label>
-                            <input form="editProfileForm" id="username" name="username" type="text" placeholder="mario123"
+                            <label for="Username">Nome Utente</label>
+                            <input form="editProfileForm" id="Username" name="Username" type="text" placeholder="mario123"
                                    value="<%=(user.getUsername() != null) ? user.getUsername() : ""%>" maxlength="12" >
 
-                            <label for="password">Password</label>
-                            <input form="editProfileForm" id="password" name="password" type="password"
+                            <label for="Password">Password</label>
+                            <input form="editProfileForm" id="Password" name="Password" type="password"
                                    value="<%=(user.getPassword() != null) ? user.getPassword() : ""%>" maxlength="32" >
 
                             <div>
                                 <div>
-                                    <label for="name">Nome</label>
-                                    <input form="editProfileForm" id="name" name="name" type="text" placeholder="Mario"
+                                    <label for="Nome">Nome</label>
+                                    <input form="editProfileForm" id="Nome" name="Nome" type="text" placeholder="Mario"
                                            value="<%=(user.getNome() != null) ? user.getNome() : ""%>" maxlength="40" >
                                 </div>
                                 <div>
-                                    <label for="surname">Cognome</label>
-                                    <input form="editProfileForm" id="surname" name="surname" type="text" placeholder="Rossi"
+                                    <label for="Cognome">Cognome</label>
+                                    <input form="editProfileForm" id="Cognome" name="Cognome" type="text" placeholder="Rossi"
                                            value="<%=(user.getCognome() != null) ? user.getCognome() : ""%>" maxlength="40" >
                                 </div>
                             </div>
 
                             <div>
                                 <div>
-                                    <label for="email">Email</label>
-                                    <input form="editProfileForm" id="email" name="email" type="email" placeholder="mario.rossi@example.com"
+                                    <label for="Email">Email</label>
+                                    <input form="editProfileForm" id="Email" name="Email" type="email" placeholder="mario.rossi@example.com"
                                            value="<%=(user.getemail() != null) ? user.getemail() : ""%>" maxlength="40" >
                                 </div>
                             </div>
@@ -199,18 +209,18 @@
                             </p>
                         </button>
                         <div>
-                            <label for="street">Indirizzo</label>
-                            <input form="editProfileForm" id="street" name="street" type="text" placeholder="Via Rossi 1"
+                            <label for="Indirizzo">Indirizzo</label>
+                            <input form="editProfileForm" id="Indirizzo" name="Indirizzo" type="text" placeholder="Via Rossi 1"
                                    value="<%=(user.getindirizzo() != null) ? user.getindirizzo() : ""%>" maxlength="50" >
                             <div>
                                 <div>
-                                    <label for="cap">CAP</label>
-                                    <input form="editProfileForm" id="cap" name="cap" type="text" minlength="5" placeholder="12345"
+                                    <label for="CAP">CAP</label>
+                                    <input form="editProfileForm" id="CAP" name="CAP" type="text" minlength="5" placeholder="12345"
                                            value="<%=(user.getcap() != 0) ? user.getcap() : ""%>" maxlength="5" >
                                 </div>
                                 <div>
-                                    <label for="city">Città</label>
-                                    <input form="editProfileForm" id="city" name="city" type="text" placeholder="Roma"
+                                    <label for="Città">Città</label>
+                                    <input form="editProfileForm" id="Città" name="Città" type="text" placeholder="Roma"
                                            value="<%=(user.getcitta() != null) ? user.getcitta() : ""%>" maxlength="30" >
                                 </div>
                             </div>
@@ -222,6 +232,7 @@
     </section>
     <div>
         <button type="submit" form="editProfileForm">Conferma Modifiche</button>
+        <button type="submit" name="backButton" onclick="goback()">Annulla Modifiche</button>
     </div>
 
     <form name="editProfileForm" id="editProfileForm" action="Dispatcher" method="post">
@@ -235,9 +246,9 @@
     <form name="deleteSpedizione" id="deleteSpedizione" method="post" action="Dispatcher">
         <input type="hidden" name="controllerAction" value="UserProfile.deleteSpedizione"/>
     </form>
-    <%--<form name="backForm" method="post" action="Dispatcher">
+    <form name="backForm" method="post" action="Dispatcher">
         <input type="hidden" name="controllerAction" value="UserProfile.view"/>
-    </form>--%>
+    </form>
 
 </main>
 <%@include file="/include/footer.inc"%>

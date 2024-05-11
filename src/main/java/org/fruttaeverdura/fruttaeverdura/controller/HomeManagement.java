@@ -139,6 +139,14 @@ public class HomeManagement {
                 loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, user.getAdmin(), user.getBlocked(), null, null,null);
             }
 
+            if (user.getDeleted().equals("Y")) {
+                sessionUserDAO.delete(null);
+                applicationMessage = "Account eliminato!";
+                loggedUser=null;
+            } else {
+                loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, user.getAdmin(), user.getBlocked(), null, null,null);
+            }
+
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
 

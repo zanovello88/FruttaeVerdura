@@ -9,16 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="inizio implementazione UserProfile">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/userProfile/editView.jsp" afterDir="false" />
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="da finire editView.jsp controllare quando un utente viene eliminato">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/UserProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CookieImpl/UtenteDAOCookieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/CookieImpl/UtenteDAOCookieImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/UtenteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/UtenteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/controller/HomeManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/UtenteDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/UtenteDAOMySQLJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/userProfile/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/userProfile/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/userProfile/editView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/userProfile/editView.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,15 +258,8 @@
       <workItem from="1715256749937" duration="7537000" />
       <workItem from="1715327215564" duration="3476000" />
       <workItem from="1715355904266" duration="1427000" />
-      <workItem from="1715414939881" duration="7105000" />
-    </task>
-    <task id="LOCAL-00011" summary="correzione errori DAOFactory e MySQLJDBCDAOFactory">
-      <option name="closed" value="true" />
-      <created>1712063018372</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1712063018372</updated>
+      <workItem from="1715414939881" duration="7442000" />
+      <workItem from="1715432168784" duration="2241000" />
     </task>
     <task id="LOCAL-00012" summary="creazione UtenteDAOMySQLJDBCImpl">
       <option name="closed" value="true" />
@@ -655,7 +645,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715357322999</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="da finire editView.jsp controllare quando un utente viene eliminato">
+      <option name="closed" value="true" />
+      <created>1715422394940</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1715422394940</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +671,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creazione accesso come button" />
     <MESSAGE value="inizio vetrina home" />
     <MESSAGE value="inizio sezione di ricerca" />
     <MESSAGE value="fine sezione ricerca, inizio dettagli prodotto" />
@@ -698,6 +695,7 @@
     <MESSAGE value="fine home, sistemazione css vario" />
     <MESSAGE value="sistemazione css vario" />
     <MESSAGE value="inizio implementazione UserProfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="inizio implementazione UserProfile" />
+    <MESSAGE value="da finire editView.jsp controllare quando un utente viene eliminato" />
+    <option name="LAST_COMMIT_MESSAGE" value="da finire editView.jsp controllare quando un utente viene eliminato" />
   </component>
 </project>
