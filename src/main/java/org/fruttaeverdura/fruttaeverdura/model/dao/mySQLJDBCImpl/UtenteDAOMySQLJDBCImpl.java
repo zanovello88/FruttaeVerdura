@@ -146,29 +146,27 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
                 sql
                         = " UPDATE utente "
                         + " SET "
-                        + " Username = ? ,"
-                        + " Email = ? ,"
-                        + " Password = ? ,"
                         + " Nome = ? , "
                         + " Cognome = ? , "
+                        + " Email = ? ,"
+                        + " Password = ? ,"
                         + " Indirizzo = ? , "
-                        + " Stato = ? , "
-                        + " Citta = ? , "
-                        + " Cap = ? , "
+                        + " Città = ? , "
+                        + " CAP = ? , "
+                        + " Username = ? ,"
                         + " WHERE "
                         + " Id_utente = ?";
 
                 ps = conn.prepareStatement(sql);
                 i = 1;
-                ps.setString(i++, user.getUsername());
-                ps.setString(i++, user.getemail());
-                ps.setString(i++, user.getPassword());
                 ps.setString(i++, user.getNome());
                 ps.setString(i++, user.getCognome());
+                ps.setString(i++, user.getemail());
+                ps.setString(i++, user.getPassword());
                 ps.setString(i++, user.getindirizzo());
-                ps.setString(i++, user.getstato());
                 ps.setString(i++, user.getcitta());
                 ps.setLong(i++, user.getcap());
+                ps.setString(i++, user.getUsername());
                 ps.setLong(i++, user.getid_utente());
 
                 ps.executeUpdate();
@@ -378,6 +376,55 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
             throw new RuntimeException(e);
         }
     }
+    @Override
+    public void deleteSpedizione(Utente user) {
+
+        PreparedStatement ps;
+
+        try {
+
+            String sql
+                    = " UPDATE utente "
+                    + " SET Città = null, "
+                    + " CAP = null, "
+                    + " Indirizzo = null "
+                    + " WHERE Id_utente = ? ";
+
+            ps = conn.prepareStatement(sql);
+            ps.setLong(1, user.getid_utente());
+            ps.executeUpdate();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    @Override
+    public void deleteCarta(Utente user) {
+
+        PreparedStatement ps;
+
+        try {
+
+            String sql
+                    = " UPDATE utente "
+                    + " SET card_n = null, "
+                    + " cvc = null, "
+                    + " exp_date = null "
+                    + " WHERE Id_utente = ? ";
+
+            ps = conn.prepareStatement(sql);
+            ps.setLong(1, user.getid_utente());
+            ps.executeUpdate();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
     Utente read(ResultSet rs) {
 

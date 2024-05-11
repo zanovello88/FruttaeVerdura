@@ -35,52 +35,101 @@
         }
 
     </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: center
+        }
+
+        #main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #info-section {
+            text-align: center;
+        }
+
+        #info-section h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        #info-section p {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        #info-section span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #73ad21; /* Verde */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .product-link:hover {
+            background-color: #5f8c17; /* Verde più scuro al passaggio del mouse */
+        }
+        .product-link-r {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .product-link-r:hover {
+            background-color: #ad0000;
+        }
+
+    </style>
 </head>
-<body class="bg-gray-500">
+<body>
 <%@include file="/include/header.jsp"%>
-<main class="w-full bg-gray-500 ">
+<main>
     <%--USER DATA--%>
-    <div>
-        <div id="main-container" class="flex flex-row px-32">
-            <div id="info-section" class="w-1/2 pt-12 pb-6">
-                <h1 class="pt-3 flex items-center justify-between text-gray-900 font-bold text-2xl"><%=user.getNome()%></h1>
-                <p class="pt-3 text-gray-900 font-regular">
-                        <span class="font-medium text-lg">
-                            NomeUtente
-                        </span><%=user.getUsername()%>
-                </p>
-                <p class="pt-3 text-gray-900 font-regular">
-                       <span class="font-medium text-lg">
-                           Nome
-                       </span> <%=user.getNome()%>
-                </p>
-                <p class="pt-3 text-gray-900 font-regular">
-                        <span class="font-medium text-lg">
-                            Cognome
-                        </span><%=user.getCognome()%>
-                </p>
-                <%if(user.getemail() != null) {%>
-                <p class="pt-3 text-gray-900 font-regular">
-                        <span class="font-medium text-lg">
-                            Email
-                        </span><%=user.getemail()%>
-                </p>
-                <%}%>
-                <%--<%if(user.getPhone() != null) {%>
-                <p class="pt-3 text-gray-900 font-regular">
-                        <span class="font-medium text-lg">
-                            <%if (languageString.equals("ita")){%>Telefono<%}if (languageString.equals("eng")){ %>Phone<% }%>
-                        </span><%=user.getPhone()%>
-                </p>
-                <%}%>--%>
+        <div id="main-container">
+            <div id="info-section">
+                <h1><%=user.getNome()%></h1>
+                <p><span>Nome Utente:</span> <%=user.getUsername()%></p>
+                <p><span>Nome:</span> <%=user.getNome()%></p>
+                <p><span>Cognome:</span> <%=user.getCognome()%></p>
+                <% if(user.getemail() != null) { %>
+                <p><span>Email:</span> <%=user.getemail()%></p>
+                <% } %>
             </div>
         </div>
-    </div>
-    <div class="flex flex-row flex-no-wrap justify-center mx-4 px-4 mb-12">
-        <a class="bg-gray-700 hover:bg-gray-dark text-white font-bold px-4 py-2 ml-6 mt-6 rounded-full w-40" href="javascript:editProfileViewForm.requestSubmit()">
+    <div style="text-align: center">
+        <a href="javascript:editProfileViewForm.requestSubmit()" class="product-link">
             Modifica profilo
         </a>
-        <a class="bg-red-400 hover:bg-gray-dark text-white font-bold px-4 py-2 ml-6 mt-6 rounded-full w-28" href="javascript:deleteProfile()">
+        <a href="javascript:deleteProfile()" class="product-link-r">
             Cancella profilo
         </a>
     </div>

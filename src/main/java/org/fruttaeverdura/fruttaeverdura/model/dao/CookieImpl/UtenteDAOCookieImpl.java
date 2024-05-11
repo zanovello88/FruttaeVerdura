@@ -136,4 +136,13 @@ public class UtenteDAOCookieImpl implements UtenteDAO{
     public List<Utente> findAll() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+    @Override
+    public void deleteSpedizione(Utente user) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void deleteCarta(Utente user) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }

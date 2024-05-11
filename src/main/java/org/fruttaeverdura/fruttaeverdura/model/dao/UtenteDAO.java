@@ -38,7 +38,6 @@ public interface UtenteDAO {
     public Utente findByUserId(Long user_id);
     public void setAdminStatusOn(Utente user);
     public void setAdminStatusOff(Utente user);
-    /*public Utente findByUserId(Long id_utente);
-    public void setAdminStatusOn(User user);
-    public void setAdminStatusOff(User user);*/
+    public void deleteSpedizione(Utente user);
+    public void deleteCarta(Utente user);
 }

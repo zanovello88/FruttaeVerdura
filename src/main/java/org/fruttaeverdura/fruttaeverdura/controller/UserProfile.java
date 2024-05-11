@@ -69,14 +69,13 @@ public class UserProfile {
         }
 
     }
-/*
+
     public static void editProfileView(HttpServletRequest request, HttpServletResponse response) {
 
         DAOFactory sessionDAOFactory= null;
         DAOFactory daoFactory = null;
-        User loggedUser;
+        Utente loggedUser;
         String applicationMessage = null;
-        Language language;
 
         Logger logger = LogService.getApplicationLogger();
 
@@ -88,11 +87,8 @@ public class UserProfile {
             sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
             sessionDAOFactory.beginTransaction();
 
-            UserDAO sessionUserDAO = sessionDAOFactory.getUserDAO();
+            UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
             loggedUser = sessionUserDAO.findLoggedUser();
-
-            LanguageDAO sessionLanguageDAO = sessionDAOFactory.getLanguageDAO();
-            language = sessionLanguageDAO.findlanguage();
 
             daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
             daoFactory.beginTransaction();
@@ -102,7 +98,6 @@ public class UserProfile {
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
 
-            request.setAttribute("language",language);
             request.setAttribute("loggedOn",loggedUser!=null);
             request.setAttribute("loggedUser", loggedUser);
             request.setAttribute("applicationMessage", applicationMessage);
@@ -130,8 +125,7 @@ public class UserProfile {
         DAOFactory sessionDAOFactory= null;
         DAOFactory daoFactory = null;
         String applicationMessage = null;
-        User loggedUser;
-        Language language;
+        Utente loggedUser;
 
         Logger logger = LogService.getApplicationLogger();
 
@@ -143,41 +137,36 @@ public class UserProfile {
             sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
             sessionDAOFactory.beginTransaction();
 
-            UserDAO sessionUserDAO = sessionDAOFactory.getUserDAO();
+            UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
             loggedUser = sessionUserDAO.findLoggedUser();
-
-            LanguageDAO sessionLanguageDAO = sessionDAOFactory.getLanguageDAO();
-            language = sessionLanguageDAO.findlanguage();
 
             daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
             daoFactory.beginTransaction();
 
-            UserDAO userDAO = daoFactory.getUserDAO();
-            User user = userDAO.findByUserId(loggedUser.getUserId());
+            UtenteDAO userDAO = daoFactory.getUtenteDAO();
+            Utente user = userDAO.findByUserId(loggedUser.getid_utente());
 
             Long cap;
             Long cvc;
 
             try {
-                if (!request.getParameter("cap").isEmpty()){
-                    cap = Long.parseLong(request.getParameter("cap"));
-                    user.setCap(cap);
+                if (!request.getParameter("CAP").isEmpty()){
+                    cap = Long.parseLong(request.getParameter("CAP"));
+                    user.setcap(cap);
                 }
                 if (!request.getParameter("cvc").isEmpty()){
                     cvc = Long.parseLong(request.getParameter("cvc"));
                     user.setCvc(cvc);
                 }
 
-                user.setUsername(request.getParameter("username"));
-                user.setPassword(request.getParameter("password"));
-                user.setEmail(request.getParameter("email"));
-                user.setName(request.getParameter("name"));
-                user.setSurname(request.getParameter("surname"));
-                user.setPhone(request.getParameter("phone"));
-                user.setCity(request.getParameter("city"));
+                user.setNome(request.getParameter("Nome"));
+                user.setCognome(request.getParameter("Cognome"));
+                user.setemail(request.getParameter("Email"));
+                user.setPassword(request.getParameter("Password"));
+                user.setindirizzo(request.getParameter("Indirizzo"));
+                user.setcitta(request.getParameter("Città"));
                 //user.setCap(cap);
-                user.setStreet(request.getParameter("street"));
-                user.setCivic(request.getParameter("civic"));
+                user.setUsername(request.getParameter("Username"));
                 user.setCard_n(request.getParameter("card_n"));
                 //user.setCvc(cvc);
                 user.setExp_date(request.getParameter("exp_date"));
@@ -200,7 +189,6 @@ public class UserProfile {
             sessionDAOFactory.commitTransaction();
 
             userRetrieve(daoFactory, sessionDAOFactory, request);
-            request.setAttribute("language",language);
             request.setAttribute("loggedOn",loggedUser!=null);
             request.setAttribute("loggedUser", loggedUser);
             request.setAttribute("applicationMessage", applicationMessage);
@@ -228,8 +216,7 @@ public class UserProfile {
 
         DAOFactory sessionDAOFactory= null;
         DAOFactory daoFactory = null;
-        User oldUser;
-        Language language;
+        Utente oldUser;
 
         Logger logger = LogService.getApplicationLogger();
 
@@ -241,19 +228,16 @@ public class UserProfile {
             sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
             sessionDAOFactory.beginTransaction();
 
-            UserDAO sessionUserDAO = sessionDAOFactory.getUserDAO();
+            UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
             oldUser = sessionUserDAO.findLoggedUser();
             sessionUserDAO.delete(null);
-
-            LanguageDAO sessionLanguageDAO = sessionDAOFactory.getLanguageDAO();
-            language = sessionLanguageDAO.findlanguage();
 
             daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
             daoFactory.beginTransaction();
 
             userRetrieve(daoFactory, sessionDAOFactory, request);
 
-            UserDAO userDAO = daoFactory.getUserDAO();
+            UtenteDAO userDAO = daoFactory.getUtenteDAO();
 
             try{
                 userDAO.delete(oldUser);
@@ -262,8 +246,8 @@ public class UserProfile {
                 logger.log(Level.SEVERE, "DAO Error", e);
             }
 
-            wineRetrieve(daoFactory, sessionDAOFactory, request);
-            showcaseWineRetrieve(daoFactory, sessionDAOFactory, request);
+            productRetrieve(daoFactory, sessionDAOFactory, request);
+            showcaseProductRetrieve(daoFactory, sessionDAOFactory, request);
 
             int arrayPos;
             try {
@@ -276,7 +260,6 @@ public class UserProfile {
             sessionDAOFactory.commitTransaction();
 
             request.setAttribute("arrayPos", arrayPos);
-            request.setAttribute("language",language);
             request.setAttribute("loggedOn",false);
             request.setAttribute("loggedUser", null);
             request.setAttribute("viewUrl", "homeManagement/view");
@@ -304,9 +287,8 @@ public class UserProfile {
     public static void deleteCarta(HttpServletRequest request, HttpServletResponse response){
         DAOFactory sessionDAOFactory= null;
         DAOFactory daoFactory = null;
-        User loggedUser;
+        Utente loggedUser;
         String applicationMessage = null;
-        Language language;
 
         Logger logger = LogService.getApplicationLogger();
 
@@ -318,19 +300,16 @@ public class UserProfile {
             sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
             sessionDAOFactory.beginTransaction();
 
-            UserDAO sessionUserDAO = sessionDAOFactory.getUserDAO();
+            UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
             loggedUser = sessionUserDAO.findLoggedUser();
-
-            LanguageDAO sessionLanguageDAO = sessionDAOFactory.getLanguageDAO();
-            language = sessionLanguageDAO.findlanguage();
 
             daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
             daoFactory.beginTransaction();
 
             userRetrieve(daoFactory, sessionDAOFactory, request);
 
-            UserDAO userDAO = daoFactory.getUserDAO();
-            User user = userDAO.findByUserId(loggedUser.getUserId());
+            UtenteDAO userDAO = daoFactory.getUtenteDAO();
+            Utente user = userDAO.findByUserId(loggedUser.getid_utente());
 
             try {
                 userDAO.deleteCarta(user);
@@ -343,7 +322,6 @@ public class UserProfile {
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
 
-            request.setAttribute("language", language);
             request.setAttribute("loggedOn", loggedUser != null);
             request.setAttribute("loggedUser", loggedUser);
             request.setAttribute("applicationMessage", applicationMessage);
@@ -368,9 +346,8 @@ public class UserProfile {
     public static void deleteSpedizione(HttpServletRequest request, HttpServletResponse response){
         DAOFactory sessionDAOFactory= null;
         DAOFactory daoFactory = null;
-        User loggedUser;
+        Utente loggedUser;
         String applicationMessage = null;
-        Language language;
 
         Logger logger = LogService.getApplicationLogger();
 
@@ -382,19 +359,16 @@ public class UserProfile {
             sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
             sessionDAOFactory.beginTransaction();
 
-            UserDAO sessionUserDAO = sessionDAOFactory.getUserDAO();
+            UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
             loggedUser = sessionUserDAO.findLoggedUser();
-
-            LanguageDAO sessionLanguageDAO = sessionDAOFactory.getLanguageDAO();
-            language = sessionLanguageDAO.findlanguage();
 
             daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
             daoFactory.beginTransaction();
 
             userRetrieve(daoFactory, sessionDAOFactory, request);
 
-            UserDAO userDAO = daoFactory.getUserDAO();
-            User user = userDAO.findByUserId(loggedUser.getUserId());
+            UtenteDAO userDAO = daoFactory.getUtenteDAO();
+            Utente user = userDAO.findByUserId(loggedUser.getid_utente());
 
             try {
                 userDAO.deleteSpedizione(user);
@@ -407,7 +381,6 @@ public class UserProfile {
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
 
-            request.setAttribute("language", language);
             request.setAttribute("loggedOn", loggedUser != null);
             request.setAttribute("loggedUser", loggedUser);
             request.setAttribute("applicationMessage", applicationMessage);
@@ -429,12 +402,12 @@ public class UserProfile {
         }
     }
 
-    private static void wineRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
+    private static void productRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
 
-        WineDAO wineDAO = daoFactory.getWineDAO();
-        List<Wine> wines;
-        wines = wineDAO.findAll();
-        request.setAttribute("wines", wines);
+        ProdottoDAO prodottoDAO = daoFactory.getProdottoDAO();
+        List<Prodotto> products;
+        products = prodottoDAO.findAll();
+        request.setAttribute("products", products);
     }
 
     private static void showcaseRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
@@ -446,30 +419,30 @@ public class UserProfile {
 
     }
 
-    private static void showcaseWineRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
+    private static void showcaseProductRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
 
         showcaseRetrieve(daoFactory, sessionDAOFactory, request);
 
-        List<Wine> wines = new ArrayList<Wine>();
+        List<Prodotto> products = new ArrayList<Prodotto>();
 
         try {
             List<Showcase> showcases = (List<Showcase>)request.getAttribute("showcases");
-            WineDAO wineDAO = daoFactory.getWineDAO();
-            Wine wine;
+            ProdottoDAO prodottoDAO = daoFactory.getProdottoDAO();
+            Prodotto prodotto;
 
             for(int i = 0; i < showcases.size(); i++) {
 
-                wine = wineDAO.findByWineId(showcases.get(i).getWineId());
-                wines.add(wine);
+                prodotto = prodottoDAO.findByProdId(showcases.get(i).getId_prod());
+                products.add(prodotto);
             }
         } catch(Exception e) {  }
 
-        if(!wines.isEmpty()) {
-            request.setAttribute("showcase_wines", wines);
+        if(!products.isEmpty()) {
+            request.setAttribute("showcase_products", products);
         }
 
     }
-*/
+
     private static void userRetrieve (DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
 
         UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
