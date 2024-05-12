@@ -138,6 +138,7 @@
 <main>
     <div>
         <h1>Vetrina</h1>
+        <h4>Posso essere presenti solo 3 prodotti</h4>
     </div>
 
     <div class="form-container">

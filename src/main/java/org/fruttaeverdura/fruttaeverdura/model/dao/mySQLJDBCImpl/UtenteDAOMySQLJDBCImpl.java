@@ -35,15 +35,16 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
             String card_n,
             Long cvc,
             String exp_date
-            /*boolean deleted*/) throws DuplicatedObjectException{
+            /*boolean deleted*/) throws DuplicatedObjectException/*MysqlDataTruncation*/{
 
         PreparedStatement ps;
         Utente user = new Utente();
+        user.setUsername(username);
+        user.setPassword(password);
+        user.setemail(email);
         user.setNome(nome);
         user.setCognome(cognome);
-        user.setemail(email);
-        user.setPassword(password);
-        user.setUsername(username);
+
 
         try {
             //controllo se USERNAME esiste già in una tupla
@@ -70,11 +71,49 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
 
             resultSet.close();
             if(exist && deleted) {
-                throw new DuplicatedObjectException("UtenteDAOJDBCImpl.create: Tentativo di inserimento di un username già esistente.");
+                throw new DuplicatedObjectException("UserDAOJDBCImpl.create: Tentativo di inserimento di un username già esistente.");
             }
             else {
                 sql
                         = " INSERT INTO utente "
+                        + "     (Nome,"
+                        + "     Cognome,"
+                        + "     Email,"
+                        + "     Password,"
+                        + "     Admin,"
+                        + "     Deleted,"
+                        + "     Indirizzo,"
+                        + "     Stato,"
+                        + "     Città,"
+                        + "     Blocked,"
+                        + "     CAP,"
+                        + "     Username,"
+                        + "     card_n,"
+                        + "     cvc,"
+                        + "     exp_date "
+                        + "   ) "
+                        + " VALUES (?,?,?,?,'N','N','/','/','/','N',0,?,'mancante',0,'mancante')";
+
+                ps = conn.prepareStatement(sql);
+                i = 1;
+                ps.setString(i++, user.getNome());
+                ps.setString(i++, user.getCognome());
+                ps.setString(i++, user.getemail());
+                ps.setString(i++, user.getPassword());
+                ps.setString(i++, user.getUsername());
+
+                ps.executeUpdate();
+
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return user;
+    }
+
+
+    /*= " INSERT INTO utente "
                         + "     (Nome,"
                         + "     Cognome,"
                         + "     Email,"
@@ -91,25 +130,7 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
                         + "     cvc, "
                         + "     exp_date, "
                         + "   ) "
-                        + " VALUES (?,?,?,?,'N','N','/','/','/','N',1, ?,'/','000','/')";
-
-                ps = conn.prepareStatement(sql);
-                i = 1;
-                ps.setString(i++, user.getNome());
-                ps.setString(i++, user.getCognome());
-                ps.setString(i++, user.getemail());
-                ps.setString(i++, user.getPassword());
-                ps.setString(i++, user.getUsername());
-
-                ps.executeUpdate();
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-
-        return user;
-    }
-
+                        + " VALUES (?,?,?,?,'N','N','/','/','/','N',1, ?,'/','000','/')";*/
     @Override
     public void update(Utente user) throws DuplicatedObjectException {
 

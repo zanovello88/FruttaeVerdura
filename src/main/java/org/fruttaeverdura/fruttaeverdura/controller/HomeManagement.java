@@ -274,15 +274,22 @@ public class HomeManagement {
             daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
             daoFactory.beginTransaction();
 
+            productRetrieve(daoFactory, sessionDAOFactory, request);
+            showcaseProductRetrieve(daoFactory, sessionDAOFactory, request);
+
             Long user_id;
             try {
                 user_id = loggedUser.getid_utente();
             } catch (NullPointerException e) {
                 user_id = null;
             }
+            /*if(loggedUser != null) {
+                preferencesRetrieve(daoFactory, sessionDAOFactory, request, user_id);
+            }*/
 
             UtenteDAO userDAO = daoFactory.getUtenteDAO();
             Utente user;
+
             try {
 
                 user = userDAO.create(
@@ -292,15 +299,15 @@ public class HomeManagement {
                         request.getParameter("password"),
                         request.getParameter("nome"),
                         request.getParameter("cognome"),
-                        "via",
-                        "stato",
-                        "città",
                         null,
-                        "Y",
-                        "N",
-                        "numero_carta",
                         null,
-                        "02/27");
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null);
 
                 applicationMessage = "Registrazione avvenuta con successo. Clicca su Login per effettuare l'accesso";
                 request.setAttribute("viewUrl", "homeManagement/view");
@@ -341,6 +348,23 @@ public class HomeManagement {
         }
 
     }
+
+    /*user = userDAO.create(
+                        null,
+                        request.getParameter("username"),
+                        request.getParameter("email"),
+                        request.getParameter("password"),
+                        request.getParameter("nome"),
+                        request.getParameter("cognome"),
+                        "via",
+                        "stato",
+                        "città",
+                        null,
+                        "Y",
+                        "N",
+                        "numero_carta",
+                        null,
+                        "02/27");*/
     public static void productView(HttpServletRequest request, HttpServletResponse response) {
 
         DAOFactory sessionDAOFactory= null;
@@ -478,7 +502,7 @@ public class HomeManagement {
             daoFactory.beginTransaction();
 
             productRetrieve(daoFactory, sessionDAOFactory, request);
-            showcaseWineRetrieve(daoFactory, sessionDAOFactory, request);
+            showcaseProductRetrieve(daoFactory, sessionDAOFactory, request);
 
             /*List<Ordine> orders = new ArrayList<Ordine>();
             if(loggedUser != null && !"N".equals(loggedUser.getAdmin())) {
@@ -518,7 +542,7 @@ public class HomeManagement {
         }
 
     }
-    private static void showcaseWineRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
+    private static void showcaseProductRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
 
         showcaseRetrieve(daoFactory, sessionDAOFactory, request);
 

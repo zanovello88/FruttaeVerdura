@@ -102,6 +102,26 @@
             font-weight: bold;
             color: #2ecc71;
         }
+        .btn-container {
+            display: flex;
+            align-items: center; /* Centra verticalmente il pulsante */
+            margin-left: auto;
+        }
+
+        .btn {
+            padding: 10px 20px; /* Aumenta il padding */
+            font-size: 16px; /* Aumenta la dimensione del testo */
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
         /* Stile per il contenitore della barra di ricerca */
          .search-container {
              width: 100%;
@@ -209,20 +229,31 @@
         <h1>Lista Prodotti</h1>
         <%-- Iterate through the products and display them --%>
         <h2 id="frutta-title" style="text-align: center">Frutta</h2>
-        <%for(i = 0; i < products.size(); i++){%>
-        <%if (products.get(i).getcategoria().equals("frutta")) {%>
+        <% for(i = 0; i < products.size(); i++) { %>
+        <% if (products.get(i).getcategoria().equals("frutta")) { %>
         <div class="product">
-            <a href="javascript:productViewFunc(<%=products.get(i).getid_prod()%>)">
-                <img src=<%=products.get(i).getimg_path()%>  alt="<%=products.get(i).getnome_prod()%>">
+            <a href="javascript:productViewFunc(<%= products.get(i).getid_prod() %>)">
+                <img src="<%= products.get(i).getimg_path() %>" alt="<%= products.get(i).getnome_prod() %>">
                 <div class="product-details">
-                    <div class="product-name"><%=products.get(i).getnome_prod()%></div>
-                    <div class="product-sold"><%=products.get(i).getsede_acquisto()%></div>
-                    <div class="product-price"><%=products.get(i).getprezzo()%> €/kg</div>
+                    <div class="product-name"><%= products.get(i).getnome_prod() %></div>
+                    <div class="product-sold"><%= products.get(i).getsede_acquisto() %></div>
+                    <div class="product-price"><%= products.get(i).getprezzo() %> €/kg</div>
                 </div>
             </a>
+            <% if (loggedOn) { %>
+            <div class="btn-container">
+                <a class="btn" href="javascript:AddToCart(<%= products.get(i).getid_prod() %>)">
+                    Aggiungi al carrello
+                    <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                    </svg>
+                </a>
+            </div>
+            <% } %>
         </div>
-        <%}%>
-        <%}%>
+        <% } %>
+        <% } %>
+
         <h2 id="verdura-title" style="text-align: center">Verdura</h2>
         <%for(i = 0; i < products.size(); i++){%>
         <%if (products.get(i).getcategoria().equals("verdura")) {%>
@@ -235,6 +266,16 @@
                     <div class="product-price"><%=products.get(i).getprezzo()%> €/kg</div>
                 </div>
             </a>
+            <% if (loggedOn) { %>
+            <div class="btn-container">
+                <a class="btn" href="javascript:AddToCart(<%= products.get(i).getid_prod() %>)">
+                    Aggiungi al carrello
+                    <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                    </svg>
+                </a>
+            </div>
+            <% } %>
         </div>
         <%}%>
         <%}%>
@@ -250,15 +291,25 @@
                     <div class="product-price"><%=products.get(i).getprezzo()%> €</div>
                 </div>
             </a>
+            <% if (loggedOn) { %>
+            <div class="btn-container">
+                <a class="btn" href="javascript:AddToCart(<%= products.get(i).getid_prod() %>)">
+                    Aggiungi al carrello
+                    <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                    </svg>
+                </a>
+            </div>
+            <% } %>
         </div>
         <%}%>
         <%}%>
 
-    <form name="AddToCartForm" method="post" action="Dispatcher">
-        <input type="hidden" name="wine_id"/>
-        <input type="hidden" name="controllerAction" value="CartManagement.AddWine"/>
-        <input type="hidden" name="viewUrl" value="homeManagement/view"/>
-    </form>
+        <form name="AddToCartForm" method="post" action="Dispatcher">
+            <input type="hidden" name="id_prod"/>
+            <input type="hidden" name="controllerAction" value="CartManagement.AddProduct"/>
+            <input type="hidden" name="viewUrl" value="productManagement/view"/>
+        </form>
 
     <form name="productView" method="post" action="Dispatcher">
         <input type="hidden" name="id_prod"/>
