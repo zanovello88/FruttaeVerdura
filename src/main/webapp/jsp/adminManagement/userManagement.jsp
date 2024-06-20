@@ -152,7 +152,7 @@
             <div class="float-left flex flex-no-wrap justify-between items-center ">
                 <div class="flex flex-col flex-wrap justify-start items-start">
                     <div class="flex flex-row flex-no-wrap justify-center items-center">
-                        <a href="javascript:orderManagement(<%=users.get(i).getid_utente()%>)" class="pt-3 text-gray-900 font-bold pr-4"><%=users.get(i).getNome()%> <%=users.get(i).getCognome()%></a>
+                        <div style="color: #007bff"><%=users.get(i).getNome()%> <%=users.get(i).getCognome()%></div>
                         <%if(users.get(i).getAdmin().equals("Y")){%>
                         <p class="pt-3 text-green-600 font-bold ml-1">Amministratore</p>
                         <%}%>

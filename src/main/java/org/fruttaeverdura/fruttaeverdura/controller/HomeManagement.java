@@ -136,15 +136,14 @@ public class HomeManagement {
                 applicationMessage = "Username e password errati!";
                 loggedUser=null;
             } else {
-                loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, user.getAdmin(), user.getBlocked(), null, null,null);
-            }
-
-            if (user.getDeleted().equals("Y")) {
-                sessionUserDAO.delete(null);
-                applicationMessage = "Account eliminato!";
-                loggedUser=null;
-            } else {
-                loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, user.getAdmin(), user.getBlocked(), null, null,null);
+                if (user.getDeleted().equals("Y")) {
+                    sessionUserDAO.delete(null);
+                    applicationMessage = "Account eliminato!";
+                    loggedUser=null;
+                } else {
+                    loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, user.getAdmin(), user.getBlocked(), null, null,null);
+                }
+                //loggedUser = sessionUserDAO.create(user.getid_utente(), null,null, null, user.getNome(),user.getCognome(), null, null, null, null, user.getAdmin(), user.getBlocked(), null, null,null);
             }
 
             daoFactory.commitTransaction();
@@ -283,9 +282,6 @@ public class HomeManagement {
             } catch (NullPointerException e) {
                 user_id = null;
             }
-            /*if(loggedUser != null) {
-                preferencesRetrieve(daoFactory, sessionDAOFactory, request, user_id);
-            }*/
 
             UtenteDAO userDAO = daoFactory.getUtenteDAO();
             Utente user;
@@ -349,22 +345,6 @@ public class HomeManagement {
 
     }
 
-    /*user = userDAO.create(
-                        null,
-                        request.getParameter("username"),
-                        request.getParameter("email"),
-                        request.getParameter("password"),
-                        request.getParameter("nome"),
-                        request.getParameter("cognome"),
-                        "via",
-                        "stato",
-                        "città",
-                        null,
-                        "Y",
-                        "N",
-                        "numero_carta",
-                        null,
-                        "02/27");*/
     public static void productView(HttpServletRequest request, HttpServletResponse response) {
 
         DAOFactory sessionDAOFactory= null;
@@ -391,13 +371,6 @@ public class HomeManagement {
             ProdottoDAO prodDAO = daoFactory.getProdottoDAO();
             Prodotto prod = prodDAO.findByProdId(id_prod);
 
-            /*
-            List<Ordine> orders = new ArrayList<Ordine>();
-            if(loggedUser != null && !loggedUser.isAdmin()) {
-                OrdineDAO orderDAO = daoFactory.getOrdineDAO();
-                orders = orderDAO.findOrders(loggedUser);
-            }
-            */
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
 
@@ -503,12 +476,6 @@ public class HomeManagement {
 
             productRetrieve(daoFactory, sessionDAOFactory, request);
             showcaseProductRetrieve(daoFactory, sessionDAOFactory, request);
-
-            /*List<Ordine> orders = new ArrayList<Ordine>();
-            if(loggedUser != null && !"N".equals(loggedUser.getAdmin())) {
-                OrdineDAO orderDAO = daoFactory.getOrdineDAO();
-                orders = orderDAO.findOrders(loggedUser);
-            }*/
 
             int arrayPos;
             try {

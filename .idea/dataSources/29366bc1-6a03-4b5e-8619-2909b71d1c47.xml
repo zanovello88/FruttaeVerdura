@@ -21,7 +21,7 @@
     </schema>
     <schema id="6" parent="1" name="ecommerce">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-05-08.09:04:41</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-06-03.19:26:10</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <table id="7" parent="6" name="cart">
@@ -45,7 +45,7 @@
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="12" parent="7" name="cart_id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>36</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -103,7 +103,7 @@
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="23" parent="8" name="order_id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>10</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -177,7 +177,7 @@
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="37" parent="9" name="Id_prod">
-      <AutoIncrement>11</AutoIncrement>
+      <AutoIncrement>22</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -241,7 +241,7 @@
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="49" parent="10" name="idshowcase">
-      <AutoIncrement>5</AutoIncrement>
+      <AutoIncrement>11</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -278,7 +278,7 @@
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="56" parent="11" name="Id_utente">
-      <AutoIncrement>4</AutoIncrement>
+      <AutoIncrement>6</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
