@@ -18,7 +18,6 @@ public abstract class DAOFactory {
     /*Indicare per ogni mo creato*/
     public abstract UtenteDAO getUtenteDAO();
     public abstract ProdottoDAO getProdottoDAO();
-    public abstract PagamentoDAO getPagamentoDAO();
     public abstract OrderDAO getOrderDAO();
     public abstract CartDAO getCartDAO();
     public abstract ShowcaseDAO getShowcaseDAO();

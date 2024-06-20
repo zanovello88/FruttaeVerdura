@@ -69,9 +69,6 @@ public class MySQLJDBCDAOFactory extends DAOFactory {
     }
 
     @Override
-    public PagamentoDAO getPagamentoDAO() { return new PagamentoDAOMySQLJDBCImpl(connection); }
-
-    @Override
     public OrderDAO getOrderDAO() { return new OrderDAOMySQLJDBCImpl(connection); }
 
     @Override
