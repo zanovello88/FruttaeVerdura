@@ -113,9 +113,6 @@ public class CartManagement {
             cartRetrieve(daoFactory, sessionDAOFactory, request);
             showcaseProductRetrieve(daoFactory, sessionDAOFactory, request);
 
-            //utile solo se dopo aver aggiunto un prodotto dalla wishlist al carrelo si vuole rimanere nella wishlist/view
-            //wishlistRetrieve(daoFactory, sessionDAOFactory, request);
-
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
 

@@ -528,23 +528,13 @@ public class ProductManagement extends HttpServlet {
         return products;
 
     }
-/*
-        private static void categoryRetrieve(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
-
-            ProdottoDAO wineDAO = daoFactory.getProdottoDAO();
-            List<Prodotto> products;
-            products = wineDAO.filterByCategory(request.getParameter("category"));
-            request.setAttribute("wines", products);
-
-        }
-*/
-        private static void prodSearch(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
+    private static void prodSearch(DAOFactory daoFactory, DAOFactory sessionDAOFactory, HttpServletRequest request) {
 
             ProdottoDAO wineDAO = daoFactory.getProdottoDAO();
             List<Prodotto> products;
             products = wineDAO.findByName(request.getParameter("searchString"));
             request.setAttribute("products", products);
-        }
-
     }
+
+}
 

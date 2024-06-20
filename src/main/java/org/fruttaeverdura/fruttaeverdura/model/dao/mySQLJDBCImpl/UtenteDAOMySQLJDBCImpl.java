@@ -112,25 +112,6 @@ public class UtenteDAOMySQLJDBCImpl implements UtenteDAO {
         return user;
     }
 
-
-    /*= " INSERT INTO utente "
-                        + "     (Nome,"
-                        + "     Cognome,"
-                        + "     Email,"
-                        + "     Password,"
-                        + "     Admin,"
-                        + "     Deleted,"
-                        + "     Indirizzo,"
-                        + "     Stato,"
-                        + "     Città,"
-                        + "     Blocked,"
-                        + "     Cap,"
-                        + "     Username,"
-                        + "     card_n, "
-                        + "     cvc, "
-                        + "     exp_date, "
-                        + "   ) "
-                        + " VALUES (?,?,?,?,'N','N','/','/','/','N',1, ?,'/','000','/')";*/
     @Override
     public void update(Utente user) throws DuplicatedObjectException {
 

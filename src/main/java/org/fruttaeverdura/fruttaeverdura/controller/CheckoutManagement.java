@@ -114,29 +114,11 @@ public class CheckoutManagement {
             Date date = new Date();
             Timestamp ts = new Timestamp(date.getTime());
 
-            /*long coupon_id;
-            Coupon coupon = null;
-            CouponDAO couponDAO = daoFactory.getCouponDAO();
-
-            try {
-                coupon_id = Long.parseLong(request.getParameter("coupon_id"));
-                coupon = couponDAO.findByCouponId(coupon_id);
-
-            } catch (NumberFormatException e) { }
-
-            BigDecimal total_amount = (BigDecimal) request.getAttribute("total_amount");
-            if (coupon!=null) {
-
-                double discount = (double)coupon.getDiscount();
-                discount = discount/100;
-                total_amount = total_amount.subtract(total_amount.multiply(new BigDecimal(discount)));
-            }*/
             BigDecimal total_amount = (BigDecimal) request.getAttribute("total_amount");
 
 
             String status = "Processamento ordine";
 
-            //PreferenceDAO preferenceDAO = daoFactory.getPreferenceDAO();
             ProdottoDAO prodottoDAO = daoFactory.getProdottoDAO();
 
             for (int i = 0; i < carts.size(); i++) {
@@ -156,21 +138,6 @@ public class CheckoutManagement {
                 //sottraggo dal db la quantita' di prodotti acquistati
                 prodottoDAO.updateAvalaibility(carts.get(i).getProdotto().getid_prod(), (int) quantity);
 
-                //aggiorno le preferenze dell'utente
-                //Preference preference = preferenceDAO.findByUserCategory(user_id, carts.get(i).getWine().getCategory());
-
-                /*if(preference == null) {
-                    //se l'utente non ha ancora acquistato vini di una specifica tipologia, creo una tupla nella tabella
-                    preferenceDAO.create(
-                            current_user.getUserId(),
-                            carts.get(i).getWine().getCategory(),
-                            carts.get(i).getQuantity());
-                } else {
-
-                    //altrimenti aggiorno una tupla gia' esistente
-                    preference.setTimes(preference.getTimes() + quantity);
-                    preferenceDAO.update(preference);
-                }*/
             }
 
             //svuoto il carrello
