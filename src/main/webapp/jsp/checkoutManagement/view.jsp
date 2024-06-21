@@ -29,11 +29,6 @@
     BigDecimal shipping = (BigDecimal) request.getAttribute("shipping");
     BigDecimal total_discounted = BigDecimal.ZERO;
 
-    /*try{
-        coupon = (Coupon)request.getAttribute("coupon"); //da passare al controller del checkout al momento dell'acquisto per effettuare lo sconto
-        total_discounted = (BigDecimal)request.getAttribute("total_discounted"); //per motivazioni grafiche, necessario a visualizzare il nuovo prezzo dopo l'applicazione del coupon
-    }
-    catch(NullPointerException e) { }*/
 %>
 
 <!DOCTYPE html><html>
@@ -42,14 +37,6 @@
         var now = Date.now();
         var NowDate = new Date(now);
 
-        /*function ApplyCoupon() {
-            if (document.getElementById("coupon_input").value=="")
-                alert("Coupon non inserito")
-            else {
-                document.CouponApplyForm.coupon_name.value = document.getElementById("coupon_input").value;
-                document.CouponApplyForm.requestSubmit();
-            }
-        }*/
         function StaticFormCheck(){
             var card_number =  document.CompleteOrderForm.card_n.value;
             var cvc = document.CompleteOrderForm.cvc.value;

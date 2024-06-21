@@ -9,12 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="fine provvisoria, sistemazione piccoli accorgimenti finali">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/PagamentoDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/MySQLJDBCDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/MySQLJDBCDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/dao/mySQLJDBCImpl/PagamentoDAOMySQLJDBCImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fruttaeverdura/fruttaeverdura/model/mo/Pagamento.java" beforeDir="false" />
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="fine provvisoria, pt3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,23 +265,9 @@
       <workItem from="1717419344258" duration="1293000" />
       <workItem from="1717442660212" duration="132000" />
       <workItem from="1717664917295" duration="280000" />
-      <workItem from="1718866477461" duration="2021000" />
-    </task>
-    <task id="LOCAL-00014" summary="creazione CARTELLA services">
-      <option name="closed" value="true" />
-      <created>1712135829721</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1712135829721</updated>
-    </task>
-    <task id="LOCAL-00015" summary="sistemazione cartelle">
-      <option name="closed" value="true" />
-      <created>1712136330966</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1712136330966</updated>
+      <workItem from="1718866477461" duration="3505000" />
+      <workItem from="1718959959809" duration="618000" />
+      <workItem from="1719000811864" duration="2146000" />
     </task>
     <task id="LOCAL-00016" summary="creazione prime pagine jsp e html nella cartella webapp">
       <option name="closed" value="true" />
@@ -661,7 +645,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718868250386</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="fine provvisoria, pt2">
+      <option name="closed" value="true" />
+      <created>1718868743649</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1718868743649</updated>
+    </task>
+    <task id="LOCAL-00064" summary="fine provvisoria, pt3">
+      <option name="closed" value="true" />
+      <created>1718869369411</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1718869369411</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -679,8 +679,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fine sezione ricerca, inizio dettagli prodotto" />
-    <MESSAGE value="fine productDetails.jsp" />
     <MESSAGE value="inizio e fine bottoni categoria in schermata home" />
     <MESSAGE value="inizio implementazione admin" />
     <MESSAGE value="inizio implementazione admin v2" />
@@ -704,6 +702,8 @@
     <MESSAGE value="da finire editView.jsp controllare quando un utente viene eliminato" />
     <MESSAGE value="fine provvisoria" />
     <MESSAGE value="fine provvisoria, sistemazione piccoli accorgimenti finali" />
-    <option name="LAST_COMMIT_MESSAGE" value="fine provvisoria, sistemazione piccoli accorgimenti finali" />
+    <MESSAGE value="fine provvisoria, pt2" />
+    <MESSAGE value="fine provvisoria, pt3" />
+    <option name="LAST_COMMIT_MESSAGE" value="fine provvisoria, pt3" />
   </component>
 </project>

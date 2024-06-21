@@ -236,12 +236,6 @@ To change this template use File | Settings | File Templates. da creare, pagina 
             f.requestSubmit();
         }
 
-        function AddToCart(wine_id) {
-            alert("Aggiunto al carrello");
-            document.AddToCartForm.wine_id.value = wine_id;
-            document.AddToCartForm.requestSubmit();
-        }
-
         function mainOnLoadHandler() {}
 
     </script>
