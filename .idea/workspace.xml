@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="fine provvisoria, pt3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/homeManagement/view.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="ec8994df-f589-4dfe-bd5d-aa77088b5cb2" name="Changes" comment="FINE" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -267,15 +263,7 @@
       <workItem from="1717664917295" duration="280000" />
       <workItem from="1718866477461" duration="3505000" />
       <workItem from="1718959959809" duration="618000" />
-      <workItem from="1719000811864" duration="2146000" />
-    </task>
-    <task id="LOCAL-00016" summary="creazione prime pagine jsp e html nella cartella webapp">
-      <option name="closed" value="true" />
-      <created>1712138736091</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1712138736091</updated>
+      <workItem from="1719000811864" duration="2575000" />
     </task>
     <task id="LOCAL-00017" summary="creazione file PagamentoDAOMySQLJDBCImpl e OrdineDAOMySQLJDBCImpl">
       <option name="closed" value="true" />
@@ -661,7 +649,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718869369411</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="FINE">
+      <option name="closed" value="true" />
+      <created>1719003355030</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1719003355031</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -679,7 +675,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="inizio e fine bottoni categoria in schermata home" />
     <MESSAGE value="inizio implementazione admin" />
     <MESSAGE value="inizio implementazione admin v2" />
     <MESSAGE value="inizio implementazione admin, UserManagement. Da sistemare il getAdmin" />
@@ -704,6 +699,7 @@
     <MESSAGE value="fine provvisoria, sistemazione piccoli accorgimenti finali" />
     <MESSAGE value="fine provvisoria, pt2" />
     <MESSAGE value="fine provvisoria, pt3" />
-    <option name="LAST_COMMIT_MESSAGE" value="fine provvisoria, pt3" />
+    <MESSAGE value="FINE" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINE" />
   </component>
 </project>
