@@ -9,6 +9,7 @@ public abstract class DAOFactory {
     // List of DAO types supported by the factory
     public static final String MYSQLJDBCIMPL = "MySQLJDBCImpl";
     public static final String COOKIEIMPL= "CookieImpl";
+    public static final String SQLSERVERJDBCIMPL = "SQLServerJDBCImpl";
 
     public abstract void beginTransaction();
     public abstract void commitTransaction();
@@ -28,6 +29,8 @@ public abstract class DAOFactory {
             return new MySQLJDBCDAOFactory(factoryParameters);
         } else if (whichFactory.equals(COOKIEIMPL)) {
             return new CookieDAOFactory(factoryParameters);
+        } else if (whichFactory.equals(SQLSERVERJDBCIMPL)) {
+            return new org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory(factoryParameters);
         } else {
             return null;
         }

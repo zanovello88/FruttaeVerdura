@@ -1,4 +1,4 @@
-package org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl;
+package org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl;
 
 import org.fruttaeverdura.fruttaeverdura.model.dao.OrderDAO;
 import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DuplicatedObjectException;
@@ -11,11 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.math.BigDecimal;
 
-public class OrderDAOMySQLJDBCImpl implements OrderDAO {
+public class OrderDAOSQLServerImpl implements OrderDAO {
 
     Connection conn;
 
-    public OrderDAOMySQLJDBCImpl(Connection conn) {
+    public OrderDAOSQLServerImpl(Connection conn) {
         this.conn = conn;
     }
 
@@ -40,12 +40,12 @@ public class OrderDAOMySQLJDBCImpl implements OrderDAO {
 
         try {
             String sql
-                    = " INSERT INTO `order` "
+                    = " INSERT INTO [order] "
                     + "   ( utente_id,"
                     + "     product_id,"
                     + "     quantity,"
                     + "     status,"
-                    + "     `timestamp`,"
+                    + "     timestamp,"
                     + "     total_amount,"
                     + "     deleted "
                     + "   ) "
@@ -81,7 +81,7 @@ public class OrderDAOMySQLJDBCImpl implements OrderDAO {
             Long user_id = user.getid_utente();
             String sql
                     = " SELECT *"
-                    + " FROM `order`"
+                    + " FROM [order]"
                     + " WHERE "
                     + " deleted ='0' AND"
                     + " utente_id = ? "
@@ -119,7 +119,7 @@ public class OrderDAOMySQLJDBCImpl implements OrderDAO {
             Long user_id = user.getid_utente();
             String sql
                     = " SELECT *"
-                    + " FROM `order`"
+                    + " FROM [order]"
                     + " WHERE "
                     + " deleted ='0' AND"
                     + " timestamp = ? AND"
@@ -147,17 +147,15 @@ public class OrderDAOMySQLJDBCImpl implements OrderDAO {
 
     @Override
     public List<Order> findByOrderId(Utente user, Long orderId) {
-
         PreparedStatement ps;
         Order order;
         ArrayList<Order> order_tuples = new ArrayList<Order>();
 
         try {
-
             Long user_id = user.getid_utente();
             String sql
                     = " SELECT *"
-                    + " FROM `order`"
+                    + " FROM [order]"
                     + " WHERE "
                     + " deleted ='0' AND"
                     + " order_id = ? AND"
@@ -188,8 +186,8 @@ public class OrderDAOMySQLJDBCImpl implements OrderDAO {
         PreparedStatement ps;
         try {
             Long user_id = user.getid_utente();
-            String sql = "DELETE FROM `order` "
-                    + " WHERE deleted='0' AND utente_id = ? AND timestamp < DATE_SUB(NOW(), INTERVAL ? MONTH)";
+            String sql = "DELETE FROM [order] "
+                    + " WHERE deleted='0' AND utente_id = ? AND timestamp < DATEADD(month, -?, GETDATE())";
             ps = conn.prepareStatement(sql);
             ps.setLong(1, user_id);
             ps.setInt(2, months);
@@ -212,7 +210,7 @@ public class OrderDAOMySQLJDBCImpl implements OrderDAO {
             Long user_id = user.getid_utente();
             String sql
                     = " SELECT *"
-                    + " FROM `order`"
+                    + " FROM [order]"
                     + " WHERE "
                     + " deleted ='0' AND"
                     + " timestamp = ? AND"
@@ -232,7 +230,7 @@ public class OrderDAOMySQLJDBCImpl implements OrderDAO {
             resultSet.close();
 
             sql
-                    = " UPDATE `order` "
+                    = " UPDATE [order] "
                     + " SET "
                     + " status = ?"
                     + " WHERE "

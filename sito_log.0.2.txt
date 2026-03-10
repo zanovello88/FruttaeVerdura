@@ -1,0 +1,12 @@
+mar 10, 2026 4:05:19 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 10, 2026 4:05:19 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 10, 2026 4:05:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view
+mar 10, 2026 4:05:25 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement cleanupOrders
+mar 10, 2026 4:05:25 PM org.fruttaeverdura.fruttaeverdura.controller.OrderManagement cleanupOrders
+INFORMAZIONI: Starting cleanup for user 3 - deleting orders older than 6 months
+mar 10, 2026 4:05:25 PM org.fruttaeverdura.fruttaeverdura.controller.OrderManagement cleanupOrders
+INFORMAZIONI: Cleanup completed for user 3

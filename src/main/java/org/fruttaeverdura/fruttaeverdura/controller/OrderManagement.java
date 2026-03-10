@@ -123,6 +123,65 @@ public class OrderManagement {
 
     }
 
+    public static void cleanupOrders(HttpServletRequest request, HttpServletResponse response) {
+
+        DAOFactory sessionDAOFactory= null;
+        DAOFactory daoFactory = null;
+        Utente loggedUser;
+        String applicationMessage = null;
+
+        Logger logger = LogService.getApplicationLogger();
+
+        try {
+            Map sessionFactoryParameters=new HashMap<String,Object>();
+            sessionFactoryParameters.put("request",request);
+            sessionFactoryParameters.put("response",response);
+            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
+            sessionDAOFactory.beginTransaction();
+
+            UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
+            loggedUser = sessionUserDAO.findLoggedUser();
+
+            // ideally check is admin
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
+            daoFactory.beginTransaction();
+
+            OrderDAO orderDAO = daoFactory.getOrderDAO();
+            int months = Integer.parseInt(request.getParameter("months"));
+            orderDAO.deleteOldOrders(loggedUser, months);
+            applicationMessage = "Pulizia ordini completata ("+months+" mesi)";
+
+            daoFactory.commitTransaction();
+            
+            // reload orders after cleanup
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
+            daoFactory.beginTransaction();
+            orderRetrieve(daoFactory, sessionDAOFactory, request);
+            daoFactory.commitTransaction();
+            
+            sessionDAOFactory.commitTransaction();
+
+            request.setAttribute("loggedOn",loggedUser!=null);
+            request.setAttribute("loggedUser", loggedUser);
+            request.setAttribute("applicationMessage", applicationMessage);
+            request.setAttribute("viewUrl", "orderManagement/view");
+
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "Controller Error", e);
+            try {
+                if (sessionDAOFactory != null) sessionDAOFactory.rollbackTransaction();
+            } catch (Throwable t) {
+            }
+            throw new RuntimeException(e);
+
+        } finally {
+            try {
+                if (sessionDAOFactory != null) sessionDAOFactory.closeTransaction();
+            } catch (Throwable t) {
+            }
+        }
+    }
+
     public static void setDelivered(HttpServletRequest request, HttpServletResponse response) {
 
         DAOFactory sessionDAOFactory= null;
@@ -227,11 +286,17 @@ public class OrderManagement {
         loggedUser = sessionUserDAO.findLoggedUser();
         Utente user = userDAO.findByUserId(loggedUser.getid_utente());
 
-        Timestamp order_timestamp = new java.sql.Timestamp(Long.parseLong(request.getParameter("order_date")));
+        Long order_id = Long.parseLong(request.getParameter("order_id"));
 
         OrderDAO orderDAO = daoFactory.getOrderDAO();
         List<Order> order_tuples;
-        order_tuples = orderDAO.findBySingleOrder(user, order_timestamp);
+        order_tuples = orderDAO.findByOrderId(user, order_id);
+        if (order_tuples == null || order_tuples.isEmpty()) {
+            // no order found for the given id/user
+            request.setAttribute("applicationMessage", "Ordine non trovato o parametro non valido");
+            request.setAttribute("order_tuples", new ArrayList<Order>());
+            return;
+        }
         request.setAttribute("order_tuples", order_tuples);
 
         ProdottoDAO prodottoDAO = daoFactory.getProdottoDAO();

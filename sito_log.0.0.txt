@@ -16933,3 +16933,1110 @@ giu 21, 2024 10:51:05 PM org.fruttaeverdura.fruttaeverdura.controller.CartManage
 INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
 giu 21, 2024 10:51:19 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
 INFO: CheckoutManagement view
+giu 22, 2024 9:28:41 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+giu 22, 2024 9:28:41 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+giu 22, 2024 9:29:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+giu 22, 2024 9:29:55 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+giu 22, 2024 9:30:05 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+giu 22, 2024 9:30:12 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+giu 22, 2024 9:30:20 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+giu 22, 2024 9:30:25 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+giu 22, 2024 9:30:43 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CheckoutManagement view
+giu 22, 2024 9:30:49 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProduct
+giu 22, 2024 9:30:49 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProduct
+giu 22, 2024 9:30:49 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProduct
+giu 22, 2024 9:30:50 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProduct
+giu 22, 2024 9:30:50 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProduct
+giu 22, 2024 9:30:52 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProductBlock
+giu 22, 2024 9:30:53 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+giu 22, 2024 9:30:57 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 9:30:58 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+giu 22, 2024 9:30:59 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 9:30:59 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 9:31:00 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 9:31:00 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 9:31:00 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 9:31:00 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 9:31:01 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CheckoutManagement view
+giu 22, 2024 9:31:11 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: OrderManagement view
+giu 22, 2024 9:31:15 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: OrderManagement orderView
+giu 22, 2024 9:31:20 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserProfile view
+giu 22, 2024 9:31:21 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserProfile editProfileView
+giu 22, 2024 9:31:27 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserProfile view
+giu 22, 2024 9:31:29 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 9:31:30 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+giu 22, 2024 9:31:44 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 9:31:45 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+giu 22, 2024 9:31:47 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+giu 22, 2024 9:31:51 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 9:31:52 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement view
+giu 22, 2024 9:31:58 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 9:32:02 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+giu 22, 2024 9:32:09 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement searchView
+giu 22, 2024 9:32:15 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement searchView
+giu 22, 2024 9:32:21 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+giu 22, 2024 9:32:22 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+giu 22, 2024 9:32:28 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+giu 22, 2024 9:32:40 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+giu 22, 2024 9:33:09 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+giu 22, 2024 9:33:14 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+giu 22, 2024 9:33:15 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+giu 22, 2024 9:33:18 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProductBlock
+giu 22, 2024 9:33:19 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+giu 22, 2024 9:33:23 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 9:33:25 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+giu 22, 2024 9:33:26 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 9:33:26 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 9:33:26 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 9:33:26 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 9:33:26 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 9:33:26 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 9:33:27 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 9:33:27 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 9:33:27 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 9:33:27 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 9:33:29 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+giu 22, 2024 9:33:32 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 9:33:33 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+giu 22, 2024 9:33:53 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+giu 22, 2024 9:44:02 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+giu 22, 2024 11:07:48 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+giu 22, 2024 11:07:56 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+giu 22, 2024 11:08:14 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+giu 22, 2024 11:08:50 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement searchView
+giu 22, 2024 11:08:57 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement searchView
+giu 22, 2024 11:09:03 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+giu 22, 2024 11:09:13 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+giu 22, 2024 11:09:17 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+giu 22, 2024 11:09:34 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+giu 22, 2024 11:09:43 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:09:45 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+giu 22, 2024 11:09:56 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+giu 22, 2024 11:10:03 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+giu 22, 2024 11:10:20 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProductBlock
+giu 22, 2024 11:10:23 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:10:23 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 11:10:26 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:10:26 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 11:10:28 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:10:28 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 11:10:32 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:10:32 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 11:10:36 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+giu 22, 2024 11:10:41 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:10:51 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+giu 22, 2024 11:10:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:10:54 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 11:10:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:10:54 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 11:10:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:10:54 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 11:10:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:10:54 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 11:10:56 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CheckoutManagement view
+giu 22, 2024 11:11:43 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProductBlock
+giu 22, 2024 11:11:45 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+giu 22, 2024 11:11:48 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:11:52 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:11:57 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:11:59 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+giu 22, 2024 11:12:55 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+giu 22, 2024 11:12:55 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+giu 22, 2024 11:13:01 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CheckoutManagement view
+giu 22, 2024 11:13:55 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CheckoutManagement order
+giu 22, 2024 11:14:03 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: OrderManagement view
+giu 22, 2024 11:14:06 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: OrderManagement orderView
+giu 22, 2024 11:14:23 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+giu 22, 2024 11:14:24 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+giu 22, 2024 11:14:30 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+giu 22, 2024 11:14:33 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 11:14:37 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+giu 22, 2024 11:14:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 11:14:56 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+giu 22, 2024 11:14:58 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 11:14:59 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+giu 22, 2024 11:15:11 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement insertView
+giu 22, 2024 11:15:16 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement modifyView
+giu 22, 2024 11:15:22 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement modify
+giu 22, 2024 11:15:26 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement insertView
+giu 22, 2024 11:16:57 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement insert
+giu 22, 2024 11:17:06 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement searchView
+giu 22, 2024 11:17:33 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement searchView
+giu 22, 2024 11:17:37 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+giu 22, 2024 11:17:40 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+giu 22, 2024 11:17:46 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 11:17:47 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+giu 22, 2024 11:17:50 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement searchView
+giu 22, 2024 11:17:53 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 11:17:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+giu 22, 2024 11:17:56 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+giu 22, 2024 11:18:04 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+giu 22, 2024 11:18:07 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement searchView
+giu 22, 2024 11:18:08 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+giu 22, 2024 11:18:15 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 11:18:16 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+giu 22, 2024 11:18:17 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+giu 22, 2024 11:18:19 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement searchView
+giu 22, 2024 11:18:21 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insert
+giu 22, 2024 11:18:26 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+giu 22, 2024 11:18:40 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 11:18:41 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+giu 22, 2024 11:18:43 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement delete
+giu 22, 2024 11:18:45 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 11:18:46 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement view
+giu 22, 2024 11:18:56 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+giu 22, 2024 11:18:59 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: OrderManagement view
+giu 22, 2024 11:19:01 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: OrderManagement orderView
+giu 22, 2024 11:19:22 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 11:19:23 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement view
+giu 22, 2024 11:19:28 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+giu 22, 2024 11:19:34 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 11:19:36 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+giu 22, 2024 11:19:39 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: OrderManagement view
+giu 22, 2024 11:19:57 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+giu 22, 2024 11:20:07 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement view
+giu 22, 2024 11:20:20 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement setAdmin
+giu 22, 2024 11:20:24 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement setAdmin
+giu 22, 2024 11:20:29 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement delete
+giu 22, 2024 11:20:32 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+giu 22, 2024 11:20:34 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+giu 22, 2024 11:20:35 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+giu 22, 2024 11:20:41 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+giu 22, 2024 11:20:45 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+giu 22, 2024 11:20:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+giu 22, 2024 11:20:57 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserProfile view
+giu 22, 2024 11:20:59 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserProfile editProfileView
+giu 22, 2024 11:21:06 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserProfile view
+giu 22, 2024 11:21:08 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+lug 15, 2024 4:03:33 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 15, 2024 4:03:33 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 15, 2024 4:03:52 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+lug 15, 2024 4:03:55 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 15, 2024 4:04:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 15, 2024 4:04:03 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+lug 15, 2024 4:04:06 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+lug 15, 2024 4:04:19 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: OrderManagement view
+lug 15, 2024 4:04:20 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: OrderManagement orderView
+lug 15, 2024 4:04:36 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+lug 15, 2024 4:04:38 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+lug 15, 2024 4:04:41 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+lug 15, 2024 4:04:42 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+lug 15, 2024 4:04:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+lug 15, 2024 4:04:45 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement view
+lug 15, 2024 4:05:12 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 15, 2024 4:08:31 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+lug 15, 2024 4:08:33 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+lug 15, 2024 4:08:35 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement modifyView
+lug 15, 2024 4:08:39 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement insertView
+feb 22, 2025 9:44:29 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+feb 22, 2025 9:44:29 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+feb 22, 2025 9:45:03 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+feb 22, 2025 9:45:05 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+feb 22, 2025 9:45:11 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+feb 22, 2025 9:45:17 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+feb 22, 2025 9:46:49 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+feb 22, 2025 9:46:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+feb 22, 2025 9:46:58 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+feb 22, 2025 9:47:02 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+feb 22, 2025 9:47:02 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+feb 22, 2025 9:47:05 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement AddProduct
+feb 22, 2025 9:47:05 AM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFO: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+feb 22, 2025 9:47:07 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProductBlock
+feb 22, 2025 9:47:11 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CheckoutManagement view
+feb 22, 2025 9:47:17 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProduct
+feb 22, 2025 9:47:18 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProduct
+feb 22, 2025 9:47:18 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProduct
+feb 22, 2025 9:47:18 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement RemoveProduct
+feb 22, 2025 9:47:19 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CheckoutManagement view
+feb 22, 2025 9:47:26 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CheckoutManagement order
+feb 22, 2025 9:47:30 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+feb 22, 2025 9:47:32 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+feb 22, 2025 9:47:33 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: OrderManagement view
+feb 22, 2025 9:47:36 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: OrderManagement orderView
+feb 22, 2025 9:47:39 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: OrderManagement setDelivered
+feb 22, 2025 9:47:43 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserProfile view
+feb 22, 2025 9:47:47 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+feb 22, 2025 9:47:50 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement viewManagement
+feb 22, 2025 9:47:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement modifyView
+feb 22, 2025 9:48:00 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+feb 22, 2025 9:48:01 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+feb 22, 2025 9:48:03 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insertView
+feb 22, 2025 9:48:05 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement insert
+feb 22, 2025 9:48:07 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+feb 22, 2025 9:48:10 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+feb 22, 2025 9:48:11 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: UserManagement view
+feb 22, 2025 9:48:18 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+feb 22, 2025 9:48:19 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+feb 22, 2025 9:48:21 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: AdminManagement view
+feb 22, 2025 9:48:23 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ShowcaseManagement view
+feb 22, 2025 9:48:54 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+feb 22, 2025 9:49:11 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: CartManagement view
+feb 22, 2025 9:49:15 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+feb 22, 2025 9:49:53 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement searchView
+feb 22, 2025 9:50:01 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement productView
+feb 22, 2025 9:50:07 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+feb 25, 2025 11:16:04 AM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+feb 25, 2025 11:16:04 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+feb 25, 2025 11:16:06 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+feb 25, 2025 11:16:17 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+feb 25, 2025 11:16:20 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+feb 25, 2025 11:16:22 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+feb 25, 2025 11:16:36 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: ProductManagement view
+feb 25, 2025 11:16:43 AM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFO: HomeManagement searchView
+mar 09, 2026 3:53:40 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 09, 2026 3:53:40 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 09, 2026 3:53:41 PM org.fruttaeverdura.fruttaeverdura.controller.ShowcaseManagement view
+GRAVE: Controller Error
+java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'sa'. ClientConnectionId:087fd4d1-b0de-4af4-b9af-1e01d49513f8
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory.beginTransaction(SQLServerJDBCDAOFactory.java:27)
+	at org.fruttaeverdura.fruttaeverdura.controller.ShowcaseManagement.view(ShowcaseManagement.java:47)
+	at org.apache.jsp.jsp.homeManagement.view_jsp._jspService(view_jsp.java:155)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:691)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:441)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:367)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:295)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:37)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doGet(Dispatcher.java:62)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'sa'. ClientConnectionId:087fd4d1-b0de-4af4-b9af-1e01d49513f8
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:304)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:137)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:42)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:6612)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:5154)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:5087)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3583)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:3172)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:3014)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1836)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1246)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:253)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory.beginTransaction(SQLServerJDBCDAOFactory.java:22)
+	... 43 more
+
+mar 09, 2026 3:55:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 09, 2026 3:55:01 PM org.fruttaeverdura.fruttaeverdura.controller.ShowcaseManagement view
+GRAVE: Controller Error
+java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'sa'. ClientConnectionId:edbdbbe8-c743-422a-b902-aa5200e2aab8
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory.beginTransaction(SQLServerJDBCDAOFactory.java:27)
+	at org.fruttaeverdura.fruttaeverdura.controller.ShowcaseManagement.view(ShowcaseManagement.java:47)
+	at org.apache.jsp.jsp.homeManagement.view_jsp._jspService(view_jsp.java:155)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:691)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:441)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:367)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:295)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:37)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doGet(Dispatcher.java:62)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'sa'. ClientConnectionId:edbdbbe8-c743-422a-b902-aa5200e2aab8
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:304)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:137)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:42)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:6612)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:5154)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:5087)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3583)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:3172)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:3014)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1836)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1246)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:253)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory.beginTransaction(SQLServerJDBCDAOFactory.java:22)
+	... 43 more
+
+mar 09, 2026 3:59:50 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 09, 2026 3:59:50 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 09, 2026 3:59:51 PM org.fruttaeverdura.fruttaeverdura.controller.ShowcaseManagement view
+GRAVE: Controller Error
+java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'sa'. ClientConnectionId:e0b29ae3-5d74-4fe2-8b25-074fde581ce8
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory.beginTransaction(SQLServerJDBCDAOFactory.java:27)
+	at org.fruttaeverdura.fruttaeverdura.controller.ShowcaseManagement.view(ShowcaseManagement.java:47)
+	at org.apache.jsp.jsp.homeManagement.view_jsp._jspService(view_jsp.java:155)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:691)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:441)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:367)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:295)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:37)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doGet(Dispatcher.java:62)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'sa'. ClientConnectionId:e0b29ae3-5d74-4fe2-8b25-074fde581ce8
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:304)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:137)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:42)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:6612)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:5154)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:5087)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3583)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:3172)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:3014)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1836)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1246)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:253)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory.beginTransaction(SQLServerJDBCDAOFactory.java:22)
+	... 43 more
+
+mar 09, 2026 4:00:44 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 09, 2026 4:00:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 09, 2026 4:01:07 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: ProductManagement view
+mar 09, 2026 4:01:14 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement loginView
+mar 09, 2026 4:01:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement productView
+mar 09, 2026 4:01:30 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 09, 2026 4:01:39 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement searchView
+mar 09, 2026 4:01:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement loginView
+mar 09, 2026 4:59:05 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 09, 2026 4:59:05 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement loginView
+mar 09, 2026 4:59:14 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement searchView
+mar 09, 2026 4:59:17 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement registerView
+mar 09, 2026 4:59:32 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 09, 2026 4:59:43 PM org.fruttaeverdura.fruttaeverdura.controller.HomeManagement searchView
+GRAVE: Controller Error
+java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: La connessione TCP/IP all'host DBF&V, porta 1433 non è riuscita. Errore: "Connection refused. Verificare le proprietà di connessione. Assicurarsi che un'istanza di SQL Server sia in esecuzione sull'host e accetti le connessioni TCP/IP alla porta. Verificare inoltre che le connessioni TCP alla porta non siano bloccate da un firewall.".
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory.beginTransaction(SQLServerJDBCDAOFactory.java:27)
+	at org.fruttaeverdura.fruttaeverdura.controller.HomeManagement.searchView(HomeManagement.java:418)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: La connessione TCP/IP all'host DBF&V, porta 1433 non è riuscita. Errore: "Connection refused. Verificare le proprietà di connessione. Assicurarsi che un'istanza di SQL Server sia in esecuzione sull'host e accetti le connessioni TCP/IP alla porta. Verificare inoltre che le connessioni TCP alla porta non siano bloccate da un firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:231)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.convertConnectExceptionToSQLServerException(SQLServerException.java:282)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2578)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:719)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3523)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:3172)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:3014)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1836)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1246)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:253)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory.beginTransaction(SQLServerJDBCDAOFactory.java:22)
+	... 29 more
+
+mar 09, 2026 5:00:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 09, 2026 5:00:01 PM org.fruttaeverdura.fruttaeverdura.controller.ShowcaseManagement view
+GRAVE: Controller Error
+java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: La connessione TCP/IP all'host DBF&V, porta 1433 non è riuscita. Errore: "Connection refused. Verificare le proprietà di connessione. Assicurarsi che un'istanza di SQL Server sia in esecuzione sull'host e accetti le connessioni TCP/IP alla porta. Verificare inoltre che le connessioni TCP alla porta non siano bloccate da un firewall.".
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory.beginTransaction(SQLServerJDBCDAOFactory.java:27)
+	at org.fruttaeverdura.fruttaeverdura.controller.ShowcaseManagement.view(ShowcaseManagement.java:47)
+	at org.apache.jsp.jsp.homeManagement.view_jsp._jspService(view_jsp.java:155)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:691)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:441)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:367)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:295)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:37)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doGet(Dispatcher.java:62)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: La connessione TCP/IP all'host DBF&V, porta 1433 non è riuscita. Errore: "Connection refused. Verificare le proprietà di connessione. Assicurarsi che un'istanza di SQL Server sia in esecuzione sull'host e accetti le connessioni TCP/IP alla porta. Verificare inoltre che le connessioni TCP alla porta non siano bloccate da un firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:231)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.convertConnectExceptionToSQLServerException(SQLServerException.java:282)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2578)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:719)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3523)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:3172)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:3014)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1836)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1246)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:253)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory.beginTransaction(SQLServerJDBCDAOFactory.java:22)
+	... 43 more
+
+mar 09, 2026 5:00:31 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 09, 2026 5:00:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 09, 2026 5:01:14 PM org.fruttaeverdura.fruttaeverdura.controller.ShowcaseManagement view
+GRAVE: Controller Error
+java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: La connessione TCP/IP all'host DBF&V, porta 1433 non è riuscita. Errore: "Connection refused. Verificare le proprietà di connessione. Assicurarsi che un'istanza di SQL Server sia in esecuzione sull'host e accetti le connessioni TCP/IP alla porta. Verificare inoltre che le connessioni TCP alla porta non siano bloccate da un firewall.".
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory.beginTransaction(SQLServerJDBCDAOFactory.java:27)
+	at org.fruttaeverdura.fruttaeverdura.controller.ShowcaseManagement.view(ShowcaseManagement.java:47)
+	at org.apache.jsp.jsp.homeManagement.view_jsp._jspService(view_jsp.java:155)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:691)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:441)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:367)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:295)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:37)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doGet(Dispatcher.java:62)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: La connessione TCP/IP all'host DBF&V, porta 1433 non è riuscita. Errore: "Connection refused. Verificare le proprietà di connessione. Assicurarsi che un'istanza di SQL Server sia in esecuzione sull'host e accetti le connessioni TCP/IP alla porta. Verificare inoltre che le connessioni TCP alla porta non siano bloccate da un firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:231)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.convertConnectExceptionToSQLServerException(SQLServerException.java:282)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2578)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:719)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3523)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:3172)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:3014)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1836)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1246)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:253)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.SQLServerJDBCDAOFactory.beginTransaction(SQLServerJDBCDAOFactory.java:22)
+	... 43 more
+
+mar 10, 2026 3:15:53 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 10, 2026 3:15:53 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 10, 2026 3:16:36 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 10, 2026 3:16:36 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 10, 2026 3:16:39 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: ProductManagement view
+mar 10, 2026 3:16:43 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement searchView
+mar 10, 2026 3:16:45 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 10, 2026 3:17:52 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement loginView
+mar 10, 2026 3:17:56 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement logon
+mar 10, 2026 3:18:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: ProductManagement view
+mar 10, 2026 3:18:03 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement view
+mar 10, 2026 3:18:11 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: AdminManagement view
+mar 10, 2026 3:18:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: ShowcaseManagement view
+mar 10, 2026 3:18:21 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: ProductManagement viewManagement
+mar 10, 2026 3:18:27 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: ProductManagement viewManagement
+mar 10, 2026 3:18:31 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: AdminManagement view
+mar 10, 2026 3:18:32 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: UserManagement view
+mar 10, 2026 3:18:39 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: AdminManagement view
+mar 10, 2026 3:18:40 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 10, 2026 3:18:43 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement view
+mar 10, 2026 3:18:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: ProductManagement view
+mar 10, 2026 3:18:48 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement AddProduct
+mar 10, 2026 3:18:50 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement productView
+mar 10, 2026 3:18:54 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement AddProduct
+mar 10, 2026 3:18:54 PM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFORMAZIONI: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+mar 10, 2026 3:18:57 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement view
+mar 10, 2026 3:18:59 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement AddProduct
+mar 10, 2026 3:18:59 PM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFORMAZIONI: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+mar 10, 2026 3:19:00 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement AddProduct
+mar 10, 2026 3:19:00 PM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFORMAZIONI: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+mar 10, 2026 3:19:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement AddProduct
+mar 10, 2026 3:19:01 PM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFORMAZIONI: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+mar 10, 2026 3:19:02 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement AddProduct
+mar 10, 2026 3:19:02 PM org.fruttaeverdura.fruttaeverdura.controller.CartManagement AddProduct
+INFORMAZIONI: Tentativo di inserimento di un nuovo prodotto gia presente nel carrello
+mar 10, 2026 3:19:04 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CheckoutManagement view
+mar 10, 2026 3:19:07 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CheckoutManagement order
+mar 10, 2026 3:19:14 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view
+mar 10, 2026 3:19:16 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement orderView
+mar 10, 2026 3:19:28 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement orderView
+mar 10, 2026 3:22:35 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 10, 2026 3:22:35 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view
+mar 10, 2026 3:22:37 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement orderView
+mar 10, 2026 3:22:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: ProductManagement view
+mar 10, 2026 3:22:45 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement view
+mar 10, 2026 3:22:48 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view
+mar 10, 2026 3:22:50 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement orderView
+mar 10, 2026 3:22:57 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: ProductManagement view
+mar 10, 2026 3:23:00 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement AddProduct
+mar 10, 2026 3:23:04 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement AddProduct
+mar 10, 2026 3:23:07 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement view
+mar 10, 2026 3:23:09 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CheckoutManagement view
+mar 10, 2026 3:23:10 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CheckoutManagement order
+mar 10, 2026 3:23:16 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view
+mar 10, 2026 3:23:17 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement orderView
+mar 10, 2026 3:23:20 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement view
+mar 10, 2026 3:23:22 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: CartManagement view
+mar 10, 2026 3:23:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: ProductManagement view
+mar 10, 2026 3:23:25 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view
+mar 10, 2026 3:23:27 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement orderView
+mar 10, 2026 3:37:07 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 10, 2026 3:37:07 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 10, 2026 3:37:11 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement logout
+mar 10, 2026 3:37:12 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement loginView
+mar 10, 2026 3:37:18 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement logon
+mar 10, 2026 3:37:20 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: AdminManagement view
+mar 10, 2026 3:37:23 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: ProductManagement viewManagement
+mar 10, 2026 3:37:27 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: AdminManagement view
+mar 10, 2026 3:37:28 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: ShowcaseManagement view
+mar 10, 2026 3:37:29 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: AdminManagement view
+mar 10, 2026 3:37:30 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: UserManagement view
+mar 10, 2026 3:37:33 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: AdminManagement view
+mar 10, 2026 3:37:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 10, 2026 3:37:46 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view
+mar 10, 2026 3:42:49 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 10, 2026 3:42:49 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 10, 2026 3:42:53 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement logout
+mar 10, 2026 3:42:54 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement loginView
+mar 10, 2026 3:42:59 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement logon
+mar 10, 2026 3:43:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view
+mar 10, 2026 3:43:13 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement cleanupOrders
+mar 10, 2026 3:43:26 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement logout
+mar 10, 2026 3:43:27 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement loginView
+mar 10, 2026 3:43:32 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement logon
+mar 10, 2026 3:44:14 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement loginView
+mar 10, 2026 3:44:19 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement logon
+mar 10, 2026 3:44:21 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view
+mar 10, 2026 3:55:16 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 10, 2026 3:55:16 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 10, 2026 3:55:19 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement logout
+mar 10, 2026 3:55:20 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement loginView
+mar 10, 2026 3:55:26 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement logon
+mar 10, 2026 3:55:29 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view
+mar 10, 2026 3:55:45 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement logout
+mar 10, 2026 3:55:47 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement loginView
+mar 10, 2026 3:55:55 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement logon
+mar 10, 2026 3:55:57 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view

@@ -27,7 +27,10 @@
     DateFormat dateFormatter = new SimpleDateFormat("yyyy/MM/dd");
     DateFormat timeFormatter = new SimpleDateFormat("HH:mm");
     DateFormat formatter = new SimpleDateFormat("yyyy/MM/dd HH:mm");
-    String menuActiveLink = formatter.format(order_tuples.get(0).getTimestamp().getTime());
+    String menuActiveLink = "";
+    if (order_tuples != null && !order_tuples.isEmpty()) {
+        menuActiveLink = formatter.format(order_tuples.get(0).getTimestamp().getTime());
+    }
     int i;
 %>
 
@@ -130,7 +133,7 @@
 
 
     <form id="setDeliveredForm" name="setDeliveredForm" action="Dispatcher" method="post">
-        <input type="hidden" name="order_date" value="<%=order_tuples.get(0).getTimestamp().getTime()%>"/>
+        <input type="hidden" name="order_id" value="<%=order_tuples.get(0).getOrderId()%>"/>
         <input type="hidden" name="controllerAction" value="OrderManagement.setDelivered"/>
     </form>
 
