@@ -182,6 +182,76 @@ public class OrderManagement {
         }
     }
 
+    public static void viewOrderDetails(HttpServletRequest request, HttpServletResponse response) {
+
+        DAOFactory sessionDAOFactory = null;
+        DAOFactory daoFactory = null;
+        Utente loggedUser = null;
+
+        Logger logger = LogService.getApplicationLogger();
+
+        try {
+            // Set viewUrl FIRST so it's always available even if there's an error
+            request.setAttribute("viewUrl", "orderManagement/orderDetails");
+            
+            Map sessionFactoryParameters = new HashMap<String, Object>();
+            sessionFactoryParameters.put("request", request);
+            sessionFactoryParameters.put("response", response);
+            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL, sessionFactoryParameters);
+            sessionDAOFactory.beginTransaction();
+
+            UtenteDAO sessionUserDAO = sessionDAOFactory.getUtenteDAO();
+            loggedUser = sessionUserDAO.findLoggedUser();
+
+            // Check if user is admin - only admins can view detailed report
+            if (loggedUser == null || !loggedUser.getAdmin().equals("Y")) {
+                // Not authorized - redirect to home
+                request.setAttribute("viewUrl", "homeManagement/view");
+                request.setAttribute("loggedOn", false);
+                request.setAttribute("loggedUser", null);
+                request.setAttribute("applicationMessage", null);
+                sessionDAOFactory.commitTransaction();
+                return;
+            }
+
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL, null);
+            daoFactory.beginTransaction();
+
+            OrderDAO orderDAO = daoFactory.getOrderDAO();
+            List<OrderDetail> orderDetails = orderDAO.findOrderDetailsJoin();
+
+            daoFactory.commitTransaction();
+            sessionDAOFactory.commitTransaction();
+
+            request.setAttribute("orderDetails", orderDetails);
+            request.setAttribute("loggedOn", loggedUser != null);
+            request.setAttribute("loggedUser", loggedUser);
+
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "Controller Error in viewOrderDetails", e);
+            
+            // Set default values on error to prevent NullPointerException in Dispatcher
+            request.setAttribute("orderDetails", new ArrayList<OrderDetail>());
+            request.setAttribute("loggedOn", false);
+            request.setAttribute("loggedUser", null);
+            
+            try {
+                if (sessionDAOFactory != null) sessionDAOFactory.rollbackTransaction();
+                if (daoFactory != null) daoFactory.rollbackTransaction();
+            } catch (Throwable t) {
+                logger.log(Level.SEVERE, "Rollback error", t);
+            }
+
+        } finally {
+            try {
+                if (sessionDAOFactory != null) sessionDAOFactory.closeTransaction();
+                if (daoFactory != null) daoFactory.closeTransaction();
+            } catch (Throwable t) {
+                logger.log(Level.SEVERE, "Close transaction error", t);
+            }
+        }
+    }
+
     public static void setDelivered(HttpServletRequest request, HttpServletResponse response) {
 
         DAOFactory sessionDAOFactory= null;
@@ -207,12 +277,17 @@ public class OrderManagement {
 
             singleOrderRetrieve(daoFactory, sessionDAOFactory, request);
             String status = "Ordine consegnato";
-            boolean setDeliveredSwitch = true;
-            request.setAttribute("setDeliveredSwitch", setDeliveredSwitch);
 
             OrderDAO orderDAO = daoFactory.getOrderDAO();
             List<Order> order_tuples = (List<Order>)request.getAttribute("order_tuples");
-            orderDAO.updateStatus(order_tuples.get(0).getUser(), order_tuples.get(0).getTimestamp(), status);
+            orderDAO.updateStatus(order_tuples.get(0).getUser(), order_tuples.get(0).getOrderId(), status);
+
+            // reload order tuples so the updated status will be visible
+            singleOrderRetrieve(daoFactory, sessionDAOFactory, request);
+
+            boolean setDeliveredSwitch = true;
+            request.setAttribute("setDeliveredSwitch", setDeliveredSwitch);
+            applicationMessage = "Stato aggiornato: ordine marcato come consegnato.";
 
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
@@ -220,7 +295,8 @@ public class OrderManagement {
             request.setAttribute("loggedOn",loggedUser!=null);
             request.setAttribute("loggedUser", loggedUser);
             request.setAttribute("applicationMessage", applicationMessage);
-            request.setAttribute("viewUrl", "orderManagement/view");
+            // stay on single order page after action
+            request.setAttribute("viewUrl", "orderManagement/singleOrder");
 
         } catch (Exception e) {
             logger.log(Level.SEVERE, "Controller Error", e);

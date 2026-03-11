@@ -125,9 +125,13 @@
         <div id="shipment-details">
             <h1>Tracciamento spedizione</h1>
             <p class="shipment-status"><%=order_tuples.get(0).getStatus()%></p>
-            <%if(!order_tuples.get(0).getStatus().equals("Ordine consegnato") || setDelivered){%>
-            <button id="deliver-button" type="submit" form="setDeliveredForm">Marca come consegnato</button>
-            <%}%>
+            <% if (applicationMessage != null && !applicationMessage.isEmpty()) { %>
+                <div style="margin:10px 0; color:#2e7d32; font-weight:600;"><%= applicationMessage %></div>
+            <% } %>
+            <%-- show button only if order is not already delivered and we haven't just marked it --%>
+            <% if (!order_tuples.get(0).getStatus().equals("Ordine consegnato") && !setDelivered) { %>
+                <button id="deliver-button" type="submit" form="setDeliveredForm">Marca come consegnato</button>
+            <% } %>
         </div>
     </div>
 

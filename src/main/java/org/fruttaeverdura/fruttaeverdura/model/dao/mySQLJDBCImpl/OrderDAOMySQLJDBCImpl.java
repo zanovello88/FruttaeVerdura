@@ -2,9 +2,7 @@ package org.fruttaeverdura.fruttaeverdura.model.dao.mySQLJDBCImpl;
 
 import org.fruttaeverdura.fruttaeverdura.model.dao.OrderDAO;
 import org.fruttaeverdura.fruttaeverdura.model.dao.exception.DuplicatedObjectException;
-import org.fruttaeverdura.fruttaeverdura.model.mo.Utente;
-import org.fruttaeverdura.fruttaeverdura.model.mo.Prodotto;
-import org.fruttaeverdura.fruttaeverdura.model.mo.Order;
+import org.fruttaeverdura.fruttaeverdura.model.mo.*;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -201,53 +199,24 @@ public class OrderDAOMySQLJDBCImpl implements OrderDAO {
     }
 
     @Override
-    public void updateStatus(Utente user, Timestamp timestamp, String status) {
+    public void updateStatus(Utente user, Long orderId, String status) {
 
         PreparedStatement ps;
-        Order order;
-        ArrayList<Order> order_tuples = new ArrayList<Order>();
 
         try {
-
             Long user_id = user.getid_utente();
             String sql
-                    = " SELECT *"
-                    + " FROM `order`"
-                    + " WHERE "
-                    + " deleted ='0' AND"
-                    + " timestamp = ? AND"
-                    + " utente_id = ? ";
-
-            ps = conn.prepareStatement(sql);
-            ps.setTimestamp(1, timestamp);
-            ps.setLong(2, user_id);
-
-            ResultSet resultSet = ps.executeQuery();
-
-            while (resultSet.next()) {
-                order = read(resultSet);
-                order_tuples.add(order);
-            }
-
-            resultSet.close();
-
-            sql
                     = " UPDATE `order` "
-                    + " SET "
-                    + " status = ?"
-                    + " WHERE "
-                    + " deleted ='0' AND"
-                    + " timestamp = ? AND"
-                    + " utente_id = ? ";
+                    + " SET status = ?"
+                    + " WHERE deleted ='0' AND order_id = ? AND utente_id = ? ";
 
             ps = conn.prepareStatement(sql);
             int i = 1;
             ps.setString(i++, status);
-            ps.setTimestamp(i++, timestamp);
+            ps.setLong(i++, orderId);
             ps.setLong(i++, user_id);
-
             ps.executeUpdate();
-
+            ps.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -293,5 +262,47 @@ public class OrderDAOMySQLJDBCImpl implements OrderDAO {
         } catch (SQLException sqle) {
         }
         return order;
+    }
+
+    @Override
+    public List<OrderDetail> findOrderDetailsJoin() {
+        ArrayList<OrderDetail> orderDetails = new ArrayList();
+
+        try {
+            String sql = "SELECT o.order_id, u.nome as user_name, u.email as user_email, "
+                    + "p.nome as product_name, o.quantity, p.prezzo as unit_price, "
+                    + "o.total_amount, o.timestamp, o.status "
+                    + "FROM `order` o "
+                    + "INNER JOIN utente u ON o.utente_id = u.id_utente "
+                    + "INNER JOIN prodotto p ON o.product_id = p.id_prod "
+                    + "WHERE o.deleted = '0' "
+                    + "ORDER BY o.timestamp DESC";
+
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                OrderDetail od = new OrderDetail(
+                        rs.getLong("order_id"),
+                        rs.getString("user_name"),
+                        rs.getString("user_email"),
+                        rs.getString("product_name"),
+                        rs.getLong("quantity"),
+                        rs.getBigDecimal("unit_price"),
+                        rs.getBigDecimal("total_amount"),
+                        rs.getTimestamp("timestamp"),
+                        rs.getString("status")
+                );
+                orderDetails.add(od);
+            }
+
+            rs.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return orderDetails;
     }
 }

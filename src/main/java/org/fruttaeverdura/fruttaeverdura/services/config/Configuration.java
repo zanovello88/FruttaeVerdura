@@ -16,6 +16,6 @@ public class Configuration {
 
     /* Logger Configuration */
     public static final String GLOBAL_LOGGER_NAME="frutta";
-    public static final String GLOBAL_LOGGER_FILE="/Users/francescozanovello/Desktop/FruttaeVerdura/sito_log.%g.%u.txt";
+    public static final String GLOBAL_LOGGER_FILE="/Users/francescozanovello/Desktop/FruttaeVerdura/sito_log.0.0.txt";
     public static final Level GLOBAL_LOGGER_LEVEL=Level.ALL;
 }

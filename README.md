@@ -82,9 +82,23 @@ UPDATE prodotto SET deleted='1' WHERE id_prod=?
 ```
 
 #### JOIN
-Il progetto non utilizza esplicitamente operazioni JOIN nelle query SQL. Le operazioni di lettura dei dati vengono effettuate attraverso query semplici su singole tabelle, con eventuali filtri basati su chiavi esterne gestite a livello applicativo.
+Il progetto utilizza un'operazione JOIN esplicita per il report dettagliato degli ordini:
 
-Questa scelta architetturale mantiene la semplicità del codice DAO, affidando la logica di relazione tra entità al livello di business dell'applicazione.
+- **Report Dettagliato Ordini**: In `OrderDAOSQLServerImpl.java` e `OrderDAOMySQLJDBCImpl.java`, implementato il metodo `findOrderDetailsJoin()` che combina dati da tre tabelle
+
+Esempio di query JOIN per recuperare i dettagli completi degli ordini:
+```sql
+SELECT o.order_id, u.nome as user_name, u.email as user_email,
+       p.nome as product_name, o.quantity, p.prezzo as unit_price,
+       o.total_amount, o.timestamp, o.status
+FROM [order] o
+INNER JOIN utente u ON o.utente_id = u.id_utente
+INNER JOIN prodotto p ON o.product_id = p.id_prod
+WHERE o.deleted = '0'
+ORDER BY o.timestamp DESC
+```
+
+Questa operazione consente agli amministratori di visualizzare una vista consolidata di tutti gli ordini con informazioni complete su cliente, prodotto e importo, facilitando l'analisi e il monitoraggio delle vendite.
 
 ## Funzionalità Principali
 
@@ -94,6 +108,8 @@ Questa scelta architetturale mantiene la semplicità del codice DAO, affidando l
 4. **Checkout e Ordini**: Processo di acquisto, gestione ordini
 5. **Amministrazione**: Gestione prodotti, ordini, utenti (per amministratori)
 6. **Vetrina**: Prodotti in evidenza sulla homepage
+7. **Report Dettagliato Ordini (JOIN)**: Visualizzazione consolidata di tutti gli ordini con JOIN su ordine, utente e prodotto
+8. **Pulizia Ordini Archiviati (DELETE)**: Eliminazione di ordini più vecchi di N mesi (filtrato per utente)
 
 ## Configurazione e Deployment
 

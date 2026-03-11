@@ -18040,3 +18040,65 @@ mar 10, 2026 3:55:55 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher 
 INFORMAZIONI: HomeManagement logon
 mar 10, 2026 3:55:57 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
 INFORMAZIONI: OrderManagement view
+mar 11, 2026 7:35:40 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 11, 2026 7:35:40 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 11, 2026 7:35:44 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view
+mar 11, 2026 7:35:47 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement viewOrderDetails
+mar 11, 2026 7:35:48 PM org.fruttaeverdura.fruttaeverdura.controller.OrderManagement viewOrderDetails
+GRAVE: Controller Error
+java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'prodotto_id'.
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.OrderDAOSQLServerImpl.findOrderDetailsJoin(OrderDAOSQLServerImpl.java:333)
+	at org.fruttaeverdura.fruttaeverdura.controller.OrderManagement.viewOrderDetails(OrderManagement.java:196)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.processRequest(Dispatcher.java:33)
+	at org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher.doGet(Dispatcher.java:62)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Invalid column name 'prodotto_id'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:648)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:567)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeQuery(SQLServerPreparedStatement.java:485)
+	at org.fruttaeverdura.fruttaeverdura.model.dao.sqlserverJDBCImpl.OrderDAOSQLServerImpl.findOrderDetailsJoin(OrderDAOSQLServerImpl.java:312)
+	... 29 more
+
+mar 11, 2026 8:48:56 PM org.fruttaeverdura.fruttaeverdura.services.logservice.LogService getApplicationLogger
+CONFIGURAZIONE: Logger: frutta created.
+mar 11, 2026 8:48:56 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: HomeManagement view
+mar 11, 2026 8:48:59 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement view
+mar 11, 2026 8:49:01 PM org.fruttaeverdura.fruttaeverdura.dispatcher.Dispatcher processRequest
+INFORMAZIONI: OrderManagement viewOrderDetails

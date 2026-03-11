@@ -215,6 +215,28 @@
             <button type="submit" class="cleanup-btn">Elimina Ordini</button>
         </form>
     </div>
+
+    <!-- Report JOIN Button - Only for Admins -->
+    <% if (loggedUser != null && loggedUser.getAdmin().equals("Y")) { %>
+    <div style="text-align: center; margin: 20px 0;">
+        <a href="/FruttaeVerdura/Dispatcher?controllerAction=OrderManagement.viewOrderDetails" style="
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #73ad21 0%, #99daab 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        " 
+        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.3)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';">
+            Visualizza Report Dettagliato 
+        </a>
+    </div>
+    <% } %>
 <% } %>
 
 <main>

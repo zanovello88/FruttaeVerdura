@@ -390,7 +390,7 @@ public class UserManagement {
 
             OrderDAO orderDAO = daoFactory.getOrderDAO();
             List<Order> order_tuples = (List<Order>)request.getAttribute("order_tuples");
-            orderDAO.updateStatus(order_tuples.get(0).getUser(), order_tuples.get(0).getTimestamp(), status);
+            orderDAO.updateStatus(order_tuples.get(0).getUser(), order_tuples.get(0).getOrderId(), status);
 
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
