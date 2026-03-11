@@ -86,6 +86,7 @@ public class CheckoutManagement {
         DAOFactory daoFactory = null;
         String applicationMessage = null;
         Utente loggedUser;
+        String viewUrl = "homeManagement/view"; // default after successful order
 
         Logger logger = LogService.getApplicationLogger();
 
@@ -124,8 +125,18 @@ public class CheckoutManagement {
             for (int i = 0; i < carts.size(); i++) {
 
                 long quantity = carts.get(i).getQuantity();
+                Long prodId = carts.get(i).getProdotto().getid_prod();
 
-                //creo l'ordine
+                // attempt to reserve stock atomically; if it fails, abort entire order
+                boolean reserved = prodottoDAO.reserveStock(prodId, (int)quantity);
+                if (!reserved) {
+                    applicationMessage = "Errore: quantità insufficiente per " + carts.get(i).getProdotto().getnome_prod();
+                    viewUrl = "cartManagement/view";
+                    // do not create order and break out of loop; transaction will be rolled back later
+                    break;
+                }
+
+                //creo l'ordine solo se la riserva è riuscita
                 orderDAO.create(
                         current_user,
                         carts.get(i).getProdotto(),
@@ -135,23 +146,29 @@ public class CheckoutManagement {
                         total_amount
                 );
 
-                //sottraggo dal db la quantita' di prodotti acquistati
-                prodottoDAO.updateAvalaibility(carts.get(i).getProdotto().getid_prod(), (int) quantity);
+                // previously separate update is now handled by reserveStock
+                // prodottoDAO.updateAvalaibility(prodId, (int) quantity);
 
             }
 
-            //svuoto il carrello
-            Utente user = userDAO.findByUserId(loggedUser.getid_utente());
-            CartDAO cartDAO = daoFactory.getCartDAO();
-            cartDAO.deleteCart(user);
+            // if we were redirected back to cart view due to reservation failure, rollback
+            if (viewUrl.equals("cartManagement/view")) {
+                daoFactory.rollbackTransaction();
+                sessionDAOFactory.rollbackTransaction();
+            } else {
+                //svuoto il carrello
+                Utente user = userDAO.findByUserId(loggedUser.getid_utente());
+                CartDAO cartDAO = daoFactory.getCartDAO();
+                cartDAO.deleteCart(user);
 
-            applicationMessage = "Ordine effettuato. tieni d'occhio gli ordini effettuati nell'area utente.";
+                applicationMessage = "Ordine effettuato. tieni d'occhio gli ordini effettuati nell'area utente.";
 
-            productRetrieve(daoFactory, sessionDAOFactory, request);
-            showcaseProductRetrieve(daoFactory, sessionDAOFactory, request);
+                productRetrieve(daoFactory, sessionDAOFactory, request);
+                showcaseProductRetrieve(daoFactory, sessionDAOFactory, request);
 
-            daoFactory.commitTransaction();
-            sessionDAOFactory.commitTransaction();
+                daoFactory.commitTransaction();
+                sessionDAOFactory.commitTransaction();
+            }
 
             request.setAttribute("loggedOn",loggedUser!=null);
             request.setAttribute("loggedUser", loggedUser);

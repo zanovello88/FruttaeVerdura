@@ -8,6 +8,14 @@ import org.fruttaeverdura.fruttaeverdura.model.mo.Prodotto;
 import java.util.List;
 
 public interface ProdottoDAO {
+    /**
+     * Atomically decrements the available quantity of the given product by
+     * the specified amount if enough stock exists.  Returns true on success,
+     * false if insufficient quantity was available.  This operation should
+     * be executed inside a database transaction to provide concurrency
+     * protection.
+     */
+    public boolean reserveStock(Long prodId, int amount);
     Prodotto create(
             //Long id_prod,
             String nome_prod,

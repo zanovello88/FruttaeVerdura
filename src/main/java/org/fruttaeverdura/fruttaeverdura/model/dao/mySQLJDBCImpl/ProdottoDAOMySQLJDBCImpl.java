@@ -22,6 +22,26 @@ public class ProdottoDAOMySQLJDBCImpl implements ProdottoDAO {
     }
 
     @Override
+    public boolean reserveStock(Long prodId, int amount) {
+        PreparedStatement ps;
+        try {
+            String sql = " UPDATE `prodotto` "
+                    + " SET Quantità_disp = Quantità_disp - ? "
+                    + " WHERE Id_prod = ? AND Quantità_disp >= ?";
+            ps = conn.prepareStatement(sql);
+            int i = 1;
+            ps.setInt(i++, amount);
+            ps.setLong(i++, prodId);
+            ps.setInt(i++, amount);
+            int rows = ps.executeUpdate();
+            ps.close();
+            return rows > 0;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
     public Prodotto create(
             //Long id_prod
             String nome_prod,

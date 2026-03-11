@@ -100,6 +100,15 @@ ORDER BY o.timestamp DESC
 
 Questa operazione consente agli amministratori di visualizzare una vista consolidata di tutti gli ordini con informazioni complete su cliente, prodotto e importo, facilitando l'analisi e il monitoraggio delle vendite.
 
+#### Concorrenza sullo stock
+All'atto dell'acquisto viene eseguita una transazione che decrementa il campo `Quantità_disp` in `prodotto` utilizzando una query condizionale:
+```sql
+UPDATE prodotto
+SET Quantità_disp = Quantità_disp - ?
+WHERE Id_prod = ? AND Quantità_disp >= ?
+```
+Solo se l'aggiornamento colpisce una riga l'operazione prosegue; in caso contrario la transazione viene annullata e all'utente viene mostrato un messaggio di quantità insufficiente. Questa tecnica garantisce l'isolamento e impedisce a due utenti di superare lo stock simultaneamente.
+
 ## Funzionalità Principali
 
 1. **Gestione Utenti**: Registrazione, login, modifica profilo
